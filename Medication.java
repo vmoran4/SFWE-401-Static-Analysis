@@ -27,7 +27,7 @@ public class Medication{
   }
 
   public double getCostPerGram(){
-    return CostPerGram;
+    return costPerGram;
   }
 
   public void setQuantity(int quantity){
