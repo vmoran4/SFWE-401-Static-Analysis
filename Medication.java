@@ -5,6 +5,7 @@ public class Medication{
   private int quantity;
   private String description;
   private boolean restrictionStatus;
+  private int lowStockThreshold;
 
   public void setType(String type){
     this.type=type;
@@ -52,6 +53,19 @@ public class Medication{
 
   public boolean getStatus(){
     return restrictionStatus;
+  }
+
+  public void setLowStockThreshold(int threshold){
+    this.lowStockThreshold=threshold;
+  }
+
+  public int getLowStockThreshold(){
+    return lowStockThreshold;
+  }
+
+
+  public boolean checkLowStock(){
+    return quantity<lowStockThreshold;
   }
   
 }
