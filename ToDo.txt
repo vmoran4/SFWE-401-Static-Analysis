@@ -5,7 +5,10 @@
 Create CSV file input for Medication 
 Create CSV file input for Order's
 
+Create csv file initialization in Main.java
+
 Inventory class operationsa
 
 Start on TransactionLogger class
 
+Plan out report formatting (nothing fancy, just ASCII type formatting)
