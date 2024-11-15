@@ -7,7 +7,10 @@ public class Main {
     public static void main(String[] args) {
         // Variables
 
-        // Read Input CSV File
+        // ToDo: 1 CSV file for all types of medications
+        // ToDo: 1 CSV file for all orders
+
+        // Initialize and read medication CSV file
         
     }
 }
