@@ -2,10 +2,10 @@
 
 11/15:
 
-Create CSV file input for Medication 
-Create CSV file input for Order's
+Create CSV file input for Medication DONE (Andreas)
+Create CSV file input for Order's DONE (Andreas)
 
-Inventory class operationsa
+Inventory class operations
 
 Start on TransactionLogger class
 
