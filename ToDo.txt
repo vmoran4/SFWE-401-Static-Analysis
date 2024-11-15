@@ -15,4 +15,8 @@ Plan out report formatting (nothing fancy, just ASCII type formatting) (Rafael)
 
 
 
-Requirements split up
+Requirements Split Up (Inclusive Start and Inclusive End)
+  Peyton: Automatic Inventory Quantity Uodate - Inventory Sort
+  Andreas: Batch Inventory Tracking - Transaction Logging
+  Logan: Report Generation GUI - Transaction Data/Report Retention
+  Rafael: Accessing Purchase Info - Transaction Log Format
