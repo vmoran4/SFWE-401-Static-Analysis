@@ -15,7 +15,7 @@ Plan out report formatting (nothing fancy, just ASCII type formatting) (Rafael)
 
 New:
   Inventory exported to csv file at end of every day and named based on date
-
+  EndOfDay Script (Logan)
 
 Requirements Split Up (Inclusive Start and Inclusive End)
   Peyton: Automatic Inventory Quantity Uodate - Inventory Sort
