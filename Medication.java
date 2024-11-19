@@ -7,6 +7,16 @@ public class Medication{
   private boolean restrictionStatus;
   private int lowStockThreshold;
 
+  public Medication (String medType, String medName, double medCost, int medQuantity, String medDesc, boolean restriction){
+    type = medType;
+    name = medName;
+    costPerGram = medCost; 
+    quantity = medQuantity;
+    description = medDesc; 
+    restrictionStatus = restriction; 
+    lowStockThreshold = 15;   
+  }
+  
   public void setType(String type){
     this.type=type;
   }
