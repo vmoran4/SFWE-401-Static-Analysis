@@ -13,6 +13,8 @@ Start on TransactionLogger class (Peyton)
 
 Plan out report formatting (nothing fancy, just ASCII type formatting) (Rafael)
 
+New:
+  Inventory exported to csv file at end of every day and named based on date
 
 
 Requirements Split Up (Inclusive Start and Inclusive End)
