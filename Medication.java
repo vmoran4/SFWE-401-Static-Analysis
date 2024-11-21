@@ -17,6 +17,16 @@ public class Medication{
     lowStockThreshold = 15;   
   }
   
+  public Medication(){
+    type = "N/A";
+    name = "N/A";
+    costPerGram = 0.0; 
+    quantity = 0;
+    description = "N/A"; 
+    restrictionStatus = false; 
+    lowStockThreshold = 15;   
+  }
+  
   public void setType(String type){
     this.type=type;
   }
