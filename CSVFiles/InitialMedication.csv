@@ -1,0 +1,51 @@
+Type,Name,Cost per Gram,Quantity,Description,Restricted
+Antibiotics,Doxycycline,46.14,42,Doxycycline is a antibiotics used for specific conditions.,No
+Analgesics (Pain Relievers),Acetaminophen,37.27,31,Acetaminophen is a analgesics (pain relievers) used for specific conditions.,Yes
+Diuretics,Hydrochlorothiazide,13.21,71,Hydrochlorothiazide is a diuretics used for specific conditions.,Yes
+Vitamins and Supplements,Vitamin D,6.05,75,Vitamin D is a vitamins and supplements used for specific conditions.,No
+Vitamins and Supplements,Calcium,46.96,20,Calcium is a vitamins and supplements used for specific conditions.,Yes
+Analgesics (Pain Relievers),Ibuprofen,9.4,63,Ibuprofen is a analgesics (pain relievers) used for specific conditions.,No
+Analgesics (Pain Relievers),Acetaminophen,31.12,78,Acetaminophen is a analgesics (pain relievers) used for specific conditions.,No
+Mood Stabilizers,Carbamazepine,7.15,15,Carbamazepine is a mood stabilizers used for specific conditions.,No
+Antacids and Anti-Ulcer Medications,Omeprazole,16.69,21,Omeprazole is a antacids and anti-ulcer medications used for specific conditions.,Yes
+Antibiotics,Amoxicillin,15.46,95,Amoxicillin is a antibiotics used for specific conditions.,Yes
+Mood Stabilizers,Carbamazepine,48.28,96,Carbamazepine is a mood stabilizers used for specific conditions.,No
+Antacids and Anti-Ulcer Medications,Omeprazole,47.3,85,Omeprazole is a antacids and anti-ulcer medications used for specific conditions.,Yes
+Antifungals,Ketoconazole,36.11,35,Ketoconazole is a antifungals used for specific conditions.,No
+Antihistamines,Loratadine,17.21,59,Loratadine is a antihistamines used for specific conditions.,No
+Antifungals,Fluconazole,36.66,86,Fluconazole is a antifungals used for specific conditions.,No
+Antibiotics,Doxycycline,33.91,88,Doxycycline is a antibiotics used for specific conditions.,Yes
+Vitamins and Supplements,Vitamin D,26.47,90,Vitamin D is a vitamins and supplements used for specific conditions.,No
+Antacids and Anti-Ulcer Medications,Calcium Carbonate,43.54,73,Calcium Carbonate is a antacids and anti-ulcer medications used for specific conditions.,Yes
+Immunosuppressants,Cyclosporine,14.61,87,Cyclosporine is a immunosuppressants used for specific conditions.,No
+Hormone Therapy Drugs,Estrogen,31.78,40,Estrogen is a hormone therapy drugs used for specific conditions.,Yes
+Antivirals,Oseltamivir,48.31,56,Oseltamivir is a antivirals used for specific conditions.,Yes
+Antibiotics,Amoxicillin,20.92,12,Amoxicillin is a antibiotics used for specific conditions.,Yes
+Antifungals,Ketoconazole,42.49,36,Ketoconazole is a antifungals used for specific conditions.,Yes
+Antifungals,Terbinafine,8.23,49,Terbinafine is a antifungals used for specific conditions.,No
+Immunosuppressants,Methotrexate,37.37,84,Methotrexate is a immunosuppressants used for specific conditions.,No
+Immunosuppressants,Tacrolimus,34.01,11,Tacrolimus is a immunosuppressants used for specific conditions.,Yes
+Antivirals,Acyclovir,19.02,78,Acyclovir is a antivirals used for specific conditions.,No
+Antipsychotics,Risperidone,13.29,22,Risperidone is a antipsychotics used for specific conditions.,Yes
+Diuretics,Hydrochlorothiazide,40.65,64,Hydrochlorothiazide is a diuretics used for specific conditions.,No
+Antacids and Anti-Ulcer Medications,Ranitidine,35.0,61,Ranitidine is a antacids and anti-ulcer medications used for specific conditions.,Yes
+Antibiotics,Amoxicillin,14.91,31,Amoxicillin is a antibiotics used for specific conditions.,Yes
+Vitamins and Supplements,Calcium,5.78,35,Calcium is a vitamins and supplements used for specific conditions.,Yes
+Hormone Therapy Drugs,Estrogen,1.52,53,Estrogen is a hormone therapy drugs used for specific conditions.,Yes
+Antivirals,Oseltamivir,30.37,48,Oseltamivir is a antivirals used for specific conditions.,Yes
+Cardiovascular Drugs,Amlodipine,11.57,21,Amlodipine is a cardiovascular drugs used for specific conditions.,Yes
+Antihistamines,Cetirizine,44.25,95,Cetirizine is a antihistamines used for specific conditions.,Yes
+Antacids and Anti-Ulcer Medications,Omeprazole,6.06,85,Omeprazole is a antacids and anti-ulcer medications used for specific conditions.,Yes
+Mood Stabilizers,Carbamazepine,31.21,17,Carbamazepine is a mood stabilizers used for specific conditions.,No
+Diuretics,Furosemide,33.97,48,Furosemide is a diuretics used for specific conditions.,Yes
+Antifungals,Ketoconazole,27.99,87,Ketoconazole is a antifungals used for specific conditions.,No
+Vitamins and Supplements,Iron,49.14,11,Iron is a vitamins and supplements used for specific conditions.,Yes
+Cardiovascular Drugs,Atorvastatin,7.94,82,Atorvastatin is a cardiovascular drugs used for specific conditions.,Yes
+Cardiovascular Drugs,Amlodipine,29.83,87,Amlodipine is a cardiovascular drugs used for specific conditions.,No
+Cardiovascular Drugs,Lisinopril,15.9,30,Lisinopril is a cardiovascular drugs used for specific conditions.,No
+Analgesics (Pain Relievers),Naproxen,42.55,72,Naproxen is a analgesics (pain relievers) used for specific conditions.,Yes
+Antacids and Anti-Ulcer Medications,Omeprazole,37.36,86,Omeprazole is a antacids and anti-ulcer medications used for specific conditions.,Yes
+Hormone Therapy Drugs,Levothyroxine,49.32,43,Levothyroxine is a hormone therapy drugs used for specific conditions.,Yes
+Antihistamines,Diphenhydramine,46.42,52,Diphenhydramine is a antihistamines used for specific conditions.,Yes
+Antibiotics,Ciprofloxacin,20.83,16,Ciprofloxacin is a antibiotics used for specific conditions.,No
+Antacids and Anti-Ulcer Medications,Calcium Carbonate,14.02,71,Calcium Carbonate is a antacids and anti-ulcer medications used for specific conditions.,No
