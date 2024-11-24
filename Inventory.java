@@ -40,5 +40,15 @@ public class Inventory {
             }
             break; //Assuming there's only one of each type of medication in the arraylist
         }
+        //Log transaction? Maybe save that for main?
+    }
+
+    public Medication getMedication(String medicationName){
+        for (Medication medication : medicationList) {
+            if (medication.getName().equals(medicationName)) {
+                return medication;
+            }
+        }
+        return null;
     }
 }
