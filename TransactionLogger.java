@@ -12,7 +12,7 @@ import java.io.File;
 // Example:
 // LOW STOCK | [2024-11-21 15:33:08] | LOW STOCK | Item: Medication1, Threshold: 5, Remaining Quantity: 3
 public class TransactionLogger{
-    private String logsDirectoryPath;
+    private final String logsDirectoryPath;
 
     public TransactionLogger(String logsDirectoryPath){
         this.logsDirectoryPath = logsDirectoryPath;
