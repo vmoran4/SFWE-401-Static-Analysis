@@ -31,4 +31,14 @@ public class Inventory {
         }
         return new ArrayList<>(this.medicationList);
     }
+
+    // Update inventory after an order is placed
+    public void updateInventory(Order order) {
+        for (Medication medication : medicationList) {
+            if (medication.getName().equals(order.getMedicationName())) {
+                medication.setQuantity(medication.getQuantity() + order.getQuantity());
+            }
+            break; //Assuming there's only one of each type of medication in the arraylist
+        }
+    }
 }

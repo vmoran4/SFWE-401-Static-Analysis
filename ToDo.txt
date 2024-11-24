@@ -9,7 +9,7 @@ Create csv file initialization in Main.java (Peyton) *In Inventory Class
 
 Inventory class operations (Andreas)
 
-Start on TransactionLogger class (Peyton)
+Start on TransactionLogger class  DONE (Peyton)
 
 Plan out report formatting (nothing fancy, just ASCII type formatting) (Rafael)
 
