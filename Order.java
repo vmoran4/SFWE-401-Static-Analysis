@@ -1,3 +1,6 @@
+import java.time.format.DateTimeFormatter;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
 public class Order{
 
     private String medicationName;
@@ -47,8 +50,15 @@ public class Order{
         this.supplier = supplier;
     }
 
-    public int getDaysTillExpiration(){
-        // code to calculate days till expiration
-        return 0;
+
+    public boolean isExpired(){
+        //Check if date is past expiration date
+        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+        LocalDate currentDate = LocalDate.now();
+        LocalDate expirationDate = LocalDate.parse(this.expDate, dtf);
+        //Make sure that day of expiration counts as expiration
+        return currentDate.isAfter(expirationDate.minusDays(1)); 
     }
+
+
 }
