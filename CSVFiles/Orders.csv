@@ -1,0 +1,81 @@
+medicationName,quantity,expDate,batchNumber,supplier
+Aspirin,100,2024-12-31,12345,Pharma Inc.
+Ibuprofen,200,2025-06-30,12346,HealthCorp
+Paracetamol,150,2023-11-15,12347,MedSupply
+Amoxicillin,250,2024-01-20,12348,Pharma Inc.
+Cetirizine,300,2025-03-10,12349,HealthCorp
+Metformin,400,2024-09-25,12350,Pharma Inc.
+Lisinopril,500,2025-12-05,12351,HealthCorp
+Atorvastatin,600,2023-08-30,12352,MedSupply
+Omeprazole,700,2024-07-15,12353,Pharma Inc.
+Simvastatin,800,2025-02-20,12354,HealthCorp
+Levothyroxine,900,2023-10-10,12355,MedSupply
+Gabapentin,1000,2024-11-05,12356,Pharma Inc.
+Hydrochlorothiazide,1100,2025-01-25,12357,HealthCorp
+Amlodipine,1200,2023-12-15,12358,MedSupply
+Metoprolol,1300,2024-03-30,12359,Pharma Inc.
+Losartan,1400,2025-04-10,12360,HealthCorp
+Azithromycin,1500,2023-09-20,12361,MedSupply
+Albuterol,1600,2024-06-05,12362,Pharma Inc.
+Gabapentin,1700,2025-07-15,12363,HealthCorp
+Prednisone,1800,2023-11-25,12364,MedSupply
+Fluconazole,1900,2024-10-20,12365,Pharma Inc.
+Doxycycline,2000,2025-05-30,12366,HealthCorp
+Carbamazepine,2100,2023-12-25,12367,MedSupply
+Ketoconazole,2200,2024-08-15,12368,Pharma Inc.
+Ranitidine,2300,2025-03-05,12369,HealthCorp
+Tacrolimus,2400,2023-11-10,12370,MedSupply
+Cyclosporine,2500,2024-09-20,12371,Pharma Inc.
+Oseltamivir,2600,2025-06-25,12372,HealthCorp
+Acyclovir,2700,2023-10-15,12373,MedSupply
+Risperidone,2800,2024-07-10,12374,Pharma Inc.
+Methotrexate,2900,2025-04-20,12375,HealthCorp
+Terbinafine,3000,2023-12-05,12376,MedSupply
+Iron,3100,2024-08-25,12377,Pharma Inc.
+Estrogen,3200,2025-05-15,12378,HealthCorp
+Vitamin D,3300,2023-11-30,12379,MedSupply
+Calcium,3400,2024-09-10,12380,Pharma Inc.
+Furosemide,3500,2025-06-20,12381,HealthCorp
+Diphenhydramine,3600,2023-10-05,12382,MedSupply
+Ciprofloxacin,3700,2024-07-25,12383,Pharma Inc.
+Naproxen,3800,2025-04-10,12384,HealthCorp
+Aspirin,3900,2024-12-31,12385,Pharma Inc.
+Ibuprofen,4000,2025-06-30,12386,HealthCorp
+Paracetamol,4100,2023-11-15,12387,MedSupply
+Amoxicillin,4200,2024-01-20,12388,Pharma Inc.
+Cetirizine,4300,2025-03-10,12389,HealthCorp
+Metformin,4400,2024-09-25,12390,Pharma Inc.
+Lisinopril,4500,2025-12-05,12391,HealthCorp
+Atorvastatin,4600,2023-08-30,12392,MedSupply
+Omeprazole,4700,2024-07-15,12393,Pharma Inc.
+Simvastatin,4800,2025-02-20,12394,HealthCorp
+Levothyroxine,4900,2023-10-10,12395,MedSupply
+Gabapentin,5000,2024-11-05,12396,Pharma Inc.
+Hydrochlorothiazide,5100,2025-01-25,12397,HealthCorp
+Amlodipine,5200,2023-12-15,12398,MedSupply
+Metoprolol,5300,2024-03-30,12399,Pharma Inc.
+Losartan,5400,2025-04-10,12400,HealthCorp
+Azithromycin,5500,2023-09-20,12401,MedSupply
+Albuterol,5600,2024-06-05,12402,Pharma Inc.
+Gabapentin,5700,2025-07-15,12403,HealthCorp
+Prednisone,5800,2023-11-25,12404,MedSupply
+Fluconazole,5900,2024-10-20,12405,Pharma Inc.
+Doxycycline,6000,2025-05-30,12406,HealthCorp
+Carbamazepine,6100,2023-12-25,12407,MedSupply
+Ketoconazole,6200,2024-08-15,12408,Pharma Inc.
+Ranitidine,6300,2025-03-05,12409,HealthCorp
+Tacrolimus,6400,2023-11-10,12410,MedSupply
+Cyclosporine,6500,2024-09-20,12411,Pharma Inc.
+Oseltamivir,6600,2025-06-25,12412,HealthCorp
+Acyclovir,6700,2023-10-15,12413,MedSupply
+Risperidone,6800,2024-07-10,12414,Pharma Inc.
+Methotrexate,6900,2025-04-20,12415,HealthCorp
+Terbinafine,7000,2023-12-05,12416,MedSupply
+Iron,7100,2024-08-25,12417,Pharma Inc.
+Estrogen,7200,2025-05-15,12418,HealthCorp
+Vitamin D,7300,2023-11-30,12419,MedSupply
+Calcium,7400,2024-09-10,12420,Pharma Inc.
+Furosemide,7500,2025-06-20,12421,HealthCorp
+Diphenhydramine,7600,2023-10-05,12422,MedSupply
+Ciprofloxacin,7700,2024-07-25,12423,Pharma Inc.
+Naproxen,7800,2025-04-10,12424,HealthCorp

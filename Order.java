@@ -1,6 +1,5 @@
 import java.time.format.DateTimeFormatter;
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 public class Order{
 
     private String medicationName;
@@ -9,6 +8,22 @@ public class Order{
     private int batchNumber;
     private String supplier;
 
+
+    public Order(String medicationName, int quantity, String expDate, int batchNumber, String supplier){
+        this.medicationName = medicationName;
+        this.quantity = quantity;
+        this.expDate = expDate;
+        this.batchNumber = batchNumber;
+        this.supplier = supplier;
+    }
+
+    public Order(){
+        this.medicationName = "";
+        this.quantity = 0;
+        this.expDate = "";
+        this.batchNumber = 0;
+        this.supplier = "";
+    }
     // Getters and setters
     public String getMedicationName() {
         return medicationName;

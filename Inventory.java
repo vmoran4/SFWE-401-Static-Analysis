@@ -7,6 +7,7 @@ import java.io.FileNotFoundException;
 
 public class Inventory {
     private ArrayList<Medication> medicationList = new ArrayList<>();
+    private ArrayList<Order> orders = new ArrayList<>();
     
     
 
@@ -34,12 +35,15 @@ public class Inventory {
 
     // Update inventory after an order is placed
     public void updateInventory(Order order) {
+        //Update medication quantity
         for (Medication medication : medicationList) {
             if (medication.getName().equals(order.getMedicationName())) {
                 medication.setQuantity(medication.getQuantity() + order.getQuantity());
             }
             break; //Assuming there's only one of each type of medication in the arraylist
         }
+        //Add to orders
+        orders.add(order);
         //Log transaction? Maybe save that for main?
     }
 
