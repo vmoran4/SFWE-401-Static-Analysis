@@ -88,4 +88,9 @@ public class Medication{
     return quantity<lowStockThreshold;
   }
   
+  // Returns only name, type, and quantity information
+  @Override
+  public String toString(){
+    return String.format("Name: %s, Type: %s, Quantity: %d", name, type, quantity);
+  }
 }

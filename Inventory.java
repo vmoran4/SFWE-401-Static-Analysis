@@ -55,4 +55,15 @@ public class Inventory {
         }
         return null;
     }
+
+    //Sort Medications alphabetically
+    public void sortMedicationsByName(){
+        medicationList.sort((Medication m1, Medication m2) -> m1.getName().compareTo(m2.getName()));
+    }
+
+    public void printAllMedications(){
+        for (Medication medication : medicationList) {
+            System.out.println(medication);
+        }
+    }
 }
