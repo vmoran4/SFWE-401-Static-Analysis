@@ -21,6 +21,7 @@ public class Main {
                     String supplier = values[4].trim();
                     Order order = new Order(medicationName, quantity, expDate, batchNumber, supplier);
                     inventory.updateInventory(order);
+                    // FIXME: Log the order here?
                 }
             }
         } catch (FileNotFoundException e) {
@@ -44,13 +45,12 @@ public class Main {
             e.printStackTrace();
         }
         
+        inventory.sortMedicationsByName();
+        inventory.printAllMedications();
 
         //Main menu
         Scanner scanner = new Scanner(System.in);
         boolean running = true;
-        while (running) {
-            //FIXME: Needs to be implemented based on requirements
-
-        }
+        //FIXME: implement main loop
     }
 }

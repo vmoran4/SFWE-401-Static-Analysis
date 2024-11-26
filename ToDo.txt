@@ -5,7 +5,7 @@
 Create CSV file input for Medication DONE (Andreas)
 Create CSV file input for Order's DONE (Andreas)
 
-Create csv file initialization in Main.java (Peyton) *In Inventory Class
+Create csv file initialization in Main.java DONE (Peyton) *In Inventory Class 
 
 Inventory class operations (Andreas)
 
