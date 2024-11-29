@@ -18,7 +18,7 @@ New:
   EndOfDay Script (Logan)
   Main Loop Stuff (based on tests?):
     "Sell to Customer" option
-
+    "Search For Medication Information" option with input medicationName
 
 Requirements Split Up (Inclusive Start and Inclusive End)
   Peyton: Automatic Inventory Quantity Uodate - Inventory Sort
