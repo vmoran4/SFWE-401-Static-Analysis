@@ -15,11 +15,11 @@ public class Main {
                     String line = scanner.nextLine();
                     String[] values = line.split(",");
                     String medicationName = values[0].trim();
-                    int quantity = Integer.parseInt(values[1].trim());
+                    double quantityGrams = Double.parseDouble(values[1].trim());
                     String expDate = values[2].trim();
                     int batchNumber = Integer.parseInt(values[3].trim());
                     String supplier = values[4].trim();
-                    Order order = new Order(medicationName, quantity, expDate, batchNumber, supplier);
+                    Order order = new Order(medicationName, quantityGrams, expDate, batchNumber, supplier);
                     inventory.updateInventory(order);
                     // FIXME: Log the order here?
                 }
@@ -48,9 +48,12 @@ public class Main {
         inventory.sortMedicationsByName();
         inventory.printAllMedications();
 
+        
         //Main menu
         Scanner scanner = new Scanner(System.in);
         boolean running = true;
         //FIXME: implement main loop
+
+        scanner.close();
     }
 }

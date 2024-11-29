@@ -5,7 +5,6 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.File;
 
-
 //Log Types: ORDER, LOW_STOCK, EXPIRATION
 //Format:
 // Log Type | [Timestamp] | Description
@@ -43,8 +42,8 @@ public class TransactionLogger{
     //Logs order
     public void logOrder(Order order){
         String message = String.format(
-            "Batch Number: %s, Customer: %s, Item: %s, Quantity: %d",
-           order.getBatchNumber(), order.getSupplier(), order.getMedicationName(), order.getQuantity()
+            "Batch Number: %s, Customer: %s, Item: %s, Quantity: %.2f grams",
+           order.getBatchNumber(), order.getSupplier(), order.getMedicationName(), order.getQuantityGrams()
         );
         logMessage("ORDER", message);
     }
@@ -52,8 +51,8 @@ public class TransactionLogger{
     //Logs low stock notification
     public void logLowStock(Medication medication){
         String message = String.format(
-            "Item: %s, Threshold: %s, Remaining Quantity: %d",
-            medication.getName(), medication.getLowStockThreshold(), medication.getQuantity()
+            "Item: %s, Threshold: %s, Remaining Quantity: %.2f grams",
+            medication.getName(), medication.getLowStockThreshold(), medication.getQuantityGrams()
         );
         logMessage("LOW STOCK", message);
     }
@@ -61,8 +60,8 @@ public class TransactionLogger{
     //Logs expired medication
     public void logExpiration(Order order){
         String message = String.format(
-            "Medication: %s, Expiry Date: %s, Amount Expired: %d",
-            order.getMedicationName(), order.getExpDate(), order.getQuantity()
+            "Medication: %s, Expiry Date: %s, Amount Expired: %.2f grams",
+            order.getMedicationName(), order.getExpDate(), order.getQuantityGrams()
         );
         logMessage("EXPIRED MEDICATION", message);
     }
@@ -81,20 +80,20 @@ public class TransactionLogger{
         order.setBatchNumber(1234);
         order.setSupplier("Supplier1");
         order.setMedicationName("Medication1");
-        order.setQuantity(10);
+        order.setQuantityGrams(10.0);
         order.setExpDate("2021-03-01");
         logger.logOrder(order);
 
         Medication medication = new Medication();
         medication.setName("Medication1");
         medication.setLowStockThreshold(5);
-        medication.setQuantity(3);
+        medication.setQuantityGrams(3.0);
         logger.logLowStock(medication);
 
         Order expiredOrder = new Order();
         expiredOrder.setMedicationName("Medication1");
         expiredOrder.setExpDate("2021-02-01");
-        expiredOrder.setQuantity(5);
+        expiredOrder.setQuantityGrams(5.0);
         logger.logExpiration(expiredOrder);
     }
 }

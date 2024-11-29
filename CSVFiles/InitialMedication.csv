@@ -1,4 +1,4 @@
-Type,Name,Cost per Gram,Quantity,Description,Restricted
+Type,Name,Cost per Gram,Quantity in Grams,Description,Restricted
 Antibiotics,Doxycycline,46.14,42,Doxycycline is a antibiotics used for specific conditions.,No
 Analgesics (Pain Relievers),Acetaminophen,37.27,31,Acetaminophen is a analgesics (pain relievers) used for specific conditions.,Yes
 Diuretics,Hydrochlorothiazide,13.21,71,Hydrochlorothiazide is a diuretics used for specific conditions.,Yes
@@ -28,7 +28,7 @@ Immunosuppressants,Tacrolimus,34.01,11,Tacrolimus is a immunosuppressants used f
 Antivirals,Acyclovir,19.02,78,Acyclovir is a antivirals used for specific conditions.,No
 Antipsychotics,Risperidone,13.29,22,Risperidone is a antipsychotics used for specific conditions.,Yes
 Diuretics,Hydrochlorothiazide,40.65,64,Hydrochlorothiazide is a diuretics used for specific conditions.,No
-Antacids and Anti-Ulcer Medications,Ranitidine,35.0,61,Ranitidine is a antacids and anti-ulcer medications used for specific conditions.,Yes
+Antacids and Anti-Ulcer Medications,Ranitidine,35,61,Ranitidine is a antacids and anti-ulcer medications used for specific conditions.,Yes
 Antibiotics,Amoxicillin,14.91,31,Amoxicillin is a antibiotics used for specific conditions.,Yes
 Vitamins and Supplements,Calcium,5.78,35,Calcium is a vitamins and supplements used for specific conditions.,Yes
 Hormone Therapy Drugs,Estrogen,1.52,53,Estrogen is a hormone therapy drugs used for specific conditions.,Yes
