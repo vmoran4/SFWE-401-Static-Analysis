@@ -73,6 +73,9 @@ public class TransactionLogger{
         return dtf.format(now) + "LOG.txt";
     }
 
+
+
+    
     //Test the logger
     public static void main(String[] args){
         TransactionLogger logger = new TransactionLogger();

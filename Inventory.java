@@ -6,7 +6,8 @@ import java.io.FileNotFoundException;
 
 public class Inventory {
     private ArrayList<Medication> medicationList = new ArrayList<>();
-    private ArrayList<Order> orders = new ArrayList<>();
+    //FIXME: handling for removing and modifying orders after sales and expirations
+    private ArrayList<Order> orders = new ArrayList<>(); //Shall be retained until expiration date
     
     public ArrayList<Medication> loadMedicationsFromCSV(String filePath) throws FileNotFoundException, IOException {
         try(BufferedReader br = new BufferedReader(new FileReader(filePath))) { 
