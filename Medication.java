@@ -1,96 +1,94 @@
-public class Medication{
+public class Medication {
   private String type;
   private String name;
   private double costPerGram;
-  private int quantity;
+  private double quantityGrams;
   private String description;
   private boolean restrictionStatus;
   private int lowStockThreshold;
 
-  public Medication (String medType, String medName, double medCost, int medQuantity, String medDesc, boolean restriction){
+  public Medication(String medType, String medName, double medCost, double medQuantityGrams, String medDesc, boolean restriction) {
     type = medType;
     name = medName;
-    costPerGram = medCost; 
-    quantity = medQuantity;
-    description = medDesc; 
-    restrictionStatus = restriction; 
-    lowStockThreshold = 15;   
-  }
-  
-  public Medication(){
-    type = "N/A";
-    name = "N/A";
-    costPerGram = 0.0; 
-    quantity = 0;
-    description = "N/A"; 
-    restrictionStatus = false; 
-    lowStockThreshold = 15;   
-  }
-  
-  public void setType(String type){
-    this.type=type;
+    costPerGram = medCost;
+    quantityGrams = medQuantityGrams;
+    description = medDesc;
+    restrictionStatus = restriction;
+    lowStockThreshold = 15;
   }
 
-  public String getType(){
+  public Medication() {
+    type = "N/A";
+    name = "N/A";
+    costPerGram = 0.0;
+    quantityGrams = 0.0;
+    description = "N/A";
+    restrictionStatus = false;
+    lowStockThreshold = 15;
+  }
+
+  public void setType(String type) {
+    this.type = type;
+  }
+
+  public String getType() {
     return type;
   }
 
-  public void setName(String name){
-    this.name=name;
+  public void setName(String name) {
+    this.name = name;
   }
 
-  public String getName(){
+  public String getName() {
     return name;
   }
 
-  public void setCostPerGram(double cost){
-    this.costPerGram=cost;
+  public void setCostPerGram(double cost) {
+    this.costPerGram = cost;
   }
 
-  public double getCostPerGram(){
+  public double getCostPerGram() {
     return costPerGram;
   }
 
-  public void setQuantity(int quantity){
-    this.quantity=quantity;
+  public void setQuantityGrams(double quantityGrams) {
+    this.quantityGrams = quantityGrams;
   }
 
-  public int getQuantity(){
-    return quantity;
+  public double getQuantityGrams() {
+    return quantityGrams;
   }
 
-  public void setDescription(String description){
-    this.description=description;
+  public void setDescription(String description) {
+    this.description = description;
   }
 
-  public String getDescription(){
+  public String getDescription() {
     return description;
   }
 
-  public void setStatus(boolean status){
-    this.restrictionStatus=status;
+  public void setStatus(boolean status) {
+    this.restrictionStatus = status;
   }
 
-  public boolean getStatus(){
+  public boolean getStatus() {
     return restrictionStatus;
   }
 
-  public void setLowStockThreshold(int threshold){
-    this.lowStockThreshold=threshold;
+  public void setLowStockThreshold(int threshold) {
+    this.lowStockThreshold = threshold;
   }
 
-  public int getLowStockThreshold(){
+  public int getLowStockThreshold() {
     return lowStockThreshold;
   }
 
-
-  public boolean checkLowStock(){
-    return quantity<lowStockThreshold;
+  public boolean checkLowStock() {
+    return quantityGrams < lowStockThreshold;
   }
-  
-  // Returns only name, type, and quantity information
+
   @Override
-  public String toString(){
-    return String.format("Name: %s, Type: %s, Quantity: %d", name, type, quantity);
+  public String toString() {
+    return String.format("Name: %s, Type: %s, Quantity: %.2f grams", name, type, quantityGrams);
   }
 }

@@ -1,29 +1,30 @@
 import java.time.format.DateTimeFormatter;
 import java.time.LocalDate;
-public class Order{
+
+public class Order {
 
     private String medicationName;
-    private int quantity;
+    private double quantityGrams;
     private String expDate; // formatted YYYY-MM-DD
     private int batchNumber;
     private String supplier;
 
-
-    public Order(String medicationName, int quantity, String expDate, int batchNumber, String supplier){
+    public Order(String medicationName, double quantityGrams, String expDate, int batchNumber, String supplier) {
         this.medicationName = medicationName;
-        this.quantity = quantity;
+        this.quantityGrams = quantityGrams;
         this.expDate = expDate;
         this.batchNumber = batchNumber;
         this.supplier = supplier;
     }
 
-    public Order(){
+    public Order() {
         this.medicationName = "";
-        this.quantity = 0;
+        this.quantityGrams = 0.0;
         this.expDate = "";
         this.batchNumber = 0;
         this.supplier = "";
     }
+
     // Getters and setters
     public String getMedicationName() {
         return medicationName;
@@ -33,12 +34,12 @@ public class Order{
         this.medicationName = medicationName;
     }
 
-    public int getQuantity() {
-        return quantity;
+    public double getQuantityGrams() {
+        return quantityGrams;
     }
 
-    public void setQuantity(int quantity) {
-        this.quantity = quantity;
+    public void setQuantityGrams(double quantityGrams) {
+        this.quantityGrams = quantityGrams;
     }
 
     public String getExpDate() {
@@ -65,15 +66,12 @@ public class Order{
         this.supplier = supplier;
     }
 
-
-    public boolean isExpired(){
-        //Check if date is past expiration date
+    public boolean isExpired() {
+        // Check if date is past expiration date
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy-MM-dd");
         LocalDate currentDate = LocalDate.now();
         LocalDate expirationDate = LocalDate.parse(this.expDate, dtf);
-        //Make sure that day of expiration counts as expiration
-        return currentDate.isAfter(expirationDate.minusDays(1)); 
+        // Make sure that day of expiration counts as expiration
+        return currentDate.isAfter(expirationDate.minusDays(1));
     }
-
-
 }
