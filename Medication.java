@@ -5,7 +5,7 @@ public class Medication {
   private double quantityGrams;
   private String description;
   private boolean restrictionStatus;
-  private int lowStockThreshold;
+  private int lowStockThreshold; // Default value is 225 grams, currently cannot be changed
 
   public Medication(String medType, String medName, double medCost, double medQuantityGrams, String medDesc, boolean restriction) {
     type = medType;
@@ -14,7 +14,7 @@ public class Medication {
     quantityGrams = medQuantityGrams;
     description = medDesc;
     restrictionStatus = restriction;
-    lowStockThreshold = 15;
+    lowStockThreshold = 225;
   }
 
   public Medication() {
@@ -24,7 +24,7 @@ public class Medication {
     quantityGrams = 0.0;
     description = "N/A";
     restrictionStatus = false;
-    lowStockThreshold = 15;
+    lowStockThreshold = 225;
   }
 
   public void setType(String type) {
@@ -89,6 +89,6 @@ public class Medication {
 
   @Override
   public String toString() {
-    return String.format("Name: %s, Type: %s, Quantity: %.2f grams", name, type, quantityGrams);
+    return String.format("Name: %s, Type: %s, Quantity: %.2f grams, Low Stock Threshold: %d grams", name, type, quantityGrams, lowStockThreshold);
   }
 }

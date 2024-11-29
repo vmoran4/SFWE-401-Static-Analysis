@@ -2,23 +2,34 @@
 
 11/15:
 
-Create CSV file input for Medication DONE (Andreas)
-Create CSV file input for Order's DONE (Andreas)
+DONE Create CSV file input for Medication (Andreas)
+DONE Create CSV file input for Order's DONE (Andreas)
 
-Create csv file initialization in Main.java DONE (Peyton) *In Inventory Class 
+DONE Create csv file initialization in Main.java  (Peyton) *In Inventory Class 
 
 Inventory class operations (Andreas)
 
-Start on TransactionLogger class  DONE (Peyton)
+DONE Start on TransactionLogger class   (Peyton)
 
 Plan out report formatting (nothing fancy, just ASCII type formatting) (Rafael)
 
 New:
   Inventory exported to csv file at end of every day and named based on date
   EndOfDay Script (Logan)
+  Include price related things in Order.java and Orders.csv
+  Implement Transaction Logging that includes price of orders, and 
+      prepare functions for sales being made in Main.java to customers(Peyton)
+  Implement an expiration report. -- Neccessary for a requirement, only run EndOfDay, and only needs to include
+      orders expiring in the next 30 days and orders that expire the next day. 
+  Does arraylist of orders need to have orders modified every time sales are made?
+      i.e. sort by exp date. remove quantity of order after sale. remove order from Inventory if empty...
+  
   Main Loop Stuff (based on tests?):
-    "Sell to Customer" option
-    "Search For Medication Information" option with input medicationName
+    "Sell to Customer" option: medName, price, etc
+    "Search For Medication Information" option with input medicationName for viewing medication info about 1 med.
+    "Reorder Stock" all fields necessary in Orders.csv (Peyton)
+       (Expiration date should be 30 days and batchNumber should be auto generated) 
+    "Generate Report" -- followed by select report type
 
 Requirements Split Up (Inclusive Start and Inclusive End)
   Peyton: Automatic Inventory Quantity Uodate - Inventory Sort
