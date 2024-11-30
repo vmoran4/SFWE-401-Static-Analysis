@@ -64,4 +64,25 @@ public class Inventory {
             System.out.println(medication);
         }
     }
+
+    // Returns true if purchase is successful, false otherwise
+    // update inventory after a purchase is made
+    public boolean makePurchase(String medicationName, double quantityGrams){
+        Medication medication = getMedication(medicationName);
+        if (medication == null) {
+            System.out.println("Medication not found");
+            return false;
+        }
+        if (medication.getQuantityGrams() < quantityGrams) {
+            System.out.println("Not enough stock");
+            return false;
+        }
+
+        medication.setQuantityGrams(medication.getQuantityGrams() - quantityGrams);
+        //Log Transaction
+        double totalCost = quantityGrams * medication.getCostPerGram();
+        TransactionLogger logger = new TransactionLogger();
+        logger.logSales(quantityGrams, totalCost, medicationName);
+        return true;
+    }
 }

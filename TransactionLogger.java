@@ -10,6 +10,8 @@ import java.io.File;
 // Log Type | [Timestamp] | Description
 // Example:
 // LOW STOCK | [2024-11-21 15:33:08] | LOW STOCK | Item: Medication1, Threshold: 5, Remaining Quantity: 3
+
+//FIXME: should this whole class be static?
 public class TransactionLogger{
     private final String logsDirectoryPath;
 
@@ -65,6 +67,15 @@ public class TransactionLogger{
         );
         logMessage("EXPIRED MEDICATION", message);
     }
+    
+    //Logs sales
+    public void logSales(double quantityGrams, double totalPrice, String medicationName){
+        String message = String.format(
+            "Medication: %s, Quantity Sold: %.2f grams, Gross Income: %.2f",
+            medicationName, quantityGrams, totalPrice
+        );
+        logMessage("SALES", message);
+    }
 
     //Helper function
     public String getCurrentFilename(){
@@ -75,7 +86,7 @@ public class TransactionLogger{
 
 
 
-    
+
     //Test the logger
     public static void main(String[] args){
         TransactionLogger logger = new TransactionLogger();
@@ -98,5 +109,7 @@ public class TransactionLogger{
         expiredOrder.setExpDate("2021-02-01");
         expiredOrder.setQuantityGrams(5.0);
         logger.logExpiration(expiredOrder);
+
+        logger.logSales(5.0, 100.0, "Medication1");
     }
 }
