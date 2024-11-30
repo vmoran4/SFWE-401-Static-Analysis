@@ -1,6 +1,7 @@
 import java.time.format.DateTimeFormatter;
 import java.time.LocalDate;
 
+//Represents an order of medication from a supplier
 public class Order {
 
     private String medicationName;

@@ -22,6 +22,8 @@ public class Main {
                     Order order = new Order(medicationName, quantityGrams, expDate, batchNumber, supplier);
                     inventory.updateInventory(order);
                     // FIXME: Log the order here?
+                    TransactionLogger logger = new TransactionLogger();
+                    logger.logOrder(order);
                 }
             }
         } catch (FileNotFoundException e) {
