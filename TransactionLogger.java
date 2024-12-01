@@ -78,7 +78,7 @@ public class TransactionLogger{
     }
 
     //Helper function
-    public String getCurrentFilename(){
+    public static String getCurrentFilename(){
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy-MM-dd");
         LocalDateTime now = LocalDateTime.now();
         return dtf.format(now) + "LOG.txt";

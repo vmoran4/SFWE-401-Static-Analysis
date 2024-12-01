@@ -7,6 +7,7 @@ import java.io.FileNotFoundException;
 public class Inventory {
     private ArrayList<Medication> medicationList = new ArrayList<>();
     //FIXME: handling for removing and modifying orders after sales and expirations
+    //DO NOT SORT. Append order matters for expiration date and usage
     private ArrayList<Order> orders = new ArrayList<>(); //Shall be retained until expiration date
     
     public ArrayList<Medication> loadMedicationsFromCSV(String filePath) throws FileNotFoundException, IOException {
@@ -47,14 +48,14 @@ public class Inventory {
                 String supplier = values[4].trim();
                 //public Order(String medicationName, double quantityGrams, String expDate, int batchNumber, String supplier)
                 Order order = new Order(medicationName, quantityGrams, expDate, batchNumber, supplier);
-                updateInventory(order);
+                updateInventoryOrder(order);
 
             }
         }
     }
 
     // Update inventory medications and orders after an order is placed
-    public void updateInventory(Order order) {
+    public void updateInventoryOrder(Order order) {
         //Update medication quantity in grams
         for (Medication medication : medicationList) {
             if (medication.getName().equals(order.getMedicationName())) {
@@ -64,9 +65,28 @@ public class Inventory {
         }
         //Add to orders
         orders.add(order);
-        //Log transaction? 
+        //Log transaction
         TransactionLogger logger = new TransactionLogger();
         logger.logOrder(order);
+    }
+
+    // Update orders arraylist after a sale is made by removing quantity from orders based on sale.
+    // Purpose: keep track of medications expiration date
+    public void updateOrdersSale(String medicationName, double quantityGrams){
+        double remainingQuantity = quantityGrams;
+        for (Order order : orders) {
+            if (order.getMedicationName().equals(medicationName)) {
+                order.setQuantityGrams(order.getQuantityGrams() - quantityGrams);
+                if(order.getQuantityGrams() <= 0){
+                    remainingQuantity = -order.getQuantityGrams();
+                    orders.remove(order);
+                }
+                else{
+                    // remainingQuantity = 0;
+                    break;
+                }
+            }
+        }
     }
 
     public Medication getMedication(String medicationName){
@@ -107,6 +127,17 @@ public class Inventory {
         double totalCost = quantityGrams * medication.getCostPerGram();
         TransactionLogger logger = new TransactionLogger();
         logger.logSale(quantityGrams, totalCost, medicationName);
+
+        //Check if medication is low stock
+        if(medication.checkLowStock()){
+            logger.logLowStock(medication);
+            //Automatic Restock
+            Order order = new Order(medication.getName(), 1000, "2022-12-31", 0, "Automatic Restock");
+            updateInventoryOrder(order);
+        }
+
+        //Remove orders that have been sold out
+        updateOrdersSale(medicationName, quantityGrams);
         return true;
     }
 }
