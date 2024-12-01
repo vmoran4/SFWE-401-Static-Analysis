@@ -29,7 +29,7 @@ New:
     "Search For Medication Information" option with input medicationName for viewing medication info about 1 med.
     "Reorder Stock" all fields necessary in Orders.csv (Peyton)
        (Expiration date should be 30 days and batchNumber should be auto generated) 
-    "Generate Report" -- followed by select report type
+    "Generate Report" -- followed by select report type -- Maybe can leave out unless manual reports required
 
 Requirements Split Up (Inclusive Start and Inclusive End)
   Peyton: Automatic Inventory Quantity Uodate - Inventory Sort
