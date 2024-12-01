@@ -69,7 +69,7 @@ public class TransactionLogger{
     }
     
     //Logs sales
-    public void logSales(double quantityGrams, double totalPrice, String medicationName){
+    public void logSale(double quantityGrams, double totalPrice, String medicationName){
         String message = String.format(
             "Medication: %s, Quantity Sold: %.2f grams, Gross Income: %.2f",
             medicationName, quantityGrams, totalPrice
@@ -110,6 +110,6 @@ public class TransactionLogger{
         expiredOrder.setQuantityGrams(5.0);
         logger.logExpiration(expiredOrder);
 
-        logger.logSales(5.0, 100.0, "Medication1");
+        logger.logSale(5.0, 100.0, "Medication1");
     }
 }

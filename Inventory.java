@@ -31,7 +31,29 @@ public class Inventory {
         return new ArrayList<>(this.medicationList);
     }
 
-    // Update inventory after an order is placed
+    //PRECONDITION: medications loaded from CSV
+    public void loadOrdersFromCSV(String filePath) throws FileNotFoundException, IOException {
+        try(BufferedReader br = new BufferedReader(new FileReader(filePath))) { 
+            String line;
+
+            br.readLine();
+
+            while ((line = br.readLine()) != null) { 
+                String[] values = line.split(","); 
+                String medicationName = values[0].trim(); 
+                double quantityGrams = Double.parseDouble(values[1].trim()); 
+                String expDate = values[2].trim();
+                int batchNumber = Integer.parseInt(values[3].trim());
+                String supplier = values[4].trim();
+                //public Order(String medicationName, double quantityGrams, String expDate, int batchNumber, String supplier)
+                Order order = new Order(medicationName, quantityGrams, expDate, batchNumber, supplier);
+                updateInventory(order);
+
+            }
+        }
+    }
+
+    // Update inventory medications and orders after an order is placed
     public void updateInventory(Order order) {
         //Update medication quantity in grams
         for (Medication medication : medicationList) {
@@ -42,7 +64,9 @@ public class Inventory {
         }
         //Add to orders
         orders.add(order);
-        //Log transaction? Maybe save that for main?
+        //Log transaction? 
+        TransactionLogger logger = new TransactionLogger();
+        logger.logOrder(order);
     }
 
     public Medication getMedication(String medicationName){
@@ -82,7 +106,7 @@ public class Inventory {
         //Log Transaction
         double totalCost = quantityGrams * medication.getCostPerGram();
         TransactionLogger logger = new TransactionLogger();
-        logger.logSales(quantityGrams, totalCost, medicationName);
+        logger.logSale(quantityGrams, totalCost, medicationName);
         return true;
     }
 }
