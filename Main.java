@@ -1,5 +1,5 @@
-import java.util.Scanner;
 import java.io.IOException;
+import java.util.Scanner;
 
 public class Main {
 
@@ -10,7 +10,14 @@ public class Main {
         System.out.println("1.) Sell Medication");
         System.out.println("2.) Restock Medication");
         System.out.println("3.) Retrieve Mecication Information");
+        System.out.println("4.) Manually Generate Report");
         System.out.println("q.) Exit");
+    }
+
+    public static void printReportOptionMenu(){
+        System.out.println("Please select a report type to generate:");
+        System.out.println("1.) Financial Report");
+        System.out.println("2.) Inventory Report");
     }
     
 
@@ -39,6 +46,11 @@ public class Main {
             String input = scanner.nextLine();
             switch(input){
                 
+
+                case "4":
+                    printReportOptionMenu();
+                    String reportType=scanner.nextLine();
+
                 case "q":
                     System.out.println("Exiting...");
                     running = false;
