@@ -47,42 +47,51 @@ public class TransactionLogger{
     }
 
     //Logs order
-    public void logOrder(Order order){
+    public String logOrder(Order order){
         String message = String.format(
             "Batch Number: %s, Customer: %s, Item: %s, Quantity: %.2f grams",
            order.getBatchNumber(), order.getSupplier(), order.getMedicationName(), order.getQuantityGrams()
         );
         logMessage("ORDER", message);
+        return message;
     }
 
     //Logs low stock notification
-    public void logLowStock(Medication medication){
+    public String logLowStock(Medication medication){
         String message = String.format(
-            "Item: %s, Threshold: %s, Remaining Quantity: %.2f grams",
+            "Item: %s is Low Stock, Threshold: %s, Remaining Quantity: %.2f grams",
             medication.getName(), medication.getLowStockThreshold(), medication.getQuantityGrams()
         );
         logMessage("LOW STOCK", message);
+        return message;
     }
 
     //Logs expired medication
-    public void logExpiration(Order order){
+    public String logExpiration(Order order){
         String message = String.format(
             "Medication: %s, Expiry Date: %s, Amount Expired: %.2f grams",
             order.getMedicationName(), order.getExpDate(), order.getQuantityGrams()
         );
         logMessage("EXPIRED MEDICATION", message);
+        return message;
     }
     
     //Logs sales
-    public void logSale(double quantityGrams, double totalPrice, String medicationName){
+    public String logSale(double quantityGrams, double totalPrice, String medicationName){
         String message = String.format(
             "Medication: %s, Quantity Sold: %.2f grams, Gross Income: %.2f",
             medicationName, quantityGrams, totalPrice
         );
         logMessage("SALE", message);
+        return message;
     }
-
-    //Helper function
+    //Returns curr day's date in yyyy-MM-dd format
+    public static String getCurrDate(){
+        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+        LocalDateTime now = LocalDateTime.now();
+        return dtf.format(now);
+    }
+    //Helper function to get
     public static String getCurrentFilename(){
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy-MM-dd");
         LocalDateTime now = LocalDateTime.now();
