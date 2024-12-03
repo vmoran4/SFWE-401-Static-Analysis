@@ -1,0 +1,21 @@
+__________________________________________________________
+Pharmacy Name
+Pharmacy Address
+Pharmacy eMail Address
+Pharmacy Phone Number
+Financial Report
+__________________________________________________________
+Sales
+
+// This is where all the transactions that happened that day will go line by line
+
+__________________________________________________________
+
+Expenses
+
+// This is where all the expenses that happened that day will go line by line
+
+__________________________________________________________
+
+Profit XXXXX.XX$
+Date XX/XX/XX
