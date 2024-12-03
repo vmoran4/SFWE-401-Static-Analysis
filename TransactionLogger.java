@@ -34,6 +34,11 @@ public class TransactionLogger{
 
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(logsDirectoryPath + getCurrentFilename(),
              true))) {
+            //If file is empty, add header
+            if(new File(logsDirectoryPath + getCurrentFilename()).length() == 0){
+                writer.write("Log Type          | Timestamp           | Description");
+                writer.newLine();
+            }
             writer.write(logEntry);
             writer.newLine();
         } catch (IOException e) {
