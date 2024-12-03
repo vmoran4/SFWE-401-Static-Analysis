@@ -91,4 +91,9 @@ public class Medication {
   public String toString() {
     return String.format("Name: %s, Type: %s, Quantity: %.2f grams, Low Stock Threshold: %d grams", name, type, quantityGrams, lowStockThreshold);
   }
+  
+//Converts medication to one line of CSV format
+  public String toCSV() {
+    return String.format("%s,%s,%.2f,%.2f,%s,%b", type, name, costPerGram, quantityGrams, description, restrictionStatus);
+  }
 }

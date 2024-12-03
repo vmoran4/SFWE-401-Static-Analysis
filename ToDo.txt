@@ -14,10 +14,10 @@ DONE Start on TransactionLogger class   (Peyton)
 Plan out report formatting (nothing fancy, just ASCII type formatting) (Rafael)
 
 New:
-  Inventory exported to csv file at end of every day and named based on date
+  DONE Inventory exported to csv file at end of every day and named based on date
   EndOfDay Script (Logan)
-  Include price related things in Order.java and Orders.csv
-  Implement Transaction Logging that includes price of orders, and 
+  DONE Include price related things in Order.java and Orders.csv
+  DONE? Implement Transaction Logging that includes price of orders, and 
       prepare functions for sales being made in Main.java to customers(Peyton)
   Implement an expiration report. -- Neccessary for a requirement, only run EndOfDay, and only needs to include
       orders expiring in the next 30 days and orders that expire the next day. 

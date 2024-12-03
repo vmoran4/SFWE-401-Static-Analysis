@@ -53,7 +53,8 @@ public class Main {
             printMenu();
             String input = scanner.nextLine();
             switch(input){
-                
+                //Selling 
+                case "1":
 
                 case "4":
                     printReportOptionMenu();
@@ -74,7 +75,9 @@ public class Main {
             }
         }
 
-
         scanner.close();
+
+        //Run end of day tasks after exiting main loop
+        EndOfDay.endOfDay();
     }
 }

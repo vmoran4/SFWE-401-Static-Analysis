@@ -1,0 +1,4 @@
+ORDER              | [2024-11-29 17:25:46] | Batch Number: 1234, Customer: Supplier1, Item: Medication1, Quantity: 10.00 grams
+LOW STOCK          | [2024-11-29 17:25:46] | Item: Medication1, Threshold: 5, Remaining Quantity: 3.00 grams
+EXPIRED MEDICATION | [2024-11-29 17:25:46] | Medication: Medication1, Expiry Date: 2021-02-01, Amount Expired: 5.00 grams
+SALES              | [2024-11-29 17:25:46] | Medication: Medication1, Quantity Sold: 5.00 grams, Gross Income: 100.00
