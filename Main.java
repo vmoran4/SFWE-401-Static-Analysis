@@ -36,6 +36,14 @@ public class Main {
         inventory.sortMedicationsByName();
         inventory.printAllMedications();
 
+        //Load orders from CSV
+        try {
+            inventory.loadOrdersFromCSV("CSVFiles/Orders.csv");
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+
         
         //Main menu
         Scanner scanner = new Scanner(System.in);
