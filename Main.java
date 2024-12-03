@@ -57,7 +57,15 @@ public class Main {
 
                 case "4":
                     printReportOptionMenu();
-                    String reportType=scanner.nextLine();
+                    String reportOption = scanner.nextLine();
+                    switch(reportOption){
+                        case "1":
+                            //FIXME: implement financial report
+                            break;
+                        case "2":
+                            //FIXME: implement inventory report
+                            break;
+                    }
 
                 case "q":
                     System.out.println("Exiting...");
