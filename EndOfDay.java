@@ -44,7 +44,13 @@ public class EndOfDay{
     //FIXME need to do automatic report generation, experation report, what else?
     public static void runEndOfDayTasks(){
         
+        //Export the current inventory to csv. 
+
     }
 
+    public static void main(String[] args) {
+        //In reality this would run from task scheduler, but for testing it will run after main loop ends
+        endOfDay();
+    }
 
 }

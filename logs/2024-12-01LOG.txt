@@ -1,0 +1,81 @@
+Log Type          | Timestamp           | Description
+ORDER              | [2024-12-01 21:24:19] | Batch Number: 12345, Customer: Pharma Inc., Item: Aspirin, Quantity: 100.00 grams
+ORDER              | [2024-12-01 21:24:19] | Batch Number: 12346, Customer: HealthCorp, Item: Ibuprofen, Quantity: 200.00 grams
+ORDER              | [2024-12-01 21:24:19] | Batch Number: 12347, Customer: MedSupply, Item: Paracetamol, Quantity: 150.00 grams
+ORDER              | [2024-12-01 21:24:19] | Batch Number: 12348, Customer: Pharma Inc., Item: Amoxicillin, Quantity: 250.00 grams
+ORDER              | [2024-12-01 21:24:19] | Batch Number: 12349, Customer: HealthCorp, Item: Cetirizine, Quantity: 300.00 grams
+ORDER              | [2024-12-01 21:24:19] | Batch Number: 12350, Customer: Pharma Inc., Item: Metformin, Quantity: 400.00 grams
+ORDER              | [2024-12-01 21:24:19] | Batch Number: 12351, Customer: HealthCorp, Item: Lisinopril, Quantity: 500.00 grams
+ORDER              | [2024-12-01 21:24:19] | Batch Number: 12352, Customer: MedSupply, Item: Atorvastatin, Quantity: 600.00 grams
+ORDER              | [2024-12-01 21:24:19] | Batch Number: 12353, Customer: Pharma Inc., Item: Omeprazole, Quantity: 700.00 grams
+ORDER              | [2024-12-01 21:24:19] | Batch Number: 12354, Customer: HealthCorp, Item: Simvastatin, Quantity: 800.00 grams
+ORDER              | [2024-12-01 21:24:19] | Batch Number: 12355, Customer: MedSupply, Item: Levothyroxine, Quantity: 900.00 grams
+ORDER              | [2024-12-01 21:24:19] | Batch Number: 12356, Customer: Pharma Inc., Item: Gabapentin, Quantity: 1000.00 grams
+ORDER              | [2024-12-01 21:24:19] | Batch Number: 12357, Customer: HealthCorp, Item: Hydrochlorothiazide, Quantity: 1100.00 grams
+ORDER              | [2024-12-01 21:24:19] | Batch Number: 12358, Customer: MedSupply, Item: Amlodipine, Quantity: 1200.00 grams
+ORDER              | [2024-12-01 21:24:19] | Batch Number: 12359, Customer: Pharma Inc., Item: Metoprolol, Quantity: 1300.00 grams
+ORDER              | [2024-12-01 21:24:19] | Batch Number: 12360, Customer: HealthCorp, Item: Losartan, Quantity: 1400.00 grams
+ORDER              | [2024-12-01 21:24:19] | Batch Number: 12361, Customer: MedSupply, Item: Azithromycin, Quantity: 1500.00 grams
+ORDER              | [2024-12-01 21:24:19] | Batch Number: 12362, Customer: Pharma Inc., Item: Albuterol, Quantity: 1600.00 grams
+ORDER              | [2024-12-01 21:24:19] | Batch Number: 12363, Customer: HealthCorp, Item: Gabapentin, Quantity: 1700.00 grams
+ORDER              | [2024-12-01 21:24:19] | Batch Number: 12364, Customer: MedSupply, Item: Prednisone, Quantity: 1800.00 grams
+ORDER              | [2024-12-01 21:24:19] | Batch Number: 12365, Customer: Pharma Inc., Item: Fluconazole, Quantity: 1900.00 grams
+ORDER              | [2024-12-01 21:24:19] | Batch Number: 12366, Customer: HealthCorp, Item: Doxycycline, Quantity: 2000.00 grams
+ORDER              | [2024-12-01 21:24:19] | Batch Number: 12367, Customer: MedSupply, Item: Carbamazepine, Quantity: 2100.00 grams
+ORDER              | [2024-12-01 21:24:19] | Batch Number: 12368, Customer: Pharma Inc., Item: Ketoconazole, Quantity: 2200.00 grams
+ORDER              | [2024-12-01 21:24:19] | Batch Number: 12369, Customer: HealthCorp, Item: Ranitidine, Quantity: 2300.00 grams
+ORDER              | [2024-12-01 21:24:19] | Batch Number: 12370, Customer: MedSupply, Item: Tacrolimus, Quantity: 2400.00 grams
+ORDER              | [2024-12-01 21:24:19] | Batch Number: 12371, Customer: Pharma Inc., Item: Cyclosporine, Quantity: 2500.00 grams
+ORDER              | [2024-12-01 21:24:19] | Batch Number: 12372, Customer: HealthCorp, Item: Oseltamivir, Quantity: 2600.00 grams
+ORDER              | [2024-12-01 21:24:19] | Batch Number: 12373, Customer: MedSupply, Item: Acyclovir, Quantity: 2700.00 grams
+ORDER              | [2024-12-01 21:24:19] | Batch Number: 12374, Customer: Pharma Inc., Item: Risperidone, Quantity: 2800.00 grams
+ORDER              | [2024-12-01 21:24:19] | Batch Number: 12375, Customer: HealthCorp, Item: Methotrexate, Quantity: 2900.00 grams
+ORDER              | [2024-12-01 21:24:19] | Batch Number: 12376, Customer: MedSupply, Item: Terbinafine, Quantity: 3000.00 grams
+ORDER              | [2024-12-01 21:24:19] | Batch Number: 12377, Customer: Pharma Inc., Item: Iron, Quantity: 3100.00 grams
+ORDER              | [2024-12-01 21:24:19] | Batch Number: 12378, Customer: HealthCorp, Item: Estrogen, Quantity: 3200.00 grams
+ORDER              | [2024-12-01 21:24:19] | Batch Number: 12379, Customer: MedSupply, Item: Vitamin D, Quantity: 3300.00 grams
+ORDER              | [2024-12-01 21:24:19] | Batch Number: 12380, Customer: Pharma Inc., Item: Calcium, Quantity: 3400.00 grams
+ORDER              | [2024-12-01 21:24:19] | Batch Number: 12381, Customer: HealthCorp, Item: Furosemide, Quantity: 3500.00 grams
+ORDER              | [2024-12-01 21:24:19] | Batch Number: 12382, Customer: MedSupply, Item: Diphenhydramine, Quantity: 3600.00 grams
+ORDER              | [2024-12-01 21:24:19] | Batch Number: 12383, Customer: Pharma Inc., Item: Ciprofloxacin, Quantity: 3700.00 grams
+ORDER              | [2024-12-01 21:24:19] | Batch Number: 12384, Customer: HealthCorp, Item: Naproxen, Quantity: 3800.00 grams
+ORDER              | [2024-12-01 21:24:19] | Batch Number: 12385, Customer: Pharma Inc., Item: Aspirin, Quantity: 3900.00 grams
+ORDER              | [2024-12-01 21:24:19] | Batch Number: 12386, Customer: HealthCorp, Item: Ibuprofen, Quantity: 4000.00 grams
+ORDER              | [2024-12-01 21:24:19] | Batch Number: 12387, Customer: MedSupply, Item: Paracetamol, Quantity: 4100.00 grams
+ORDER              | [2024-12-01 21:24:19] | Batch Number: 12388, Customer: Pharma Inc., Item: Amoxicillin, Quantity: 4200.00 grams
+ORDER              | [2024-12-01 21:24:19] | Batch Number: 12389, Customer: HealthCorp, Item: Cetirizine, Quantity: 4300.00 grams
+ORDER              | [2024-12-01 21:24:19] | Batch Number: 12390, Customer: Pharma Inc., Item: Metformin, Quantity: 4400.00 grams
+ORDER              | [2024-12-01 21:24:19] | Batch Number: 12391, Customer: HealthCorp, Item: Lisinopril, Quantity: 4500.00 grams
+ORDER              | [2024-12-01 21:24:19] | Batch Number: 12392, Customer: MedSupply, Item: Atorvastatin, Quantity: 4600.00 grams
+ORDER              | [2024-12-01 21:24:19] | Batch Number: 12393, Customer: Pharma Inc., Item: Omeprazole, Quantity: 4700.00 grams
+ORDER              | [2024-12-01 21:24:19] | Batch Number: 12394, Customer: HealthCorp, Item: Simvastatin, Quantity: 4800.00 grams
+ORDER              | [2024-12-01 21:24:19] | Batch Number: 12395, Customer: MedSupply, Item: Levothyroxine, Quantity: 4900.00 grams
+ORDER              | [2024-12-01 21:24:19] | Batch Number: 12396, Customer: Pharma Inc., Item: Gabapentin, Quantity: 5000.00 grams
+ORDER              | [2024-12-01 21:24:19] | Batch Number: 12397, Customer: HealthCorp, Item: Hydrochlorothiazide, Quantity: 5100.00 grams
+ORDER              | [2024-12-01 21:24:19] | Batch Number: 12398, Customer: MedSupply, Item: Amlodipine, Quantity: 5200.00 grams
+ORDER              | [2024-12-01 21:24:19] | Batch Number: 12399, Customer: Pharma Inc., Item: Metoprolol, Quantity: 5300.00 grams
+ORDER              | [2024-12-01 21:24:19] | Batch Number: 12400, Customer: HealthCorp, Item: Losartan, Quantity: 5400.00 grams
+ORDER              | [2024-12-01 21:24:19] | Batch Number: 12401, Customer: MedSupply, Item: Azithromycin, Quantity: 5500.00 grams
+ORDER              | [2024-12-01 21:24:19] | Batch Number: 12402, Customer: Pharma Inc., Item: Albuterol, Quantity: 5600.00 grams
+ORDER              | [2024-12-01 21:24:19] | Batch Number: 12403, Customer: HealthCorp, Item: Gabapentin, Quantity: 5700.00 grams
+ORDER              | [2024-12-01 21:24:19] | Batch Number: 12404, Customer: MedSupply, Item: Prednisone, Quantity: 5800.00 grams
+ORDER              | [2024-12-01 21:24:19] | Batch Number: 12405, Customer: Pharma Inc., Item: Fluconazole, Quantity: 5900.00 grams
+ORDER              | [2024-12-01 21:24:19] | Batch Number: 12406, Customer: HealthCorp, Item: Doxycycline, Quantity: 6000.00 grams
+ORDER              | [2024-12-01 21:24:19] | Batch Number: 12407, Customer: MedSupply, Item: Carbamazepine, Quantity: 6100.00 grams
+ORDER              | [2024-12-01 21:24:19] | Batch Number: 12408, Customer: Pharma Inc., Item: Ketoconazole, Quantity: 6200.00 grams
+ORDER              | [2024-12-01 21:24:19] | Batch Number: 12409, Customer: HealthCorp, Item: Ranitidine, Quantity: 6300.00 grams
+ORDER              | [2024-12-01 21:24:19] | Batch Number: 12410, Customer: MedSupply, Item: Tacrolimus, Quantity: 6400.00 grams
+ORDER              | [2024-12-01 21:24:19] | Batch Number: 12411, Customer: Pharma Inc., Item: Cyclosporine, Quantity: 6500.00 grams
+ORDER              | [2024-12-01 21:24:19] | Batch Number: 12412, Customer: HealthCorp, Item: Oseltamivir, Quantity: 6600.00 grams
+ORDER              | [2024-12-01 21:24:19] | Batch Number: 12413, Customer: MedSupply, Item: Acyclovir, Quantity: 6700.00 grams
+ORDER              | [2024-12-01 21:24:19] | Batch Number: 12414, Customer: Pharma Inc., Item: Risperidone, Quantity: 6800.00 grams
+ORDER              | [2024-12-01 21:24:19] | Batch Number: 12415, Customer: HealthCorp, Item: Methotrexate, Quantity: 6900.00 grams
+ORDER              | [2024-12-01 21:24:19] | Batch Number: 12416, Customer: MedSupply, Item: Terbinafine, Quantity: 7000.00 grams
+ORDER              | [2024-12-01 21:24:19] | Batch Number: 12417, Customer: Pharma Inc., Item: Iron, Quantity: 7100.00 grams
+ORDER              | [2024-12-01 21:24:19] | Batch Number: 12418, Customer: HealthCorp, Item: Estrogen, Quantity: 7200.00 grams
+ORDER              | [2024-12-01 21:24:19] | Batch Number: 12419, Customer: MedSupply, Item: Vitamin D, Quantity: 7300.00 grams
+ORDER              | [2024-12-01 21:24:19] | Batch Number: 12420, Customer: Pharma Inc., Item: Calcium, Quantity: 7400.00 grams
+ORDER              | [2024-12-01 21:24:19] | Batch Number: 12421, Customer: HealthCorp, Item: Furosemide, Quantity: 7500.00 grams
+ORDER              | [2024-12-01 21:24:19] | Batch Number: 12422, Customer: MedSupply, Item: Diphenhydramine, Quantity: 7600.00 grams
+ORDER              | [2024-12-01 21:24:19] | Batch Number: 12423, Customer: Pharma Inc., Item: Ciprofloxacin, Quantity: 7700.00 grams
+ORDER              | [2024-12-01 21:24:19] | Batch Number: 12424, Customer: HealthCorp, Item: Naproxen, Quantity: 7800.00 grams

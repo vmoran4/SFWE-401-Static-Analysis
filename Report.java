@@ -1,6 +1,7 @@
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+//
 
 public class Report {
     
@@ -34,5 +35,7 @@ public class Report {
     public double calculateTotalSales() {
         return calculateTotalSales(TransactionLogger.getCurrentFilename());
     }
+
+    //Helper function for expiration report section of Inventory Report
     
 }
