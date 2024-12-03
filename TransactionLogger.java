@@ -79,7 +79,7 @@ public class TransactionLogger{
             "Medication: %s, Quantity Sold: %.2f grams, Gross Income: %.2f",
             medicationName, quantityGrams, totalPrice
         );
-        logMessage("SALES", message);
+        logMessage("SALE", message);
     }
 
     //Helper function

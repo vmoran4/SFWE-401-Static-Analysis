@@ -2,6 +2,8 @@ import java.util.ArrayList;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileWriter;
 import java.io.FileNotFoundException;
 
 public class Inventory {
@@ -140,4 +142,21 @@ public class Inventory {
         updateOrdersSale(medicationName, quantityGrams);
         return true;
     }
+    
+    //Export the current inventory to csv. Meant to happen at the end of the day
+    public void exportCurrInventory(String filenameToWrite){
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(filenameToWrite))) {
+            writer.write("Type,Name,CostPerGram,QuantityGrams,Description,Restricted\n");
+            for (Medication medication : medicationList) {
+                writer.write(medication.toCSV());
+            }
+        } catch (IOException e) {
+            System.err.println("Error writing to file: " + e.getMessage());
+        }
+    }
+    //Default exportCurrInventory constructor for end of day
+    public void exportCurrInventory(){
+        exportCurrInventory("inventories/" + TransactionLogger.getCurrentFilename() + "Inventory.csv");
+    }
+
 }
