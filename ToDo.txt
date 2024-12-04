@@ -26,7 +26,7 @@ New:
 
    Update input csv files to be larger, and possibly remove duplicate medication names
    Implement password for manual restock, and manual report generation
-   Automatic batchnumber generation
+   CANCELED Automatic batchnumber generation
   
   Main Loop Stuff (based on tests?):
     "Sell to Customer" option: medName, price, etc
