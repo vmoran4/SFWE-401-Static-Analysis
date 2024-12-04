@@ -81,6 +81,7 @@ public class EndOfDay{
         inventory.removeExpiredMedications();
 
         //Check for any automatic restock needed when expired medications are removed.
+        inventory.checkAllLowStock();
 
         //Export new inventory information to csv files
         inventory.exportCurrInventory();
@@ -90,6 +91,8 @@ public class EndOfDay{
         //Generate reports
 
         //Remove reports logs and data that are over five years old
+        TransactionLogger logger = new TransactionLogger();
+        logger.removeOldLogs();
     }
 
     public static void main(String[] args) {

@@ -171,7 +171,7 @@ public class Inventory {
         System.out.println(logger.logSale(quantityGrams, totalCost, medicationName));
 
         //Check if medication is low stock
-        if(medication.checkLowStock()){
+        if(medication.isLowStock()){
             System.out.println(logger.logLowStock(medication));
             System.out.println("Automatically Reordering 1000 stock");
             //Automatic Restock
@@ -184,6 +184,19 @@ public class Inventory {
         return true;
     }
 
+    public void checkAllLowStock(){
+        for (Medication medication : medicationList) {
+            //Check if medication is low stock
+            if(medication.isLowStock()){
+                TransactionLogger logger = new TransactionLogger();
+                System.out.println(logger.logLowStock(medication));
+                System.out.println("Automatically Reordering 1000 stock");
+                //Automatic Restock
+                Order order = new Order(medication.getName(), 1000, "2022-12-31", 0, "Automatic Restock");
+                updateInventoryOrder(order);
+            }
+        }
+    }
     //Returns true if an invalid medication type is found
     //FIXME: should this return a list of medication names that are invalid?
     public boolean checkMedicationTypes(){

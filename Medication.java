@@ -83,7 +83,7 @@ public class Medication {
     return lowStockThreshold;
   }
 
-  public boolean checkLowStock() {
+  public boolean isLowStock() {
     return quantityGrams < lowStockThreshold;
   }
 

@@ -101,6 +101,29 @@ public class TransactionLogger{
     }
 
 
+    public boolean removeOldLogs(){
+        //Get current date
+        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+        LocalDateTime now = LocalDateTime.now();
+        String currDate = dtf.format(now);
+
+        //Get five years ago date
+        LocalDateTime fiveYearsAgo = now.minusYears(5);
+        String fiveYearsAgoDate = dtf.format(fiveYearsAgo);
+
+        //Get all files in logs directory
+        File logsDirectory = new File(logsDirectoryPath);
+        File[] logFiles = logsDirectory.listFiles();
+
+        //Delete files older than five years
+        for(File file : logFiles){
+            String filename = file.getName();
+            if(filename.compareTo(fiveYearsAgoDate + "LOG.txt") < 0){
+                file.delete();
+            }
+        }
+        return true;
+    }
 
 
     //Test the logger
