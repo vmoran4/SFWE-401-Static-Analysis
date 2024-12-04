@@ -4,6 +4,12 @@ import java.io.IOException;
 import java.io.FileWriter;
 import java.io.File;
 import java.util.Scanner;
+import java.util.ArrayList;
+
+// Stuff for comparing times
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.time.temporal.ChronoUnit;
 
 public class Report {
 
@@ -36,8 +42,41 @@ public class Report {
     public static double calculateTotalSales() {
         return calculateTotalSales("logs/" + TransactionLogger.getCurrentFilename());
     }
+  
+  //Expiration functions
+  // Function to compare time and return true if they are 31 days apart
+  public static boolean expiresIn30DaysorLess(String date1, String date2) {
+        // Define the date format (YY-MM-DD)
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yy-MM-dd");
 
-    public static void generateFinanciaReport(String date) {
+        // Convert the strings to LocalDate objects
+        LocalDate date1Obj = LocalDate.parse(date1, formatter);
+        LocalDate date2Obj = LocalDate.parse(date2, formatter);
+
+        // Calculate the absolute difference in days
+        long daysBetween = ChronoUnit.DAYS.between(date1Obj, date2Obj);
+
+        // Return true if the difference is less than 31 days
+        return Math.abs(daysBetween) < 31;
+    }
+
+    // Function to compare time and return true if they are 1 day apart
+    public static boolean expiresIn1Day(String date1, String date2) {
+        // Define the date format (YY-MM-DD)
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yy-MM-dd");
+
+        // Convert the strings to LocalDate objects
+        LocalDate date1Obj = LocalDate.parse(date1, formatter);
+        LocalDate date2Obj = LocalDate.parse(date2, formatter);
+
+        // Calculate the absolute difference in days
+        long daysBetween = ChronoUnit.DAYS.between(date1Obj, date2Obj);
+
+        // Return true if the difference is exactly 1 day
+        return Math.abs(daysBetween) == 1;
+    }
+
+  public static void generateFinanciaReport(String date) {
 
         // Open the file with correct filename
         try {
