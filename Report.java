@@ -21,14 +21,11 @@ public class Report {
             String line;
 
             while ((line = br.readLine()) != null) {
-                String[] values = line.split(",");
-                String logType = values[0].trim();
-                String message = values[1].trim();
-                String[] messageValues = message.split(",");
-                String medicationName = messageValues[1].trim();
-                double quantityGrams = Double.parseDouble(messageValues[3].trim());
-                double totalPrice = Double.parseDouble(messageValues[4].trim());
-                if (logType.equals("SALES")) {
+                if (line.startsWith("SALE")) {
+                    String[] parts = line.split("\\|");
+                    String details = parts[2].trim();
+                    String[] detailParts = details.split(",");
+                    double totalPrice = Double.parseDouble(detailParts[2].split(":")[1].trim().replace("Gross Income: ", ""));
                     totalSales += totalPrice;
                 }
             }
@@ -118,7 +115,7 @@ public class Report {
                 Scanner scnrOrders = new Scanner(new File("logs/" + date + "LOG.txt"));
                 while (scnrOrders.hasNextLine()) {
                     String orderString = scnrOrders.nextLine();
-                    if (orderString.startsWith("O")) {
+                    if (orderString.startsWith("ORDER")) {
                         dailyFinancialReport.write(scnrOrders.nextLine()+ "\n");
                     }
                 }
@@ -130,7 +127,7 @@ public class Report {
             }
 
             dailyFinancialReport.write("__________________________________________________________\n");
-            dailyFinancialReport.write("Profit " + calculateTotalSales()); // calculate the profit
+            dailyFinancialReport.write("Profit " + calculateTotalSales() + "\n"); // calculate the profit
             dailyFinancialReport.write("Date " + date);
 
             // close the file
@@ -155,7 +152,7 @@ public class Report {
         generateInventoryReport(currntInventory, todaysDate);
     }
 
-    public static void generateInventoryReport(Inventory currntInventory, String date) {
+    public static void generateInventoryReport(Inventory currentInventory, String date) {
 
         // Open the file with correct filename
         try {
@@ -166,22 +163,40 @@ public class Report {
             dailyInventoryReport.write("Pharmacy Name\n");
             dailyInventoryReport.write("Pharmacy Address\n");
             dailyInventoryReport.write("Pharmacy eMail Address\n");
-            dailyInventoryReport.write("Pharmacy Phone Number\n");
-            dailyInventoryReport.write("Inventory Report\n");
+            dailyInventoryReport.write("Pharmacy Phone Number");
+            dailyInventoryReport.write("Inventory Report");
             dailyInventoryReport.write("__________________________________________________________\n");
             dailyInventoryReport.write("Available Medications\n");
 
             // Write all available medication into the file
 
+            ArrayList<Medication> listOfMedications = currentInventory.getMedicationList();
+            for (Medication medication : listOfMedications) {                
+                dailyInventoryReport.write(medication.toString() + "\n");
+            }
+
             dailyInventoryReport.write("__________________________________________________________\n");
             dailyInventoryReport.write("Medications with expiration date soon in the next 30 days\n");
 
-            // Write code for writing expenses onto the file
+            // Write all available medication that will expire in the next 30 days
+            ArrayList<Order> listofOrders = currentInventory.getOrders();
+            for (Order order : listofOrders) {
+                String expDate = order.getExpDate();
+                if (expiresIn30DaysorLess(expDate, date)) {
+                    dailyInventoryReport.write(order.toString() + "\n");
+                }
+            }
 
             dailyInventoryReport.write("__________________________________________________________\n");
             dailyInventoryReport.write("Medications with expiration date soon in the next 1 days\n");
 
             // Write code for writing expenses onto the file
+            for (Order order : listofOrders) {
+                String expDate = order.getExpDate();
+                if (expiresIn1Day(expDate, date)) {
+                    dailyInventoryReport.write(order.toString() + "\n");
+                }
+            }
 
             dailyInventoryReport.write("__________________________________________________________\n");
             dailyInventoryReport.write("Date " + date);
@@ -189,9 +204,11 @@ public class Report {
             // close the file
             dailyInventoryReport.close();
 
+
         } catch (IOException e) {
             System.out.println("Error making the file occured");
             e.printStackTrace();
         }
     }
+
 }
