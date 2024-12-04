@@ -56,7 +56,7 @@ public class EndOfDay{
         //Read current medication inventory from csv file
         Inventory inventory = new Inventory();
         try {
-            inventory.loadMedicationsFromCSV("medications/" + TransactionLogger.getCurrDate() + "Inventory.csv");
+            inventory.loadMedicationsFromCSV("medications/" + TransactionLogger.getCurrDate() + "Medications.csv");
         } catch (FileNotFoundException e) {
             System.out.println("Inventory file not found: " + e.getMessage());
         } catch (IOException e) {
@@ -78,8 +78,14 @@ public class EndOfDay{
         
 
         //Remove medications that expire today
+        inventory.removeExpiredMedications();
 
         //Check for any automatic restock needed when expired medications are removed.
+
+        //Export new inventory information to csv files
+        inventory.exportCurrInventory();
+        inventory.exportCurrOrders();
+
 
         //Generate reports
 

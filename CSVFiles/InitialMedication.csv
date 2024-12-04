@@ -49,3 +49,12 @@ Hormone Therapy Drugs,Levothyroxine,49.32,43,Levothyroxine is a hormone therapy 
 Antihistamines,Diphenhydramine,46.42,52,Diphenhydramine is a antihistamines used for specific conditions.,Yes
 Antibiotics,Ciprofloxacin,20.83,16,Ciprofloxacin is a antibiotics used for specific conditions.,No
 Antacids and Anti-Ulcer Medications,Calcium Carbonate,14.02,71,Calcium Carbonate is a antacids and anti-ulcer medications used for specific conditions.,No
+Analgesics (Pain Relievers),Aspirin,25.00,5000.00,Aspirin is an analgesic (pain reliever) used for specific conditions.,false
+Analgesics (Pain Relievers),Paracetamol,20.00,10000.00,Paracetamol is a common analgesic (pain reliever) used to treat mild to moderate pain and fever.,false
+Hormone Therapy Drugs,Metformin,12.50,8500.00,Metformin is an Hormone Therapy Drugs medication used to control blood sugar levels in people with type 2 diabetes.,false
+Cardiovascular Drugs,Simvastatin,10.00,12000.00,Simvastatin is a cardiovascular drug used to lower cholesterol and triglycerides in the blood.,false
+Cardiovascular Drugs,Metoprolol,11.00,9500.00,Metoprolol is a cardiovascular drug used to treat high blood pressure, angina, and heart failure.,false
+Cardiovascular Drugs,Losartan,9.50,11000.00,Losartan is a cardiovascular drug used to treat high blood pressure and protect the kidneys from damage due to diabetes.,false
+Antibiotics,Azithromycin,25.00,7000.00,Azithromycin is a broad-spectrum antibiotic used to treat bacterial infections.,false
+Antihistamines,Albuterol,18.00,12000.00,Albuterol is a Antihistamines used to relieve bronchospasm in conditions like asthma and COPD.,false
+Immunosuppressants,Prednisone,15.00,14000.00,Prednisone is a Immunosuppressants used to treat a wide range of inflammatory and autoimmune conditions.,false

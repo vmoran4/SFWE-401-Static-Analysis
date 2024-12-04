@@ -2,7 +2,7 @@ import java.io.IOException;
 import java.util.Scanner;
 import java.io.File;
 import java.util.Arrays;
-import java.util.Comparator;
+
 
 public class Main {
 
@@ -217,6 +217,6 @@ public class Main {
         inventory.exportCurrOrders();
 
         //Run end of day tasks after exiting main loop
-        //EndOfDay.endOfDay();
+        EndOfDay.endOfDay();
     }
 }
