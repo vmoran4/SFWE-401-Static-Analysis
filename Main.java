@@ -111,6 +111,13 @@ public class Main {
                     inventory.printAllMedications();
                     break;
                 case "5":
+                    //Check for admin password
+                    System.out.println("Enter the admin password:");
+                    String password1 = scanner.nextLine();
+                    if(!password1.equals("admin")){
+                        System.out.println("Incorrect password.");
+                        break;
+                    }
                     printReportOptionMenu();
                     String reportOption = scanner.nextLine();
                     switch(reportOption){
@@ -121,9 +128,10 @@ public class Main {
                             //FIXME: implement inventory report
                             break;
                     }
+                    break;
                 case "6": 
                     System.out.println("Input Batch Number: ");
-                    int batchNum = scanner.nextInt();
+                    int batchNum = scanner.nextInt(); 
 
                 case "q":
                     System.out.println("Exiting...");
