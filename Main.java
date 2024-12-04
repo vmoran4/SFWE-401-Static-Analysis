@@ -2,6 +2,7 @@ import java.io.IOException;
 import java.util.Scanner;
 import java.io.File;
 import java.util.Arrays;
+import java.util.ArrayList;
 
 
 public class Main {
@@ -16,7 +17,7 @@ public class Main {
         System.out.println("4.) Retrieve All Medication Information");
         System.out.println("5.) Manually Generate Report");
         System.out.println("6.) Retrieve Batch Information");
-        System.out.println("7.) Report Discepancies b/w physical and digital inventory");
+        System.out.println("7.) Report Discepancies b/w Physical and Digital Inventory");
         System.out.println("q.) Exit");
     }
 
@@ -25,17 +26,40 @@ public class Main {
         System.out.println("1.) Financial Report");
         System.out.println("2.) Inventory Report");
     }
-    
+
+    //Finds valid dates, gets user input for date selection and returns that date
+    public static String requestDateSelection(){
+        //FIXME: Current implementation is only for a single target date, not range
+        ArrayList<String> validDates = getValidDates();
+        System.out.println("Please select a date to generate a report for:");
+        for(int i = 0; i < validDates.size(); i++){
+            System.out.println((i+1) + ".) " + validDates.get(i));
+        }
+        Scanner scanner = new Scanner(System.in);
+        int selection = Integer.parseInt(scanner.nextLine());
+        return validDates.get(selection - 1);
+        
+    }
+
+    public static ArrayList<String> getValidDates(){
+        //Based on existing files in orders directory
+        ArrayList<String> validDates = new ArrayList<String>();
+        File ordersDir = new File("orders/");
+        File[] orderFiles = ordersDir.listFiles((dir, name) -> name.endsWith(".csv"));
+        if (orderFiles != null && orderFiles.length > 0) {
+            for(File file : orderFiles){
+                String date = file.getName().substring(0, 10);
+                validDates.add(date);
+            }
+        }
+        return validDates;
+    }
+
+
 
     public static void main(String[] args) {
 
         Inventory inventory = new Inventory();
-
-        
-
-        
-
-        
 
         //Prepare for input
         Scanner scanner = new Scanner(System.in);
@@ -69,6 +93,7 @@ public class Main {
             //Read in most recent orders and medications file based on date in filename
             String mostRecentDate = "";
             try {
+                //Find most recent date from orders directory files
                 File ordersDir = new File("orders/");
                 File[] orderFiles = ordersDir.listFiles((dir, name) -> name.endsWith(".csv"));
                 if (orderFiles != null && orderFiles.length > 0) {
@@ -77,6 +102,7 @@ public class Main {
                         String date2 = f2.getName().replaceAll("[^0-9]", "");
                         return date2.compareTo(date1);
                     });
+
                     // Load the most recent order file
                     String mostRecentOrderFile = orderFiles[0].getName();
                     mostRecentDate = mostRecentOrderFile.substring(0, 10);
@@ -84,6 +110,7 @@ public class Main {
                     inventory.loadOrdersFromCSV("orders/" + mostRecentOrderFile, false);
 
                     // Load the most recent medication file
+                    System.out.println("Loading medications from the most recent file: " + mostRecentDate + "Medications.csv");
                     inventory.loadMedicationsFromCSV("medications/" + mostRecentDate + "Medications.csv");
                 } else {
                     System.out.println("No order files found in the orders directory.");
@@ -140,11 +167,13 @@ public class Main {
                     Order order = new Order(medName, quantityGrams, "12/31/2021", 1, "Manual Restock");
                     inventory.updateInventoryOrder(order);
                     break;
+
                 //Retrieve Individual Medication Info -- More specific
                 case "3":
                     System.out.println("Enter the name of the medication you would like to retrieve information for:");
                     String medName1 = scanner.nextLine();
                     Medication medication1 = inventory.getMedication(medName1);
+                    System.out.println();
                     if(medication1 == null){
                         System.out.println("Medication not found.");
                         break;
@@ -165,11 +194,23 @@ public class Main {
                         System.out.println("Incorrect password.");
                         break;
                     }
+                    //Select Report Type
                     printReportOptionMenu();
                     String reportOption = scanner.nextLine();
+                    //Check for invalid input
+                    if(!reportOption.equals("1") && !reportOption.equals("2")){
+                        System.out.println("Invalid input.");
+                        break;
+                    }
+
+                    //Select  Date
+                    String targetDate = requestDateSelection();
+
+                    //Generate Report
                     switch(reportOption){
                         case "1":
                             //FIXME: implement financial report
+                            
                             break;
                         case "2":
                             //FIXME: implement inventory report
