@@ -39,7 +39,7 @@ public class Main {
 
         //Load orders from CSV
         try {
-            inventory.loadOrdersFromCSV("CSVFiles/Orders.csv");
+            inventory.loadInitialOrdersFromCSV("CSVFiles/Orders.csv", true);
         } catch (IOException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
@@ -132,11 +132,9 @@ public class Main {
                 case "6": 
                     System.out.println("Input Batch Number: ");
 
-                    int batchNum = scanner.nextInt();
+                    int batchNum = Integer.parseInt(scanner.nextLine());
                     inventory.getBatchInfo(batchNum);
 
-                    int batchNum = scanner.nextInt(); 
-                
                     break;
 
                 case "q":

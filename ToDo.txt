@@ -25,8 +25,10 @@ New:
       i.e. sort by exp date. remove quantity of order after sale. remove order from Inventory if empty...
 
    Update input csv files to be larger, and possibly remove duplicate medication names
-   Implement password for manual restock, and manual report generation
+   DONE Implement password for manual restock, and manual report generation
    CANCELED Automatic batchnumber generation
+   Exportation and loading of pevious day's data and importation in EndOfDay;
+        Maybe have selection if initial data should be loaded or previous day's data on startup
   
   Main Loop Stuff (based on tests?):
     "Sell to Customer" option: medName, price, etc

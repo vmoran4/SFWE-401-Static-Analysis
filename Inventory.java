@@ -54,7 +54,8 @@ public class Inventory {
     }
 
     //PRECONDITION: medications loaded from CSV
-    public void loadOrdersFromCSV(String filePath) throws FileNotFoundException, IOException {
+    //isInitial indicates whether medicationList should be updated based on orders
+    public void loadInitialOrdersFromCSV(String filePath, boolean isInitial) throws FileNotFoundException, IOException {
         try(BufferedReader br = new BufferedReader(new FileReader(filePath))) { 
             String line;
 
@@ -69,7 +70,13 @@ public class Inventory {
                 String supplier = values[4].trim();
                 //public Order(String medicationName, double quantityGrams, String expDate, int batchNumber, String supplier)
                 Order order = new Order(medicationName, quantityGrams, expDate, batchNumber, supplier);
-                updateInventoryOrder(order);
+                //If isInitial, update medications based on orders
+                if(isInitial){
+                    updateInventoryOrder(order);
+                }
+                else{
+                    orders.add(order);
+                }
 
             }
         }
