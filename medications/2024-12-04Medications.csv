@@ -1,10 +1,10 @@
 Type,Name,CostPerGram,QuantityGrams,Description,Restricted
-Analgesics (Pain Relievers),Acetaminophen,37.27,1010.00,Acetaminophen is a analgesics (pain relievers) used for specific conditions.,false
+Analgesics (Pain Relievers),Acetaminophen,37.27,1109.00,Acetaminophen is a analgesics (pain relievers) used for specific conditions.,false
 Antivirals,Acyclovir,19.02,9478.00,Acyclovir is a antivirals used for specific conditions.,false
 Antihistamines,Albuterol,18.00,19200.00,Albuterol is a Antihistamines used to relieve bronchospasm in conditions like asthma and COPD.,false
 Cardiovascular Drugs,Amlodipine,11.57,6508.00,Amlodipine is a cardiovascular drugs used for specific conditions.,false
 Antibiotics,Amoxicillin,15.46,4588.00,Amoxicillin is a antibiotics used for specific conditions.,false
-Analgesics (Pain Relievers),Aspirin,25.00,8900.00,Aspirin is an analgesic (pain reliever) used for specific conditions.,false
+Analgesics (Pain Relievers),Aspirin,25.00,9000.00,Aspirin is an analgesic (pain reliever) used for specific conditions.,false
 Cardiovascular Drugs,Atorvastatin,7.94,5282.00,Atorvastatin is a cardiovascular drugs used for specific conditions.,false
 Antibiotics,Azithromycin,25.00,14000.00,Azithromycin is a broad-spectrum antibiotic used to treat bacterial infections.,false
 Vitamins and Supplements,Calcium,46.96,10855.00,Calcium is a vitamins and supplements used for specific conditions.,false
