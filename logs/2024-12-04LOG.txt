@@ -488,3 +488,4 @@ LOW STOCK          | [2024-12-04 13:34:07] | Item: Calcium Carbonate is Low Stoc
 ORDER              | [2024-12-04 13:34:07] | Batch Number: 0, Supplier: Automatic Restock, Item: Calcium Carbonate, Quantity: 1000.00 grams, Total Cost: 43540.00
 LOW STOCK          | [2024-12-04 13:34:07] | Item: Loratadine is Low Stock, Threshold: 225, Remaining Quantity: 59.00 grams
 ORDER              | [2024-12-04 13:34:07] | Batch Number: 0, Supplier: Automatic Restock, Item: Loratadine, Quantity: 1000.00 grams, Total Cost: 17210.00
+SALE               | [2024-12-04 13:58:29] | Medication: Vitamin D, Quantity Sold: 5.00 grams, Gross Income: 30.25
