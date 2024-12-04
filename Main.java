@@ -79,7 +79,7 @@ public class Main {
                 System.out.println("Incorrect password.");
                 System.exit(0);
             }
-            
+
             // Initialize and read medication CSV file
             try {
                 inventory.loadMedicationsFromCSV("CSVFiles/InitialMedication.csv");
@@ -203,9 +203,11 @@ public class Main {
                         System.out.println("Incorrect password.");
                         break;
                     }
+
                     //Select Report Type
                     printReportOptionMenu();
                     String reportOption = scanner.nextLine();
+
                     //Check for invalid input
                     if(!reportOption.equals("1") && !reportOption.equals("2")){
                         System.out.println("Invalid input.");
