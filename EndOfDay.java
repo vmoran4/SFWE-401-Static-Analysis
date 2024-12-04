@@ -1,6 +1,9 @@
 import java.time.LocalTime;
+import java.io.FileNotFoundException;
+import java.io.IOException;
 
 public class EndOfDay{
+
 
     public static void endOfDay(){
         //Prob don't need this, but it's here for reference
@@ -44,13 +47,23 @@ public class EndOfDay{
         runEndOfDayTasks();
     }
 
+
+
     //FIXME need to do automatic report generation, experation report, what else?
-    public static void runEndOfDayTasks(){
+    public static void runEndOfDayTasks() {
         
-        //Export the current inventory to csv. 
+        //Read current medication inventory from csv file
+        Inventory inventory = new Inventory();
+        try {
+            inventory.loadMedicationsFromCSV("inventories/" + TransactionLogger.getCurrDate() + "Inventory.csv");
+        } catch (FileNotFoundException e) {
+            System.out.println("Inventory file not found: " + e.getMessage());
+        } catch (IOException e) {
+            System.out.println("Error reading inventory file: " + e.getMessage());
+        }
 
         //Check for invalid medication types (see requirement for types)
-
+        
         //Remove medications that expire today
 
         //Check for any automatic restock needed when expired medications are removed.
