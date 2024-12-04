@@ -12,6 +12,10 @@ public class Inventory {
     //DO NOT SORT. Append order matters for sell by date and usage
     private ArrayList<Order> orders = new ArrayList<>(); //Shall be retained until sell by date
     
+    public ArrayList<Medication> getMedicationList() {
+        return new ArrayList<>(medicationList);
+    }
+    
     public ArrayList<Medication> loadMedicationsFromCSV(String filePath) throws FileNotFoundException, IOException {
         try(BufferedReader br = new BufferedReader(new FileReader(filePath))) { 
             String line;
