@@ -1,5 +1,5 @@
 Type,Name,CostPerGram,QuantityGrams,Description,Restricted
-Analgesics (Pain Relievers),Acetaminophen,37.27,109.00,Acetaminophen is a analgesics (pain relievers) used for specific conditions.,false
+Analgesics (Pain Relievers),Acetaminophen,37.27,1010.00,Acetaminophen is a analgesics (pain relievers) used for specific conditions.,false
 Antivirals,Acyclovir,19.02,9478.00,Acyclovir is a antivirals used for specific conditions.,false
 Antihistamines,Albuterol,18.00,19200.00,Albuterol is a Antihistamines used to relieve bronchospasm in conditions like asthma and COPD.,false
 Cardiovascular Drugs,Amlodipine,11.57,6508.00,Amlodipine is a cardiovascular drugs used for specific conditions.,false
@@ -8,7 +8,7 @@ Analgesics (Pain Relievers),Aspirin,25.00,8900.00,Aspirin is an analgesic (pain 
 Cardiovascular Drugs,Atorvastatin,7.94,5282.00,Atorvastatin is a cardiovascular drugs used for specific conditions.,false
 Antibiotics,Azithromycin,25.00,14000.00,Azithromycin is a broad-spectrum antibiotic used to treat bacterial infections.,false
 Vitamins and Supplements,Calcium,46.96,10855.00,Calcium is a vitamins and supplements used for specific conditions.,false
-Antacids and Anti-Ulcer Medications,Calcium Carbonate,43.54,144.00,Calcium Carbonate is a antacids and anti-ulcer medications used for specific conditions.,false
+Antacids and Anti-Ulcer Medications,Calcium Carbonate,43.54,1144.00,Calcium Carbonate is a antacids and anti-ulcer medications used for specific conditions.,false
 Mood Stabilizers,Carbamazepine,7.15,8328.00,Carbamazepine is a mood stabilizers used for specific conditions.,false
 Antihistamines,Cetirizine,44.25,4695.00,Cetirizine is a antihistamines used for specific conditions.,false
 Antibiotics,Ciprofloxacin,20.83,11416.00,Ciprofloxacin is a antibiotics used for specific conditions.,false
@@ -24,7 +24,7 @@ Vitamins and Supplements,Iron,49.14,10211.00,Iron is a vitamins and supplements 
 Antifungals,Ketoconazole,36.11,8558.00,Ketoconazole is a antifungals used for specific conditions.,false
 Hormone Therapy Drugs,Levothyroxine,49.32,5843.00,Levothyroxine is a hormone therapy drugs used for specific conditions.,false
 Cardiovascular Drugs,Lisinopril,15.90,5030.00,Lisinopril is a cardiovascular drugs used for specific conditions.,false
-Antihistamines,Loratadine,17.21,59.00,Loratadine is a antihistamines used for specific conditions.,false
+Antihistamines,Loratadine,17.21,1059.00,Loratadine is a antihistamines used for specific conditions.,false
 Cardiovascular Drugs,Losartan,9.50,17800.00,Losartan is a cardiovascular drug used to treat high blood pressure and protect the kidneys from damage due to diabetes.,false
 Hormone Therapy Drugs,Metformin,12.50,13300.00,Metformin is an Hormone Therapy Drugs medication used to control blood sugar levels in people with type 2 diabetes.,false
 Immunosuppressants,Methotrexate,37.37,9884.00,Methotrexate is a immunosuppressants used for specific conditions.,false
