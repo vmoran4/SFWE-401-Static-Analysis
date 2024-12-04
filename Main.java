@@ -9,7 +9,7 @@ public class Main {
         System.out.println("Please select an option:");
         System.out.println("1.) Sell Medication");
         System.out.println("2.) Restock Medication");
-        System.out.println("3.) Retrieve Mecication Information");
+        System.out.println("3.) Retrieve Medication Information");
         System.out.println("4.) Retrieve All Medication Information");
         System.out.println("5.) Manually Generate Report");
         System.out.println("q.) Exit");
@@ -52,7 +52,6 @@ public class Main {
         //Main menu
         Scanner scanner = new Scanner(System.in);
         boolean running = true;
-        //FIXME: implement main loop
         while(running){
             System.out.println();
             printMenu();
@@ -71,18 +70,39 @@ public class Main {
                     double quantity = Double.parseDouble(scanner.nextLine());
                     inventory.makePurchase(medicationName, quantity);
                     break;
-
-                //Retrieve Individual Medication Info -- More specific
-                case "3":
-                    System.out.println("Enter the name of the medication you would like to retrieve information for:");
+                
+                //Manual Restock
+                case "2":
+                    //Admin password check
+                    System.out.println("Enter the admin password:");
+                    String password = scanner.nextLine();
+                    if(!password.equals("admin")){
+                        System.out.println("Incorrect password.");
+                        break;
+                    }
+                    System.out.println("Enter the name of the medication you would like to restock:");
                     String medName = scanner.nextLine();
                     Medication medication = inventory.getMedication(medName);
                     if(medication == null){
                         System.out.println("Medication not found.");
                         break;
                     }
-                    System.out.println(medication.toString());
-                    System.out.println("Restriction Status: " + medication.getRestrictionStatus() + ", Description: " + medication.getDescription());
+                    System.out.println("Enter the quantity in grams:");
+                    double quantityGrams = Double.parseDouble(scanner.nextLine());
+                    Order order = new Order(medName, quantityGrams, "12/31/2021", 1, "Manual Restock");
+                    inventory.updateInventoryOrder(order);
+                    break;
+                //Retrieve Individual Medication Info -- More specific
+                case "3":
+                    System.out.println("Enter the name of the medication you would like to retrieve information for:");
+                    String medName1 = scanner.nextLine();
+                    Medication medication1 = inventory.getMedication(medName1);
+                    if(medication1 == null){
+                        System.out.println("Medication not found.");
+                        break;
+                    }
+                    System.out.println(medication1.toString());
+                    System.out.println("Restriction Status: " + medication1.getRestrictionStatus() + ", Description: " + medication1.getDescription());
                     break;
 
                 //Retrieve All Medication Info -- Less specific

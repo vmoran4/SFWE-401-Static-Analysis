@@ -49,6 +49,11 @@ public class EndOfDay{
         
         //Export the current inventory to csv. 
 
+        //Check for invalid medication types (see requirement for types)
+
+        //Remove medications that expire today
+
+        //Check for any automatic restock needed when expired medications are removed.
     }
 
     public static void main(String[] args) {
