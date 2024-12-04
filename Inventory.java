@@ -5,6 +5,7 @@ import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.FileNotFoundException;
+import java.lang.reflect.Array;
 
 public class Inventory {
     private ArrayList<Medication> medicationList = new ArrayList<>();
@@ -14,6 +15,9 @@ public class Inventory {
     
     public ArrayList<Medication> getMedicationList() {
         return new ArrayList<>(medicationList);
+    }
+    public ArrayList<Order> getOrders() {
+        return new ArrayList<>(orders);
     }
     
     public ArrayList<Medication> loadMedicationsFromCSV(String filePath) throws FileNotFoundException, IOException {
