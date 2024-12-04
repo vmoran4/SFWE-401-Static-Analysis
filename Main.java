@@ -12,6 +12,7 @@ public class Main {
         System.out.println("3.) Retrieve Medication Information");
         System.out.println("4.) Retrieve All Medication Information");
         System.out.println("5.) Manually Generate Report");
+        System.out.println("6.) Retrieve Batch Information");
         System.out.println("q.) Exit");
     }
 
@@ -128,6 +129,9 @@ public class Main {
                             break;
                     }
                     break;
+                case "6": 
+                    System.out.println("Input Batch Number: ");
+                    int batchNum = scanner.nextInt(); 
 
                 case "q":
                     System.out.println("Exiting...");
