@@ -4,9 +4,13 @@ import java.io.IOException;
 import java.io.FileWriter;
 import java.io.File;
 import java.util.Scanner;
+import java.util.ArrayList;
 
+// Stuff for comparing times
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.time.temporal.ChronoUnit;
 
-//
 
 public class Report {
     
@@ -41,7 +45,37 @@ public class Report {
         return calculateTotalSales(TransactionLogger.getCurrentFilename());
     }
 
-    //Helper function for expiration report section of Inventory Report
+    // Function to compare time and return true if they are 31 days apart
+    public static boolean expiresIn30DaysorLess(String date1, String date2) {
+        // Define the date format (YY-MM-DD)
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yy-MM-dd");
+
+        // Convert the strings to LocalDate objects
+        LocalDate date1Obj = LocalDate.parse(date1, formatter);
+        LocalDate date2Obj = LocalDate.parse(date2, formatter);
+
+        // Calculate the absolute difference in days
+        long daysBetween = ChronoUnit.DAYS.between(date1Obj, date2Obj);
+
+        // Return true if the difference is less than 31 days
+        return Math.abs(daysBetween) < 31;
+    }
+
+    // Function to compare time and return true if they are 1 day apart
+    public static boolean expiresIn1Day(String date1, String date2) {
+        // Define the date format (YY-MM-DD)
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yy-MM-dd");
+
+        // Convert the strings to LocalDate objects
+        LocalDate date1Obj = LocalDate.parse(date1, formatter);
+        LocalDate date2Obj = LocalDate.parse(date2, formatter);
+
+        // Calculate the absolute difference in days
+        long daysBetween = ChronoUnit.DAYS.between(date1Obj, date2Obj);
+
+        // Return true if the difference is exactly 1 day
+        return Math.abs(daysBetween) == 1;
+    }
 
     public void generateFinanciaReport() {
 
@@ -111,7 +145,7 @@ public class Report {
         }
     }
 
-    public void generateInventoryReport(Inventory currntInventory) {
+    public void generateInventoryReport(Inventory currentInventory) {
         // Generate the file name
         String todaysDate = TransactionLogger.getCurrDate();
 
@@ -131,16 +165,33 @@ public class Report {
 
             // Write all available medication into the file
 
+            ArrayList<Medication> listOfMedications = currentInventory.getMedicationList();
+            for (Medication medication : listOfMedications) {                
+                dailyInventoryReport.write(medication.toString() + "\n");
+            }
 
             dailyInventoryReport.write("__________________________________________________________\n");
             dailyInventoryReport.write("Medications with expiration date soon in the next 30 days\n");
 
-            // Write code for writing expenses onto the file
+            // Write all available medication that will expire in the next 30 days
+            ArrayList<Order> listofOrders = currentInventory.getOrders();
+            for (Order order : listofOrders) {
+                String expDate = order.getExpDate();
+                if (expiresIn30DaysorLess(expDate, todaysDate)) {
+                    dailyInventoryReport.write(order.toString() + "\n");
+                }
+            }
 
             dailyInventoryReport.write("__________________________________________________________\n");
             dailyInventoryReport.write("Medications with expiration date soon in the next 1 days\n");
 
             // Write code for writing expenses onto the file
+            for (Order order : listofOrders) {
+                String expDate = order.getExpDate();
+                if (expiresIn1Day(expDate, todaysDate)) {
+                    dailyInventoryReport.write(order.toString() + "\n");
+                }
+            }
 
             dailyInventoryReport.write("__________________________________________________________\n");
             dailyInventoryReport.write("Date " + todaysDate);
@@ -154,5 +205,5 @@ public class Report {
             e.printStackTrace();
         }
     }
-    
+
 }
