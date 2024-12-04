@@ -10,7 +10,8 @@ public class Main {
         System.out.println("1.) Sell Medication");
         System.out.println("2.) Restock Medication");
         System.out.println("3.) Retrieve Mecication Information");
-        System.out.println("4.) Manually Generate Report");
+        System.out.println("4.) Retrieve All Medication Information");
+        System.out.println("5.) Manually Generate Report");
         System.out.println("q.) Exit");
     }
 
@@ -32,9 +33,8 @@ public class Main {
             // TODO Auto-generated catch block
             e.printStackTrace();
         }
-        
+        //Sort medications
         inventory.sortMedicationsByName();
-        inventory.printAllMedications();
 
         //Load orders from CSV
         try {
@@ -44,19 +44,52 @@ public class Main {
             e.printStackTrace();
         }
 
+        //Print curr Inventory
+        inventory.printAllMedications();
+
         
+
         //Main menu
         Scanner scanner = new Scanner(System.in);
         boolean running = true;
         //FIXME: implement main loop
         while(running){
+            System.out.println();
             printMenu();
             String input = scanner.nextLine();
             switch(input){
                 //Selling 
                 case "1":
+                    System.out.println("Enter the name of the medication you would like to sell:");
+                    String medicationName = scanner.nextLine();
+                    //Check if medication name exists
+                    if(inventory.getMedication(medicationName) == null){
+                        System.out.println("Medication not found.");
+                        break;
+                    }
+                    System.out.println("Enter the quantity in grams:");
+                    double quantity = Double.parseDouble(scanner.nextLine());
+                    inventory.makePurchase(medicationName, quantity);
+                    break;
 
+                //Retrieve Individual Medication Info -- More specific
+                case "3":
+                    System.out.println("Enter the name of the medication you would like to retrieve information for:");
+                    String medName = scanner.nextLine();
+                    Medication medication = inventory.getMedication(medName);
+                    if(medication == null){
+                        System.out.println("Medication not found.");
+                        break;
+                    }
+                    System.out.println(medication.toString());
+                    System.out.println("Restriction Status: " + medication.getRestrictionStatus() + ", Description: " + medication.getDescription());
+                    break;
+
+                //Retrieve All Medication Info -- Less specific
                 case "4":
+                    inventory.printAllMedications();
+                    break;
+                case "5":
                     printReportOptionMenu();
                     String reportOption = scanner.nextLine();
                     switch(reportOption){

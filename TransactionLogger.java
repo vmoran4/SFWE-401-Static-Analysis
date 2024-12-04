@@ -47,10 +47,12 @@ public class TransactionLogger{
     }
 
     //Logs order
-    public String logOrder(Order order){
+    public String logOrder(Order order, double costPerGram){
         String message = String.format(
-            "Batch Number: %s, Customer: %s, Item: %s, Quantity: %.2f grams",
-           order.getBatchNumber(), order.getSupplier(), order.getMedicationName(), order.getQuantityGrams()
+            //FIXME: change getCostPerGram to get the medication object somehow
+            "Batch Number: %s, Supplier: %s, Item: %s, Quantity: %.2f grams, Total Cost: %.2f",
+           order.getBatchNumber(), order.getSupplier(), order.getMedicationName(), order.getQuantityGrams(),
+           order.getQuantityGrams() * costPerGram
         );
         logMessage("ORDER", message);
         return message;
@@ -91,7 +93,7 @@ public class TransactionLogger{
         LocalDateTime now = LocalDateTime.now();
         return dtf.format(now);
     }
-    //Helper function to get
+    //Helper function to get current day's log file name
     public static String getCurrentFilename(){
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy-MM-dd");
         LocalDateTime now = LocalDateTime.now();
@@ -110,7 +112,7 @@ public class TransactionLogger{
         order.setMedicationName("Medication1");
         order.setQuantityGrams(10.0);
         order.setExpDate("2021-03-01");
-        logger.logOrder(order);
+        logger.logOrder(order, 100.0);
 
         Medication medication = new Medication();
         medication.setName("Medication1");
