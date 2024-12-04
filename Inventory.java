@@ -177,4 +177,20 @@ public class Inventory {
         exportCurrInventory("inventories/" + TransactionLogger.getCurrDate() + "Inventory.csv");
     }
 
+    public void getBatchInfo(int batchNum){
+        boolean batchFound = false;
+        for(int w = 0; w < orders.size(); w++){
+            if( orders.get(w).getBatchNumber() == batchNum){
+                System.out.println("Medication Name: " + orders.get(w).getMedicationName());
+                System.out.println("Batch Number: " + orders.get(w).getBatchNumber());
+                System.out.println("Expiration Date: " + orders.get(w).getExpDate());
+                System.out.println("Medication Name: " + orders.get(w).getQuantityGrams());
+                System.out.println("Medication Name: " + orders.get(w).getSupplier());
+                batchFound = true;
+            }
+        }
+        if (!batchFound) {
+            System.out.println("Batch not found");
+        }
+    }
 }
