@@ -62,8 +62,17 @@ public class EndOfDay{
             System.out.println("Error reading inventory file: " + e.getMessage());
         }
 
+        //Read current orders from csv file
+        try {
+            inventory.loadOrdersFromCSV("orders/" + TransactionLogger.getCurrDate() + "Orders.csv", false);
+        } catch (FileNotFoundException e) {
+            System.out.println("Orders file not found: " + e.getMessage());
+        } catch (IOException e) {
+            System.out.println("Error reading orders file: " + e.getMessage());
+        }
+
         //Check for invalid medication types (see requirement for types)
-        
+
         //Remove medications that expire today
 
         //Check for any automatic restock needed when expired medications are removed.

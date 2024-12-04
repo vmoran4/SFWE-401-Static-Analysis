@@ -1,0 +1,33 @@
+Type,Name,CostPerGram,QuantityGrams,Description,Restricted
+Analgesics (Pain Relievers),Acetaminophen,37.27,109.00,Acetaminophen is a analgesics (pain relievers) used for specific conditions.,false
+Antivirals,Acyclovir,19.02,9478.00,Acyclovir is a antivirals used for specific conditions.,false
+Cardiovascular Drugs,Amlodipine,11.57,6508.00,Amlodipine is a cardiovascular drugs used for specific conditions.,false
+Antibiotics,Amoxicillin,15.46,4588.00,Amoxicillin is a antibiotics used for specific conditions.,false
+Cardiovascular Drugs,Atorvastatin,7.94,5282.00,Atorvastatin is a cardiovascular drugs used for specific conditions.,false
+Vitamins and Supplements,Calcium,46.96,10855.00,Calcium is a vitamins and supplements used for specific conditions.,false
+Antacids and Anti-Ulcer Medications,Calcium Carbonate,43.54,144.00,Calcium Carbonate is a antacids and anti-ulcer medications used for specific conditions.,false
+Mood Stabilizers,Carbamazepine,7.15,8328.00,Carbamazepine is a mood stabilizers used for specific conditions.,false
+Antihistamines,Cetirizine,44.25,4695.00,Cetirizine is a antihistamines used for specific conditions.,false
+Antibiotics,Ciprofloxacin,20.83,11416.00,Ciprofloxacin is a antibiotics used for specific conditions.,false
+Immunosuppressants,Cyclosporine,14.61,9087.00,Cyclosporine is a immunosuppressants used for specific conditions.,false
+Antihistamines,Diphenhydramine,46.42,11252.00,Diphenhydramine is a antihistamines used for specific conditions.,false
+Antibiotics,Doxycycline,46.14,8130.00,Doxycycline is a antibiotics used for specific conditions.,false
+Hormone Therapy Drugs,Estrogen,31.78,10493.00,Estrogen is a hormone therapy drugs used for specific conditions.,false
+Antifungals,Fluconazole,36.66,7886.00,Fluconazole is a antifungals used for specific conditions.,false
+Diuretics,Furosemide,33.97,11048.00,Furosemide is a diuretics used for specific conditions.,false
+Diuretics,Hydrochlorothiazide,13.21,6335.00,Hydrochlorothiazide is a diuretics used for specific conditions.,false
+Analgesics (Pain Relievers),Ibuprofen,9.40,4263.00,Ibuprofen is a analgesics (pain relievers) used for specific conditions.,false
+Vitamins and Supplements,Iron,49.14,10211.00,Iron is a vitamins and supplements used for specific conditions.,false
+Antifungals,Ketoconazole,36.11,8558.00,Ketoconazole is a antifungals used for specific conditions.,false
+Hormone Therapy Drugs,Levothyroxine,49.32,5843.00,Levothyroxine is a hormone therapy drugs used for specific conditions.,false
+Cardiovascular Drugs,Lisinopril,15.90,5030.00,Lisinopril is a cardiovascular drugs used for specific conditions.,false
+Antihistamines,Loratadine,17.21,59.00,Loratadine is a antihistamines used for specific conditions.,false
+Immunosuppressants,Methotrexate,37.37,9884.00,Methotrexate is a immunosuppressants used for specific conditions.,false
+Analgesics (Pain Relievers),Naproxen,42.55,11672.00,Naproxen is a analgesics (pain relievers) used for specific conditions.,false
+Antacids and Anti-Ulcer Medications,Omeprazole,16.69,5677.00,Omeprazole is a antacids and anti-ulcer medications used for specific conditions.,false
+Antivirals,Oseltamivir,48.31,9304.00,Oseltamivir is a antivirals used for specific conditions.,false
+Antacids and Anti-Ulcer Medications,Ranitidine,35.00,8661.00,Ranitidine is a antacids and anti-ulcer medications used for specific conditions.,false
+Antipsychotics,Risperidone,13.29,9622.00,Risperidone is a antipsychotics used for specific conditions.,false
+Immunosuppressants,Tacrolimus,34.01,8811.00,Tacrolimus is a immunosuppressants used for specific conditions.,false
+Antifungals,Terbinafine,8.23,10049.00,Terbinafine is a antifungals used for specific conditions.,false
+Vitamins and Supplements,Vitamin D,6.05,10765.00,Vitamin D is a vitamins and supplements used for specific conditions.,false

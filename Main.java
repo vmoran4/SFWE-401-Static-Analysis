@@ -1,5 +1,8 @@
 import java.io.IOException;
 import java.util.Scanner;
+import java.io.File;
+import java.util.Arrays;
+import java.util.Comparator;
 
 public class Main {
 
@@ -25,33 +28,76 @@ public class Main {
 
     public static void main(String[] args) {
 
-        // Initialize and read medication CSV file
         Inventory inventory = new Inventory();
-        
-        try {
-            inventory.loadMedicationsFromCSV("CSVFiles/InitialMedication.csv");
-        } catch (IOException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        }
-        //Sort medications
-        inventory.sortMedicationsByName();
 
-        //Load orders from CSV
-        try {
-            inventory.loadInitialOrdersFromCSV("CSVFiles/Orders.csv", true);
-        } catch (IOException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
+        
+
+        
+
+        
+
+        //Prepare for input
+        Scanner scanner = new Scanner(System.in);
+
+        //Ask User if this is initial run (medication quantities and orders should be populating from CSVFiles)
+        System.out.println("Is this the first time running the program? (y/n) -- ");
+        System.out.println("(In other words should medication quantities and orders be initialized?)");
+        System.out.println("NOTE: Selecting 'y' will delete any of today's current orders and medications.");
+        String firstRun = scanner.nextLine();
+        //Initial run
+        if(firstRun.equals("y")){
+            // Initialize and read medication CSV file
+            try {
+                inventory.loadMedicationsFromCSV("CSVFiles/InitialMedication.csv");
+            } catch (IOException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            }
+            //Sort medications
+            inventory.sortMedicationsByName();
+
+            //Load initial orders from CSV
+            try {
+                inventory.loadOrdersFromCSV("CSVFiles/Orders.csv", true);
+            } catch (IOException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            }
+        }
+        else{
+            //Read in most recent orders and medications file based on date in filename
+            String mostRecentDate = "";
+            try {
+                File ordersDir = new File("orders/");
+                File[] orderFiles = ordersDir.listFiles((dir, name) -> name.endsWith(".csv"));
+                if (orderFiles != null && orderFiles.length > 0) {
+                    Arrays.sort(orderFiles, (f1, f2) -> {
+                        String date1 = f1.getName().replaceAll("[^0-9]", "");
+                        String date2 = f2.getName().replaceAll("[^0-9]", "");
+                        return date2.compareTo(date1);
+                    });
+                    // Load the most recent order file
+                    String mostRecentOrderFile = orderFiles[0].getName();
+                    mostRecentDate = mostRecentOrderFile.substring(0, 10);
+                    System.out.println("Loading orders from the most recent file: " + mostRecentOrderFile);
+                    inventory.loadOrdersFromCSV("orders/" + mostRecentOrderFile, false);
+
+                    // Load the most recent medication file
+                    inventory.loadMedicationsFromCSV("medications/" + mostRecentDate + "Medications.csv");
+                } else {
+                    System.out.println("No order files found in the orders directory.");
+                }
+            
+            } catch (IOException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            }
         }
 
         //Print curr Inventory
         inventory.printAllMedications();
-
-        
-
         //Main menu
-        Scanner scanner = new Scanner(System.in);
+        
         boolean running = true;
         while(running){
             System.out.println();
@@ -146,7 +192,11 @@ public class Main {
 
         scanner.close();
 
+        //Export current inventory medications and orders to CSV
+        inventory.exportCurrInventory();
+        inventory.exportCurrOrders();
+
         //Run end of day tasks after exiting main loop
-        EndOfDay.endOfDay();
+        //EndOfDay.endOfDay();
     }
 }

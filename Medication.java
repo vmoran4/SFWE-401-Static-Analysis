@@ -94,6 +94,6 @@ public class Medication {
 
 //Converts medication to one line of CSV format
   public String toCSV() {
-    return String.format("%s,%s,%.2f,%.2f,%s,%b", type, name, costPerGram, quantityGrams, description, restrictionStatus);
+    return String.format("%s,%s,%.2f,%.2f,%s,%b\n", type, name, costPerGram, quantityGrams, description, restrictionStatus);
   }
 }
