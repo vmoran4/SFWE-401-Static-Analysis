@@ -71,6 +71,15 @@ public class Main {
         String firstRun = scanner.nextLine();
         //Initial run
         if(firstRun.equals("y")){
+
+            //Admin password check
+            System.out.println("Enter the admin password:");
+            String password = scanner.nextLine();
+            if(!password.equals("admin")){
+                System.out.println("Incorrect password.");
+                System.exit(0);
+            }
+            
             // Initialize and read medication CSV file
             try {
                 inventory.loadMedicationsFromCSV("CSVFiles/InitialMedication.csv");

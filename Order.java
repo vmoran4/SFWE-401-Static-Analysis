@@ -10,11 +10,14 @@ public class Order {
     private int batchNumber;
     private String supplier;
 
+    private static int currBatchNumber = 0;
+
     public Order(String medicationName, double quantityGrams, String expDate, int batchNumber, String supplier) {
         this.medicationName = medicationName;
         this.quantityGrams = quantityGrams;
         this.expDate = expDate;
-        this.batchNumber = batchNumber;
+        this.batchNumber = currBatchNumber;
+        ++currBatchNumber;
         this.supplier = supplier;
     }
 
