@@ -19,7 +19,7 @@ New:
   DONE Include price related things in Order.java and Orders.csv
   DONE? Implement Transaction Logging that includes price of orders, and 
       prepare functions for sales being made in Main.java to customers(Peyton)
-  Implement an expiration report. -- Neccessary for a requirement, only run EndOfDay, and only needs to include
+  DONE Implement an expiration report. -- Neccessary for a requirement, only run EndOfDay, and only needs to include
       orders expiring in the next 30 days and orders that expire the next day. 
   Does arraylist of orders need to have orders modified every time sales are made?
       i.e. sort by exp date. remove quantity of order after sale. remove order from Inventory if empty...
