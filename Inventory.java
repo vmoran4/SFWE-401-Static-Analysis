@@ -19,7 +19,9 @@ public class Inventory {
     public ArrayList<Order> getOrders() {
         return new ArrayList<>(orders);
     }
-    
+
+
+//Importing stuff
     public ArrayList<Medication> loadMedicationsFromCSV(String filePath) throws FileNotFoundException, IOException {
         try(BufferedReader br = new BufferedReader(new FileReader(filePath))) { 
             String line;
@@ -55,7 +57,7 @@ public class Inventory {
 
     //PRECONDITION: medications loaded from CSV
     //isInitial indicates whether medicationList should be updated based on orders
-    public void loadInitialOrdersFromCSV(String filePath, boolean isInitial) throws FileNotFoundException, IOException {
+    public void loadOrdersFromCSV(String filePath, boolean isInitial) throws FileNotFoundException, IOException {
         try(BufferedReader br = new BufferedReader(new FileReader(filePath))) { 
             String line;
 
@@ -82,6 +84,7 @@ public class Inventory {
         }
     }
 
+    
     // Update inventory medications and orders after an order is placed
     public void updateInventoryOrder(Order order) {
         //Update medication quantity in grams
@@ -172,12 +175,14 @@ public class Inventory {
         return true;
     }
 
-    //Export the current inventory to csv. Meant to happen at the end of the day
+//Exporting stuff
+
+    //Export the current medicationList to csv. Meant to happen when Main.java exits
     public void exportCurrInventory(String filenameToWrite){
-        try (BufferedWriter writer = new BufferedWriter(new FileWriter("inventories/" + filenameToWrite))) {
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(filenameToWrite, false))) {
             writer.write("Type,Name,CostPerGram,QuantityGrams,Description,Restricted\n");
             for (Medication medication : medicationList) {
-                writer.write(medication.toCSV());
+            writer.write(medication.toCSV());
             }
         } catch (IOException e) {
             System.err.println("Error writing to file: " + e.getMessage());
@@ -185,8 +190,26 @@ public class Inventory {
     }
     //Default exportCurrInventory constructor for end of day
     public void exportCurrInventory(){
-        exportCurrInventory("inventories/" + TransactionLogger.getCurrDate() + "Inventory.csv");
+        exportCurrInventory("medications/" + TransactionLogger.getCurrDate() + "Medications.csv");
     }
+
+    //Export the current orders to csv. Meant to happen when Main.java exits
+    public void exportCurrOrders(String filenameToWrite){
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter("orders/" + filenameToWrite, false))) {
+            writer.write("MedicationName,QuantityGrams,ExpDate,BatchNumber,Supplier\n");
+            for (Order order : orders) {
+            writer.write(order.toCSV());
+            }
+        } catch (IOException e) {
+            System.err.println("Error writing to file: " + e.getMessage());
+        }
+    }
+
+    //Default exportCurrOrders constructor for end of day
+    public void exportCurrOrders(){
+        exportCurrOrders(TransactionLogger.getCurrDate() + "Orders.csv");
+    }
+
 
     public void getBatchInfo(int batchNum){
         boolean batchFound = false;

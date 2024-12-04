@@ -75,4 +75,8 @@ public class Order {
         // Make sure that day of expiration counts as expiration
         return currentDate.isAfter(expirationDate.minusDays(1));
     }
+
+    public String toCSV() {
+        return String.format("%s,%f,%s,%d,%s\n", medicationName, quantityGrams, expDate, batchNumber, supplier);
+    }
 }
