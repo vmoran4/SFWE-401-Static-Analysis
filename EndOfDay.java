@@ -89,7 +89,8 @@ public class EndOfDay{
 
 
         //Generate reports
-
+        Report.generateFinanciaReport();
+        Report.generateInventoryReport(inventory);
         //Remove reports logs and data that are over five years old
         TransactionLogger logger = new TransactionLogger();
         logger.removeOldLogs();
