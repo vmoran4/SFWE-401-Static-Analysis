@@ -1,5 +1,4 @@
 MedicationName,QuantityGrams,ExpDate,BatchNumber,Supplier
-Aspirin,100.000000,2024-12-31,12345,Pharma Inc.
 Ibuprofen,200.000000,2025-06-30,12346,HealthCorp
 Paracetamol,150.000000,2023-11-15,12347,MedSupply
 Amoxicillin,250.000000,2024-01-20,12348,Pharma Inc.

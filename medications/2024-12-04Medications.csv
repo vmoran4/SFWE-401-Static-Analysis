@@ -1,9 +1,12 @@
 Type,Name,CostPerGram,QuantityGrams,Description,Restricted
 Analgesics (Pain Relievers),Acetaminophen,37.27,109.00,Acetaminophen is a analgesics (pain relievers) used for specific conditions.,false
 Antivirals,Acyclovir,19.02,9478.00,Acyclovir is a antivirals used for specific conditions.,false
+Antihistamines,Albuterol,18.00,19200.00,Albuterol is a Antihistamines used to relieve bronchospasm in conditions like asthma and COPD.,false
 Cardiovascular Drugs,Amlodipine,11.57,6508.00,Amlodipine is a cardiovascular drugs used for specific conditions.,false
 Antibiotics,Amoxicillin,15.46,4588.00,Amoxicillin is a antibiotics used for specific conditions.,false
+Analgesics (Pain Relievers),Aspirin,25.00,8900.00,Aspirin is an analgesic (pain reliever) used for specific conditions.,false
 Cardiovascular Drugs,Atorvastatin,7.94,5282.00,Atorvastatin is a cardiovascular drugs used for specific conditions.,false
+Antibiotics,Azithromycin,25.00,14000.00,Azithromycin is a broad-spectrum antibiotic used to treat bacterial infections.,false
 Vitamins and Supplements,Calcium,46.96,10855.00,Calcium is a vitamins and supplements used for specific conditions.,false
 Antacids and Anti-Ulcer Medications,Calcium Carbonate,43.54,144.00,Calcium Carbonate is a antacids and anti-ulcer medications used for specific conditions.,false
 Mood Stabilizers,Carbamazepine,7.15,8328.00,Carbamazepine is a mood stabilizers used for specific conditions.,false
@@ -22,12 +25,18 @@ Antifungals,Ketoconazole,36.11,8558.00,Ketoconazole is a antifungals used for sp
 Hormone Therapy Drugs,Levothyroxine,49.32,5843.00,Levothyroxine is a hormone therapy drugs used for specific conditions.,false
 Cardiovascular Drugs,Lisinopril,15.90,5030.00,Lisinopril is a cardiovascular drugs used for specific conditions.,false
 Antihistamines,Loratadine,17.21,59.00,Loratadine is a antihistamines used for specific conditions.,false
+Cardiovascular Drugs,Losartan,9.50,17800.00,Losartan is a cardiovascular drug used to treat high blood pressure and protect the kidneys from damage due to diabetes.,false
+Hormone Therapy Drugs,Metformin,12.50,13300.00,Metformin is an Hormone Therapy Drugs medication used to control blood sugar levels in people with type 2 diabetes.,false
 Immunosuppressants,Methotrexate,37.37,9884.00,Methotrexate is a immunosuppressants used for specific conditions.,false
+Cardiovascular Drugs,Metoprolol,11.00,16100.00,Metoprolol is a cardiovascular drug used to treat high blood pressure,false
 Analgesics (Pain Relievers),Naproxen,42.55,11672.00,Naproxen is a analgesics (pain relievers) used for specific conditions.,false
 Antacids and Anti-Ulcer Medications,Omeprazole,16.69,5677.00,Omeprazole is a antacids and anti-ulcer medications used for specific conditions.,false
 Antivirals,Oseltamivir,48.31,9304.00,Oseltamivir is a antivirals used for specific conditions.,false
+Analgesics (Pain Relievers),Paracetamol,20.00,14250.00,Paracetamol is a common analgesic (pain reliever) used to treat mild to moderate pain and fever.,false
+Immunosuppressants,Prednisone,15.00,21600.00,Prednisone is a Immunosuppressants used to treat a wide range of inflammatory and autoimmune conditions.,false
 Antacids and Anti-Ulcer Medications,Ranitidine,35.00,8661.00,Ranitidine is a antacids and anti-ulcer medications used for specific conditions.,false
 Antipsychotics,Risperidone,13.29,9622.00,Risperidone is a antipsychotics used for specific conditions.,false
+Cardiovascular Drugs,Simvastatin,10.00,17600.00,Simvastatin is a cardiovascular drug used to lower cholesterol and triglycerides in the blood.,false
 Immunosuppressants,Tacrolimus,34.01,8811.00,Tacrolimus is a immunosuppressants used for specific conditions.,false
 Antifungals,Terbinafine,8.23,10049.00,Terbinafine is a antifungals used for specific conditions.,false
-Vitamins and Supplements,Vitamin D,6.05,10000.00,Vitamin D is a vitamins and supplements used for specific conditions.,false
+Vitamins and Supplements,Vitamin D,6.05,10765.00,Vitamin D is a vitamins and supplements used for specific conditions.,false

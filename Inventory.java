@@ -5,7 +5,7 @@ import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.FileNotFoundException;
-import java.lang.reflect.Array;
+import java.util.Iterator;
 
 public class Inventory {
     private ArrayList<Medication> medicationList = new ArrayList<>();
@@ -113,6 +113,7 @@ public class Inventory {
 
     // Update orders arraylist after a sale is made by removing quantity from orders based on sale.
     // Purpose: keep track of medications sell by date
+    //FIXME: Might be a logic error here in terms of remainingQuantity
     public void updateOrdersSale(String medicationName, double quantityGrams){
         double remainingQuantity = quantityGrams;
         for (Order order : orders) {
@@ -203,10 +204,40 @@ public class Inventory {
             if (!validType) {
                 System.out.println("Invalid medication type: " + medication.getType());
                 invalidFound = true;
-                break;
+                continue;
             }
         }
         return invalidFound;
+    }
+    //Removes medications from inventory that expire today
+    //Returns true if expired medications are found
+    public boolean removeExpiredMedications(){
+        boolean expiredFound = false;
+        Iterator<Order> iterator = orders.iterator();
+        while (iterator.hasNext()) {
+            Order order = iterator.next();
+            if (order.getExpDate().equals(TransactionLogger.getCurrDate())) {
+                System.out.println("Expired medication: " + order.getMedicationName());
+
+                //Log Expiration
+                TransactionLogger logger = new TransactionLogger();
+                logger.logExpiration(order);
+
+                //Get previous quantity and decrement by expired quantity
+                double newQuantityGrams = getMedication(order.getMedicationName()).getQuantityGrams() - order.getQuantityGrams();
+                updateInventoryQuantity(order.getMedicationName(), newQuantityGrams);
+                
+                //Remove expired order
+                iterator.remove();
+                expiredFound = true;
+            }
+        }
+        return expiredFound;
+    }
+
+    //Returns true if order is found and removed from orders. False otherwise
+    public boolean removeOrder(Order order){
+        return orders.remove(order);
     }
 
 
