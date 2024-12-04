@@ -3,6 +3,8 @@ import java.time.LocalTime;
 public class EndOfDay{
 
     public static void endOfDay(){
+        //Prob don't need this, but it's here for reference
+        /* 
         LocalTime current;
         boolean testing =true;
         LocalTime testTime = LocalTime.of(17,0);   //sets test time to 5:00pm
@@ -38,7 +40,8 @@ public class EndOfDay{
                 break;
             }
         }
-
+        */
+        runEndOfDayTasks();
     }
 
     //FIXME need to do automatic report generation, experation report, what else?

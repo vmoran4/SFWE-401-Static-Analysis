@@ -23,6 +23,9 @@ New:
       orders expiring in the next 30 days and orders that expire the next day. 
   Does arraylist of orders need to have orders modified every time sales are made?
       i.e. sort by exp date. remove quantity of order after sale. remove order from Inventory if empty...
+
+   Update input csv files to be larger, and possibly remove duplicate medication names
+   Implement password for manual restock, and manual report generation
   
   Main Loop Stuff (based on tests?):
     "Sell to Customer" option: medName, price, etc
