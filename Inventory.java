@@ -183,6 +183,33 @@ public class Inventory {
         return true;
     }
 
+    //Returns true if an invalid medication type is found
+    //FIXME: should this return a list of medication names that are invalid?
+    public boolean checkMedicationTypes(){
+        boolean invalidFound = false;
+        String[] validTypes = { "Analgesics (Pain Relievers)", "Antibiotics", "Antivirals", "Antifungals", 
+                        "Antihistamines", "Antacids and Anti-Ulcer Medications", "Antidepressants", 
+                        "Antipsychotics", "Mood Stabilizers", "Hormone Therapy Drugs", 
+                        "Cardiovascular Drugs", "Diuretics", "Immunosuppressants", 
+                        "Vitamins and Supplements", "Other" };
+        for (Medication medication : medicationList) {
+            boolean validType = false;
+            for (String type : validTypes) {
+                if (medication.getType().equals(type)) {
+                    validType = true;
+                    break;
+                }
+            }
+            if (!validType) {
+                System.out.println("Invalid medication type: " + medication.getType());
+                invalidFound = true;
+                break;
+            }
+        }
+        return invalidFound;
+    }
+
+
 //Exporting stuff
 
     //Export the current medicationList to csv. Meant to happen when Main.java exits

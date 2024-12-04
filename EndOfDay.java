@@ -2,6 +2,7 @@ import java.time.LocalTime;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
+//Made to run be run as script independent of Main.java, while Main.java is not running
 public class EndOfDay{
 
 
@@ -72,10 +73,17 @@ public class EndOfDay{
         }
 
         //Check for invalid medication types (see requirement for types)
+            //Right now just returns true if there are any invalid types and prints invalid medications?
+        inventory.checkMedicationTypes();
+        
 
         //Remove medications that expire today
 
         //Check for any automatic restock needed when expired medications are removed.
+
+        //Generate reports
+
+        //Remove reports logs and data that are over five years old
     }
 
     public static void main(String[] args) {
