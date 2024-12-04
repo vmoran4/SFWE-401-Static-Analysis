@@ -16,6 +16,7 @@ public class Main {
         System.out.println("4.) Retrieve All Medication Information");
         System.out.println("5.) Manually Generate Report");
         System.out.println("6.) Retrieve Batch Information");
+        System.out.println("7.) Report Discepancies b/w physical and digital inventory");
         System.out.println("q.) Exit");
     }
 
@@ -181,6 +182,25 @@ public class Main {
                     int batchNum = Integer.parseInt(scanner.nextLine());
                     inventory.getBatchInfo(batchNum);
 
+                    break;
+
+                case "7":
+                    System.out.println("Enter the admin password:");
+                    String password2 = scanner.nextLine();
+                    if(!password2.equals("admin")){
+                        System.out.println("Incorrect password.");
+                        break;
+                    }
+                    System.out.println("Enter medication name of medication with discrepancy");
+                    String medName2 = scanner.nextLine();
+                    Medication medication2 = inventory.getMedication(medName2);
+                    if(medication2 == null){
+                        System.out.println("Medication not found.");
+                        break;
+                    }
+                    System.out.println("Enter the new quantity in grams:");
+                    double quantityGrams2 = Double.parseDouble(scanner.nextLine());
+                    inventory.updateInventoryQuantity(medName2, quantityGrams2);
                     break;
 
                 case "q":

@@ -55,7 +55,7 @@ public class EndOfDay{
         //Read current medication inventory from csv file
         Inventory inventory = new Inventory();
         try {
-            inventory.loadMedicationsFromCSV("inventories/" + TransactionLogger.getCurrDate() + "Inventory.csv");
+            inventory.loadMedicationsFromCSV("medications/" + TransactionLogger.getCurrDate() + "Inventory.csv");
         } catch (FileNotFoundException e) {
             System.out.println("Inventory file not found: " + e.getMessage());
         } catch (IOException e) {

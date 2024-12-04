@@ -19,6 +19,14 @@ public class Inventory {
     public ArrayList<Order> getOrders() {
         return new ArrayList<>(orders);
     }
+    public void updateInventoryQuantity(String medicationName, double newQuantityGrams){
+        for (Medication medication : medicationList) {
+            if (medication.getName().equals(medicationName)) {
+                medication.setQuantityGrams(newQuantityGrams);
+                break;
+            }
+        }
+    }
 
 
 //Importing stuff
