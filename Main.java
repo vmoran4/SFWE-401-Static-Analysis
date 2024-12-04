@@ -124,6 +124,8 @@ public class Main {
                 case "6": 
                     System.out.println("Input Batch Number: ");
                     int batchNum = scanner.nextInt();
+                    inventory.getBatchInfo(batchNum);
+                    break;
 
                 case "q":
                     System.out.println("Exiting...");
