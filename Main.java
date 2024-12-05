@@ -87,6 +87,9 @@ public class Main {
                 System.exit(0);
             }
 
+            //Delete today's log file if one exists because inaccurate
+            TransactionLogger.deleteTodaysLogFile();
+            
             // Initialize and read medication CSV file
             try {
                 inventory.loadMedicationsFromCSV("CSVFiles/InitialMedication.csv");
@@ -99,8 +102,7 @@ public class Main {
             //Sort medications
             inventory.sortMedicationsByName();
 
-            //Delete today's log file if one exists because inaccurate
-            TransactionLogger.deleteTodaysLogFile();
+            
         }
         else{
             //Read in most recent orders and medications file based on date in filename
