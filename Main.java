@@ -87,9 +87,14 @@ public class Main {
                 System.exit(0);
             }
 
+            //Delete today's log file if one exists because inaccurate
+            TransactionLogger.deleteTodaysLogFile();
+
             // Initialize and read medication CSV file
             try {
                 inventory.loadMedicationsFromCSV("CSVFiles/InitialMedication.csv");
+                //Load initial orders from CSV
+                inventory.loadOrdersFromCSV("CSVFiles/Orders.csv", true);
             } catch (IOException e) {
                 // TODO Auto-generated catch block
                 e.printStackTrace();
@@ -97,13 +102,7 @@ public class Main {
             //Sort medications
             inventory.sortMedicationsByName();
 
-            //Load initial orders from CSV
-            try {
-                inventory.loadOrdersFromCSV("CSVFiles/Orders.csv", true);
-            } catch (IOException e) {
-                // TODO Auto-generated catch block
-                e.printStackTrace();
-            }
+            
         }
         else{
             //Read in most recent orders and medications file based on date in filename
@@ -203,7 +202,7 @@ public class Main {
                         break;
                     }
                     System.out.println(medication1.toString());
-                    System.out.println("Restriction Status: " + medication1.getRestrictionStatus() + ", Description: " + medication1.getDescription());
+                    System.out.println("Cost Per Gram: \" + medication1.getCostPerGram()" + ", Restriction Status: " + medication1.getRestrictionStatus() + ", Description: " + medication1.getDescription());
                     break;
 
                 //Retrieve All Medication Info -- Less specific

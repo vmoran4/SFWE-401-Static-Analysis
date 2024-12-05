@@ -115,14 +115,51 @@ public class TransactionLogger{
         File logsDirectory = new File(logsDirectoryPath);
         File[] logFiles = logsDirectory.listFiles();
 
-        //Delete files older than five years
+        //Delete log files older than five years
         for(File file : logFiles){
             String filename = file.getName();
             if(filename.compareTo(fiveYearsAgoDate + "LOG.txt") < 0){
                 file.delete();
             }
         }
+
+        // Delete reports, orders, and medications older than five years
+        File reportsDirectory = new File("reports/");
+        File[] reportFiles = reportsDirectory.listFiles();
+        for (File file : reportFiles) {
+            String filename = file.getName();
+            if (filename.compareTo(fiveYearsAgoDate + "REPORT.txt") < 0) {
+            file.delete();
+            }
+        }
+
+        File ordersDirectory = new File("orders/");
+        File[] orderFiles = ordersDirectory.listFiles();
+        for (File file : orderFiles) {
+            String filename = file.getName();
+            if (filename.compareTo(fiveYearsAgoDate + "ORDER.txt") < 0) {
+            file.delete();
+            }
+        }
+
+        File medicationsDirectory = new File("medications/");
+        File[] medicationFiles = medicationsDirectory.listFiles();
+        for (File file : medicationFiles) {
+            String filename = file.getName();
+            if (filename.compareTo(fiveYearsAgoDate + "MEDICATION.txt") < 0) {
+            file.delete();
+            }
+        }
+
         return true;
+    }
+
+
+    public static void deleteTodaysLogFile(){
+        File file = new File("logs/" + getCurrentFilename());
+        if(file.exists()){
+            file.delete();
+        }
     }
 
 
