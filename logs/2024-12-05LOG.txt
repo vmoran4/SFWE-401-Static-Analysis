@@ -1,0 +1,2 @@
+Log Type          | Timestamp           | Description
+ORDER              | [2024-12-05 00:49:49] | Batch Number: 83, Supplier: Manual Restock, Item: Amoxicillin, Quantity: 0.00 grams, Total Cost: 0.00
