@@ -155,6 +155,14 @@ public class TransactionLogger{
     }
 
 
+    public static void deleteTodaysLogFile(){
+        File file = new File("logs/" + getCurrentFilename());
+        if(file.exists()){
+            file.delete();
+        }
+    }
+
+
     //Test the logger
     public static void main(String[] args){
         TransactionLogger logger = new TransactionLogger();

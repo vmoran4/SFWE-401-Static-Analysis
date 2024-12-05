@@ -90,6 +90,8 @@ public class Main {
             // Initialize and read medication CSV file
             try {
                 inventory.loadMedicationsFromCSV("CSVFiles/InitialMedication.csv");
+                //Load initial orders from CSV
+                inventory.loadOrdersFromCSV("CSVFiles/Orders.csv", true);
             } catch (IOException e) {
                 // TODO Auto-generated catch block
                 e.printStackTrace();
@@ -97,13 +99,8 @@ public class Main {
             //Sort medications
             inventory.sortMedicationsByName();
 
-            //Load initial orders from CSV
-            try {
-                inventory.loadOrdersFromCSV("CSVFiles/Orders.csv", true);
-            } catch (IOException e) {
-                // TODO Auto-generated catch block
-                e.printStackTrace();
-            }
+            //Delete today's log file if one exists because inaccurate
+            TransactionLogger.deleteTodaysLogFile();
         }
         else{
             //Read in most recent orders and medications file based on date in filename
