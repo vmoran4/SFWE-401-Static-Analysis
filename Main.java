@@ -229,6 +229,9 @@ public class Main {
                             
                             break;
                         case "2":
+                            //Export curr Inventory
+                            inventory.exportCurrInventory();
+                            //Generate report
                             Report.generateInventoryReport(inventory, targetDate);
                             break;
                     }
