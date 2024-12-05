@@ -3,6 +3,10 @@ import java.util.Scanner;
 import java.io.File;
 import java.util.Arrays;
 import java.util.ArrayList;
+import java.util.zip.ZipOutputStream;
+import java.util.zip.ZipEntry;
+import java.io.FileOutputStream;
+import java.io.FileInputStream;
 
 
 public class Main {
@@ -259,7 +263,34 @@ public class Main {
                 //Audit Export
                 //FIXME: Export all financial reports to a zip file
                 case "8":
-                    
+                    try {
+                        File reportsDir = new File("reports/");
+                        File[] reportFiles = reportsDir.listFiles((dir, name) -> name.endsWith(".txt"));
+                        if (reportFiles != null && reportFiles.length > 0) {
+                            FileOutputStream fos = new FileOutputStream("audits/" + TransactionLogger.getCurrDate() + "Audit.zip");
+                            ZipOutputStream zos = new ZipOutputStream(fos);
+                            for (File reportFile : reportFiles) {
+                                FileInputStream fis = new FileInputStream(reportFile);
+                                ZipEntry zipEntry = new ZipEntry(reportFile.getName());
+                                zos.putNextEntry(zipEntry);
+                                byte[] buffer = new byte[1024];
+                                int length;
+                                while ((length = fis.read(buffer)) >= 0) {
+                                    zos.write(buffer, 0, length);
+                                }
+                                zos.closeEntry();
+                                fis.close();
+                            }
+                            zos.close();
+                            fos.close();
+                            System.out.println("Reports successfully exported to audits/reports.zip");
+                        } else {
+                            System.out.println("No report files found in the reports directory.");
+                        }
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                    break;
 
                 case "q":
                     System.out.println("Exiting...");
