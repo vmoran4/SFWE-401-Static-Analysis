@@ -13,8 +13,7 @@ import java.time.temporal.ChronoUnit;
 
 public class Report {
 
-    // Calculate total day's sales using log from that day for Financial Report.
-    // FIXME: This may need to be moved to financial report class if that is created.
+    // Calculate total day's Sales using log from that day for Financial Report.
     public static double calculateTotalSales(String logFilePath) {
         double totalSales = 0;
         try (BufferedReader br = new BufferedReader(new FileReader(logFilePath))) {
@@ -39,12 +38,37 @@ public class Report {
     public static double calculateTotalSales() {
         return calculateTotalSales("logs/" + TransactionLogger.getCurrentFilename());
     }
+
+    //Calculate total day's expenses using log from that day for Financial Report.
+    public static double calculateTotalExpenses(String logFilePath) {
+        double totalExpenses = 0;
+        try (BufferedReader br = new BufferedReader(new FileReader(logFilePath))) {
+            String line;
+
+            while ((line = br.readLine()) != null) {
+                if (line.startsWith("ORDER")) {
+                    String[] parts = line.split("Total Cost: ");
+                    if (parts.length > 1) {
+                        totalExpenses += Double.parseDouble(parts[1].trim());
+                    }
+                }
+            }
+        } catch (IOException e) {
+            System.err.println("Error reading log file: " + e.getMessage());
+        }
+        return totalExpenses;
+    }
+
+    // Calculate total day's expenses using log from that day.
+    public static double calculateTotalExpenses() {
+        return calculateTotalExpenses("logs/" + TransactionLogger.getCurrentFilename());
+    }
   
   //Expiration functions
   // Function to compare time and return true if they are 31 days apart
   public static boolean expiresIn30DaysorLess(String date1, String date2) {
         // Define the date format (YY-MM-DD)
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yy-MM-dd");
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
 
         // Convert the strings to LocalDate objects
         LocalDate date1Obj = LocalDate.parse(date1, formatter);
@@ -60,7 +84,7 @@ public class Report {
     // Function to compare time and return true if they are 1 day apart
     public static boolean expiresIn1Day(String date1, String date2) {
         // Define the date format (YY-MM-DD)
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yy-MM-dd");
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
 
         // Convert the strings to LocalDate objects
         LocalDate date1Obj = LocalDate.parse(date1, formatter);
@@ -75,6 +99,7 @@ public class Report {
 
   public static void generateFinanciaReport(String date) {
 
+        String targetLogFilename = "logs/" + date + "LOG.txt";
         // Open the file with correct filename
         try {
             FileWriter dailyFinancialReport = new FileWriter("reports/" + date + "FinancialReport.txt");
@@ -92,11 +117,11 @@ public class Report {
             // Write code for writing sales onto the file
             // open the log of the day
             try {
-                Scanner scnrSales = new Scanner(new File("logs/" + date + "LOG.txt"));
+                Scanner scnrSales = new Scanner(new File(targetLogFilename));
                 while (scnrSales.hasNextLine()) {
                     String saleString = scnrSales.nextLine();
-                    if (saleString.startsWith("S")) {
-                        dailyFinancialReport.write(scnrSales.nextLine() + "\n");
+                    if (saleString.startsWith("SALE")) {
+                        dailyFinancialReport.write(saleString + "\n");
                     }
                 }
                 scnrSales.close();
@@ -112,11 +137,11 @@ public class Report {
             // Write code for writing expenses onto the file
             // open the log of the day
             try {
-                Scanner scnrOrders = new Scanner(new File("logs/" + date + "LOG.txt"));
+                Scanner scnrOrders = new Scanner(new File(targetLogFilename));
                 while (scnrOrders.hasNextLine()) {
                     String orderString = scnrOrders.nextLine();
                     if (orderString.startsWith("ORDER")) {
-                        dailyFinancialReport.write(scnrOrders.nextLine()+ "\n");
+                        dailyFinancialReport.write(orderString + "\n");
                     }
                 }
                 scnrOrders.close();
@@ -125,9 +150,12 @@ public class Report {
                 System.out.println("An error occurred.");
                 e.printStackTrace();
             }
-
             dailyFinancialReport.write("__________________________________________________________\n");
-            dailyFinancialReport.write("Profit " + calculateTotalSales() + "\n"); // calculate the profit
+            double totalSales = calculateTotalSales(targetLogFilename);
+            double totalExpenses = calculateTotalExpenses(targetLogFilename);
+            dailyFinancialReport.write("Total Sales: $" + totalSales + "\n"); // calculate the total sales
+            dailyFinancialReport.write("Total Expenses: $" + totalExpenses + "\n"); // calculate the total expenses
+            dailyFinancialReport.write("Net Income: $" + (totalSales-totalExpenses) + "\n"); // calculate the net income
             dailyFinancialReport.write("Date " + date);
 
             // close the file
@@ -163,8 +191,8 @@ public class Report {
             dailyInventoryReport.write("Pharmacy Name\n");
             dailyInventoryReport.write("Pharmacy Address\n");
             dailyInventoryReport.write("Pharmacy eMail Address\n");
-            dailyInventoryReport.write("Pharmacy Phone Number");
-            dailyInventoryReport.write("Inventory Report");
+            dailyInventoryReport.write("Pharmacy Phone Number\n");
+            dailyInventoryReport.write("Inventory Report\n");
             dailyInventoryReport.write("__________________________________________________________\n");
             dailyInventoryReport.write("Available Medications\n");
 
@@ -176,7 +204,7 @@ public class Report {
             }
 
             dailyInventoryReport.write("__________________________________________________________\n");
-            dailyInventoryReport.write("Medications with expiration date soon in the next 30 days\n");
+            dailyInventoryReport.write("Medications with expiration date soon in the next 30 days:\n\n");
 
             // Write all available medication that will expire in the next 30 days
             ArrayList<Order> listofOrders = currentInventory.getOrders();
@@ -188,7 +216,7 @@ public class Report {
             }
 
             dailyInventoryReport.write("__________________________________________________________\n");
-            dailyInventoryReport.write("Medications with expiration date soon in the next 1 days\n");
+            dailyInventoryReport.write("Medications with expiration date soon in the next 1 days:\n\n");
 
             // Write code for writing expenses onto the file
             for (Order order : listofOrders) {

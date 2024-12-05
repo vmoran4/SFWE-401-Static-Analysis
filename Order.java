@@ -82,4 +82,8 @@ public class Order {
     public String toCSV() {
         return String.format("%s,%f,%s,%d,%s\n", medicationName, quantityGrams, expDate, batchNumber, supplier);
     }
+    @Override
+    public String toString() {
+        return String.format("Medication: %s, Quantity: %.2f grams, Expiration Date: %s, Batch Number: %d, Supplier: %s", medicationName, quantityGrams, expDate, batchNumber, supplier);
+    }
 }

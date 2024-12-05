@@ -1,0 +1,61 @@
+__________________________________________________________
+Pharmacy Name
+Pharmacy Address
+Pharmacy eMail Address
+Pharmacy Phone Number
+Inventory Report
+__________________________________________________________
+Available Medications
+Name: Acetaminophen, Type: Analgesics (Pain Relievers), Quantity: 1109.00 grams, Low Stock Threshold: 225 grams
+Name: Acyclovir, Type: Antivirals, Quantity: 9478.00 grams, Low Stock Threshold: 225 grams
+Name: Albuterol, Type: Antihistamines, Quantity: 19200.00 grams, Low Stock Threshold: 225 grams
+Name: Amlodipine, Type: Cardiovascular Drugs, Quantity: 6508.00 grams, Low Stock Threshold: 225 grams
+Name: Amoxicillin, Type: Antibiotics, Quantity: 4588.00 grams, Low Stock Threshold: 225 grams
+Name: Aspirin, Type: Analgesics (Pain Relievers), Quantity: 9000.00 grams, Low Stock Threshold: 225 grams
+Name: Atorvastatin, Type: Cardiovascular Drugs, Quantity: 5282.00 grams, Low Stock Threshold: 225 grams
+Name: Azithromycin, Type: Antibiotics, Quantity: 14000.00 grams, Low Stock Threshold: 225 grams
+Name: Calcium, Type: Vitamins and Supplements, Quantity: 10855.00 grams, Low Stock Threshold: 225 grams
+Name: Calcium Carbonate, Type: Antacids and Anti-Ulcer Medications, Quantity: 1144.00 grams, Low Stock Threshold: 225 grams
+Name: Carbamazepine, Type: Mood Stabilizers, Quantity: 8328.00 grams, Low Stock Threshold: 225 grams
+Name: Cetirizine, Type: Antihistamines, Quantity: 4695.00 grams, Low Stock Threshold: 225 grams
+Name: Ciprofloxacin, Type: Antibiotics, Quantity: 11416.00 grams, Low Stock Threshold: 225 grams
+Name: Cyclosporine, Type: Immunosuppressants, Quantity: 9087.00 grams, Low Stock Threshold: 225 grams
+Name: Diphenhydramine, Type: Antihistamines, Quantity: 11252.00 grams, Low Stock Threshold: 225 grams
+Name: Doxycycline, Type: Antibiotics, Quantity: 8130.00 grams, Low Stock Threshold: 225 grams
+Name: Estrogen, Type: Hormone Therapy Drugs, Quantity: 10493.00 grams, Low Stock Threshold: 225 grams
+Name: Fluconazole, Type: Antifungals, Quantity: 7886.00 grams, Low Stock Threshold: 225 grams
+Name: Furosemide, Type: Diuretics, Quantity: 11048.00 grams, Low Stock Threshold: 225 grams
+Name: Hydrochlorothiazide, Type: Diuretics, Quantity: 6335.00 grams, Low Stock Threshold: 225 grams
+Name: Ibuprofen, Type: Analgesics (Pain Relievers), Quantity: 4263.00 grams, Low Stock Threshold: 225 grams
+Name: Iron, Type: Vitamins and Supplements, Quantity: 10211.00 grams, Low Stock Threshold: 225 grams
+Name: Ketoconazole, Type: Antifungals, Quantity: 8558.00 grams, Low Stock Threshold: 225 grams
+Name: Levothyroxine, Type: Hormone Therapy Drugs, Quantity: 5843.00 grams, Low Stock Threshold: 225 grams
+Name: Lisinopril, Type: Cardiovascular Drugs, Quantity: 5030.00 grams, Low Stock Threshold: 225 grams
+Name: Loratadine, Type: Antihistamines, Quantity: 1059.00 grams, Low Stock Threshold: 225 grams
+Name: Losartan, Type: Cardiovascular Drugs, Quantity: 17800.00 grams, Low Stock Threshold: 225 grams
+Name: Metformin, Type: Hormone Therapy Drugs, Quantity: 13300.00 grams, Low Stock Threshold: 225 grams
+Name: Methotrexate, Type: Immunosuppressants, Quantity: 9884.00 grams, Low Stock Threshold: 225 grams
+Name: Metoprolol, Type: Cardiovascular Drugs, Quantity: 16100.00 grams, Low Stock Threshold: 225 grams
+Name: Naproxen, Type: Analgesics (Pain Relievers), Quantity: 11672.00 grams, Low Stock Threshold: 225 grams
+Name: Omeprazole, Type: Antacids and Anti-Ulcer Medications, Quantity: 5677.00 grams, Low Stock Threshold: 225 grams
+Name: Oseltamivir, Type: Antivirals, Quantity: 9304.00 grams, Low Stock Threshold: 225 grams
+Name: Paracetamol, Type: Analgesics (Pain Relievers), Quantity: 14250.00 grams, Low Stock Threshold: 225 grams
+Name: Prednisone, Type: Immunosuppressants, Quantity: 21600.00 grams, Low Stock Threshold: 225 grams
+Name: Ranitidine, Type: Antacids and Anti-Ulcer Medications, Quantity: 8661.00 grams, Low Stock Threshold: 225 grams
+Name: Risperidone, Type: Antipsychotics, Quantity: 9622.00 grams, Low Stock Threshold: 225 grams
+Name: Simvastatin, Type: Cardiovascular Drugs, Quantity: 17600.00 grams, Low Stock Threshold: 225 grams
+Name: Tacrolimus, Type: Immunosuppressants, Quantity: 8811.00 grams, Low Stock Threshold: 225 grams
+Name: Terbinafine, Type: Antifungals, Quantity: 10049.00 grams, Low Stock Threshold: 225 grams
+Name: Vitamin D, Type: Vitamins and Supplements, Quantity: 10665.00 grams, Low Stock Threshold: 225 grams
+__________________________________________________________
+Medications with expiration date soon in the next 30 days:
+
+Medication: Aspirin, Quantity: 100.00 grams, Expiration Date: 2024-12-31, Batch Number: 83, Supplier: Pharma Inc.
+Medication: Gabapentin, Quantity: 1000.00 grams, Expiration Date: 2024-11-05, Batch Number: 94, Supplier: Pharma Inc.
+Medication: Aspirin, Quantity: 3900.00 grams, Expiration Date: 2024-12-31, Batch Number: 123, Supplier: Pharma Inc.
+Medication: Gabapentin, Quantity: 5000.00 grams, Expiration Date: 2024-11-05, Batch Number: 134, Supplier: Pharma Inc.
+__________________________________________________________
+Medications with expiration date soon in the next 1 days:
+
+__________________________________________________________
+Date 2024-12-04

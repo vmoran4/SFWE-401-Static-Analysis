@@ -18,6 +18,7 @@ public class Main {
         System.out.println("5.) Manually Generate Report");
         System.out.println("6.) Retrieve Batch Information");
         System.out.println("7.) Report Discepancies b/w Physical and Digital Inventory");
+        System.err.println("8.) Audit Export");
         System.out.println("q.) Exit");
     }
 
@@ -220,11 +221,11 @@ public class Main {
                     //Generate Report
                     switch(reportOption){
                         case "1":
-                            //FIXME: implement financial report
+                            Report.generateFinanciaReport(targetDate);
                             
                             break;
                         case "2":
-                            //FIXME: implement inventory report
+                            Report.generateInventoryReport(inventory, targetDate);
                             break;
                     }
                     break;
@@ -254,6 +255,11 @@ public class Main {
                     double quantityGrams2 = Double.parseDouble(scanner.nextLine());
                     inventory.updateInventoryQuantity(medName2, quantityGrams2);
                     break;
+                
+                //Audit Export
+                //FIXME: Export all financial reports to a zip file
+                case "8":
+                    
 
                 case "q":
                     System.out.println("Exiting...");

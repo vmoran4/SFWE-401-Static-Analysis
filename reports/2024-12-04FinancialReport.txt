@@ -6,337 +6,94 @@ Pharmacy Phone Number
 Financial Report
 __________________________________________________________
 Sales
-ORDER              | [2024-12-04 14:47:36] | Batch Number: 0, Supplier: Pharma Inc., Item: Aspirin, Quantity: 100.00 grams, Total Cost: 2500.00
+SALE               | [2024-12-04 16:24:11] | Medication: Vitamin D, Quantity Sold: 100.00 grams, Gross Income: 605.00
 __________________________________________________________
 Expenses
-ORDER              | [2024-12-04 00:16:01] | Batch Number: 12346, Supplier: HealthCorp, Item: Ibuprofen, Quantity: 200.00 grams, Total Cost: 1880.00
-ORDER              | [2024-12-04 00:16:01] | Batch Number: 12348, Supplier: Pharma Inc., Item: Amoxicillin, Quantity: 250.00 grams, Total Cost: 3865.00
-ORDER              | [2024-12-04 00:16:01] | Batch Number: 12350, Supplier: Pharma Inc., Item: Metformin, Quantity: 400.00 grams, Total Cost: 0.00
-ORDER              | [2024-12-04 00:16:01] | Batch Number: 12352, Supplier: MedSupply, Item: Atorvastatin, Quantity: 600.00 grams, Total Cost: 4764.00
-ORDER              | [2024-12-04 00:16:01] | Batch Number: 12354, Supplier: HealthCorp, Item: Simvastatin, Quantity: 800.00 grams, Total Cost: 0.00
-ORDER              | [2024-12-04 00:16:01] | Batch Number: 12356, Supplier: Pharma Inc., Item: Gabapentin, Quantity: 1000.00 grams, Total Cost: 0.00
-ORDER              | [2024-12-04 00:16:01] | Batch Number: 12358, Supplier: MedSupply, Item: Amlodipine, Quantity: 1200.00 grams, Total Cost: 13884.00
-ORDER              | [2024-12-04 00:16:01] | Batch Number: 12360, Supplier: HealthCorp, Item: Losartan, Quantity: 1400.00 grams, Total Cost: 0.00
-ORDER              | [2024-12-04 00:16:01] | Batch Number: 12362, Supplier: Pharma Inc., Item: Albuterol, Quantity: 1600.00 grams, Total Cost: 0.00
-ORDER              | [2024-12-04 00:16:01] | Batch Number: 12364, Supplier: MedSupply, Item: Prednisone, Quantity: 1800.00 grams, Total Cost: 0.00
-ORDER              | [2024-12-04 00:16:01] | Batch Number: 12366, Supplier: HealthCorp, Item: Doxycycline, Quantity: 2000.00 grams, Total Cost: 92280.00
-ORDER              | [2024-12-04 00:16:01] | Batch Number: 12368, Supplier: Pharma Inc., Item: Ketoconazole, Quantity: 2200.00 grams, Total Cost: 79442.00
-ORDER              | [2024-12-04 00:16:01] | Batch Number: 12370, Supplier: MedSupply, Item: Tacrolimus, Quantity: 2400.00 grams, Total Cost: 81624.00
-ORDER              | [2024-12-04 00:16:01] | Batch Number: 12372, Supplier: HealthCorp, Item: Oseltamivir, Quantity: 2600.00 grams, Total Cost: 125606.00
-ORDER              | [2024-12-04 00:16:01] | Batch Number: 12374, Supplier: Pharma Inc., Item: Risperidone, Quantity: 2800.00 grams, Total Cost: 37212.00
-ORDER              | [2024-12-04 00:16:01] | Batch Number: 12376, Supplier: MedSupply, Item: Terbinafine, Quantity: 3000.00 grams, Total Cost: 24690.00
-ORDER              | [2024-12-04 00:16:01] | Batch Number: 12378, Supplier: HealthCorp, Item: Estrogen, Quantity: 3200.00 grams, Total Cost: 101696.00
-ORDER              | [2024-12-04 00:16:01] | Batch Number: 12380, Supplier: Pharma Inc., Item: Calcium, Quantity: 3400.00 grams, Total Cost: 159664.00
-ORDER              | [2024-12-04 00:16:01] | Batch Number: 12382, Supplier: MedSupply, Item: Diphenhydramine, Quantity: 3600.00 grams, Total Cost: 167112.00
-ORDER              | [2024-12-04 00:16:01] | Batch Number: 12384, Supplier: HealthCorp, Item: Naproxen, Quantity: 3800.00 grams, Total Cost: 161690.00
-ORDER              | [2024-12-04 00:16:01] | Batch Number: 12386, Supplier: HealthCorp, Item: Ibuprofen, Quantity: 4000.00 grams, Total Cost: 37600.00
-ORDER              | [2024-12-04 00:16:01] | Batch Number: 12388, Supplier: Pharma Inc., Item: Amoxicillin, Quantity: 4200.00 grams, Total Cost: 64932.00
-ORDER              | [2024-12-04 00:16:01] | Batch Number: 12390, Supplier: Pharma Inc., Item: Metformin, Quantity: 4400.00 grams, Total Cost: 0.00
-ORDER              | [2024-12-04 00:16:01] | Batch Number: 12392, Supplier: MedSupply, Item: Atorvastatin, Quantity: 4600.00 grams, Total Cost: 36524.00
-ORDER              | [2024-12-04 00:16:01] | Batch Number: 12394, Supplier: HealthCorp, Item: Simvastatin, Quantity: 4800.00 grams, Total Cost: 0.00
-ORDER              | [2024-12-04 00:16:01] | Batch Number: 12396, Supplier: Pharma Inc., Item: Gabapentin, Quantity: 5000.00 grams, Total Cost: 0.00
-ORDER              | [2024-12-04 00:16:01] | Batch Number: 12398, Supplier: MedSupply, Item: Amlodipine, Quantity: 5200.00 grams, Total Cost: 60164.00
-ORDER              | [2024-12-04 00:16:01] | Batch Number: 12400, Supplier: HealthCorp, Item: Losartan, Quantity: 5400.00 grams, Total Cost: 0.00
-ORDER              | [2024-12-04 00:16:01] | Batch Number: 12402, Supplier: Pharma Inc., Item: Albuterol, Quantity: 5600.00 grams, Total Cost: 0.00
-ORDER              | [2024-12-04 00:16:01] | Batch Number: 12404, Supplier: MedSupply, Item: Prednisone, Quantity: 5800.00 grams, Total Cost: 0.00
-ORDER              | [2024-12-04 00:16:01] | Batch Number: 12406, Supplier: HealthCorp, Item: Doxycycline, Quantity: 6000.00 grams, Total Cost: 276840.00
-ORDER              | [2024-12-04 00:16:01] | Batch Number: 12408, Supplier: Pharma Inc., Item: Ketoconazole, Quantity: 6200.00 grams, Total Cost: 223882.00
-ORDER              | [2024-12-04 00:16:01] | Batch Number: 12410, Supplier: MedSupply, Item: Tacrolimus, Quantity: 6400.00 grams, Total Cost: 217664.00
-ORDER              | [2024-12-04 00:16:01] | Batch Number: 12412, Supplier: HealthCorp, Item: Oseltamivir, Quantity: 6600.00 grams, Total Cost: 318846.00
-ORDER              | [2024-12-04 00:16:01] | Batch Number: 12414, Supplier: Pharma Inc., Item: Risperidone, Quantity: 6800.00 grams, Total Cost: 90372.00
-ORDER              | [2024-12-04 00:16:01] | Batch Number: 12416, Supplier: MedSupply, Item: Terbinafine, Quantity: 7000.00 grams, Total Cost: 57610.00
-ORDER              | [2024-12-04 00:16:01] | Batch Number: 12418, Supplier: HealthCorp, Item: Estrogen, Quantity: 7200.00 grams, Total Cost: 228816.00
-ORDER              | [2024-12-04 00:16:01] | Batch Number: 12420, Supplier: Pharma Inc., Item: Calcium, Quantity: 7400.00 grams, Total Cost: 347504.00
-ORDER              | [2024-12-04 00:16:01] | Batch Number: 12422, Supplier: MedSupply, Item: Diphenhydramine, Quantity: 7600.00 grams, Total Cost: 352792.00
-ORDER              | [2024-12-04 00:16:01] | Batch Number: 12424, Supplier: HealthCorp, Item: Naproxen, Quantity: 7800.00 grams, Total Cost: 331890.00
-ORDER              | [2024-12-04 00:16:34] | Batch Number: 12346, Supplier: HealthCorp, Item: Ibuprofen, Quantity: 200.00 grams, Total Cost: 1880.00
-ORDER              | [2024-12-04 00:16:34] | Batch Number: 12348, Supplier: Pharma Inc., Item: Amoxicillin, Quantity: 250.00 grams, Total Cost: 3865.00
-ORDER              | [2024-12-04 00:16:34] | Batch Number: 12350, Supplier: Pharma Inc., Item: Metformin, Quantity: 400.00 grams, Total Cost: 0.00
-ORDER              | [2024-12-04 00:16:34] | Batch Number: 12352, Supplier: MedSupply, Item: Atorvastatin, Quantity: 600.00 grams, Total Cost: 4764.00
-ORDER              | [2024-12-04 00:16:34] | Batch Number: 12354, Supplier: HealthCorp, Item: Simvastatin, Quantity: 800.00 grams, Total Cost: 0.00
-ORDER              | [2024-12-04 00:16:34] | Batch Number: 12356, Supplier: Pharma Inc., Item: Gabapentin, Quantity: 1000.00 grams, Total Cost: 0.00
-ORDER              | [2024-12-04 00:16:34] | Batch Number: 12358, Supplier: MedSupply, Item: Amlodipine, Quantity: 1200.00 grams, Total Cost: 13884.00
-ORDER              | [2024-12-04 00:16:34] | Batch Number: 12360, Supplier: HealthCorp, Item: Losartan, Quantity: 1400.00 grams, Total Cost: 0.00
-ORDER              | [2024-12-04 00:16:34] | Batch Number: 12362, Supplier: Pharma Inc., Item: Albuterol, Quantity: 1600.00 grams, Total Cost: 0.00
-ORDER              | [2024-12-04 00:16:34] | Batch Number: 12364, Supplier: MedSupply, Item: Prednisone, Quantity: 1800.00 grams, Total Cost: 0.00
-ORDER              | [2024-12-04 00:16:34] | Batch Number: 12366, Supplier: HealthCorp, Item: Doxycycline, Quantity: 2000.00 grams, Total Cost: 92280.00
-ORDER              | [2024-12-04 00:16:34] | Batch Number: 12368, Supplier: Pharma Inc., Item: Ketoconazole, Quantity: 2200.00 grams, Total Cost: 79442.00
-ORDER              | [2024-12-04 00:16:34] | Batch Number: 12370, Supplier: MedSupply, Item: Tacrolimus, Quantity: 2400.00 grams, Total Cost: 81624.00
-ORDER              | [2024-12-04 00:16:34] | Batch Number: 12372, Supplier: HealthCorp, Item: Oseltamivir, Quantity: 2600.00 grams, Total Cost: 125606.00
-ORDER              | [2024-12-04 00:16:34] | Batch Number: 12374, Supplier: Pharma Inc., Item: Risperidone, Quantity: 2800.00 grams, Total Cost: 37212.00
-ORDER              | [2024-12-04 00:16:34] | Batch Number: 12376, Supplier: MedSupply, Item: Terbinafine, Quantity: 3000.00 grams, Total Cost: 24690.00
-ORDER              | [2024-12-04 00:16:34] | Batch Number: 12378, Supplier: HealthCorp, Item: Estrogen, Quantity: 3200.00 grams, Total Cost: 101696.00
-ORDER              | [2024-12-04 00:16:34] | Batch Number: 12380, Supplier: Pharma Inc., Item: Calcium, Quantity: 3400.00 grams, Total Cost: 159664.00
-ORDER              | [2024-12-04 00:16:34] | Batch Number: 12382, Supplier: MedSupply, Item: Diphenhydramine, Quantity: 3600.00 grams, Total Cost: 167112.00
-ORDER              | [2024-12-04 00:16:34] | Batch Number: 12384, Supplier: HealthCorp, Item: Naproxen, Quantity: 3800.00 grams, Total Cost: 161690.00
-ORDER              | [2024-12-04 00:16:34] | Batch Number: 12386, Supplier: HealthCorp, Item: Ibuprofen, Quantity: 4000.00 grams, Total Cost: 37600.00
-ORDER              | [2024-12-04 00:16:34] | Batch Number: 12388, Supplier: Pharma Inc., Item: Amoxicillin, Quantity: 4200.00 grams, Total Cost: 64932.00
-ORDER              | [2024-12-04 00:16:34] | Batch Number: 12390, Supplier: Pharma Inc., Item: Metformin, Quantity: 4400.00 grams, Total Cost: 0.00
-ORDER              | [2024-12-04 00:16:34] | Batch Number: 12392, Supplier: MedSupply, Item: Atorvastatin, Quantity: 4600.00 grams, Total Cost: 36524.00
-ORDER              | [2024-12-04 00:16:34] | Batch Number: 12394, Supplier: HealthCorp, Item: Simvastatin, Quantity: 4800.00 grams, Total Cost: 0.00
-ORDER              | [2024-12-04 00:16:34] | Batch Number: 12396, Supplier: Pharma Inc., Item: Gabapentin, Quantity: 5000.00 grams, Total Cost: 0.00
-ORDER              | [2024-12-04 00:16:34] | Batch Number: 12398, Supplier: MedSupply, Item: Amlodipine, Quantity: 5200.00 grams, Total Cost: 60164.00
-ORDER              | [2024-12-04 00:16:34] | Batch Number: 12400, Supplier: HealthCorp, Item: Losartan, Quantity: 5400.00 grams, Total Cost: 0.00
-ORDER              | [2024-12-04 00:16:34] | Batch Number: 12402, Supplier: Pharma Inc., Item: Albuterol, Quantity: 5600.00 grams, Total Cost: 0.00
-ORDER              | [2024-12-04 00:16:34] | Batch Number: 12404, Supplier: MedSupply, Item: Prednisone, Quantity: 5800.00 grams, Total Cost: 0.00
-ORDER              | [2024-12-04 00:16:34] | Batch Number: 12406, Supplier: HealthCorp, Item: Doxycycline, Quantity: 6000.00 grams, Total Cost: 276840.00
-ORDER              | [2024-12-04 00:16:34] | Batch Number: 12408, Supplier: Pharma Inc., Item: Ketoconazole, Quantity: 6200.00 grams, Total Cost: 223882.00
-ORDER              | [2024-12-04 00:16:34] | Batch Number: 12410, Supplier: MedSupply, Item: Tacrolimus, Quantity: 6400.00 grams, Total Cost: 217664.00
-ORDER              | [2024-12-04 00:16:34] | Batch Number: 12412, Supplier: HealthCorp, Item: Oseltamivir, Quantity: 6600.00 grams, Total Cost: 318846.00
-ORDER              | [2024-12-04 00:16:34] | Batch Number: 12414, Supplier: Pharma Inc., Item: Risperidone, Quantity: 6800.00 grams, Total Cost: 90372.00
-ORDER              | [2024-12-04 00:16:34] | Batch Number: 12416, Supplier: MedSupply, Item: Terbinafine, Quantity: 7000.00 grams, Total Cost: 57610.00
-ORDER              | [2024-12-04 00:16:34] | Batch Number: 12418, Supplier: HealthCorp, Item: Estrogen, Quantity: 7200.00 grams, Total Cost: 228816.00
-ORDER              | [2024-12-04 00:16:34] | Batch Number: 12420, Supplier: Pharma Inc., Item: Calcium, Quantity: 7400.00 grams, Total Cost: 347504.00
-ORDER              | [2024-12-04 00:16:34] | Batch Number: 12422, Supplier: MedSupply, Item: Diphenhydramine, Quantity: 7600.00 grams, Total Cost: 352792.00
-ORDER              | [2024-12-04 00:16:34] | Batch Number: 12424, Supplier: HealthCorp, Item: Naproxen, Quantity: 7800.00 grams, Total Cost: 331890.00
-ORDER              | [2024-12-04 00:17:06] | Batch Number: 12346, Supplier: HealthCorp, Item: Ibuprofen, Quantity: 200.00 grams, Total Cost: 1880.00
-ORDER              | [2024-12-04 00:17:06] | Batch Number: 12348, Supplier: Pharma Inc., Item: Amoxicillin, Quantity: 250.00 grams, Total Cost: 3865.00
-ORDER              | [2024-12-04 00:17:06] | Batch Number: 12350, Supplier: Pharma Inc., Item: Metformin, Quantity: 400.00 grams, Total Cost: 0.00
-ORDER              | [2024-12-04 00:17:06] | Batch Number: 12352, Supplier: MedSupply, Item: Atorvastatin, Quantity: 600.00 grams, Total Cost: 4764.00
-ORDER              | [2024-12-04 00:17:06] | Batch Number: 12354, Supplier: HealthCorp, Item: Simvastatin, Quantity: 800.00 grams, Total Cost: 0.00
-ORDER              | [2024-12-04 00:17:06] | Batch Number: 12356, Supplier: Pharma Inc., Item: Gabapentin, Quantity: 1000.00 grams, Total Cost: 0.00
-ORDER              | [2024-12-04 00:17:06] | Batch Number: 12358, Supplier: MedSupply, Item: Amlodipine, Quantity: 1200.00 grams, Total Cost: 13884.00
-ORDER              | [2024-12-04 00:17:06] | Batch Number: 12360, Supplier: HealthCorp, Item: Losartan, Quantity: 1400.00 grams, Total Cost: 0.00
-ORDER              | [2024-12-04 00:17:06] | Batch Number: 12362, Supplier: Pharma Inc., Item: Albuterol, Quantity: 1600.00 grams, Total Cost: 0.00
-ORDER              | [2024-12-04 00:17:06] | Batch Number: 12364, Supplier: MedSupply, Item: Prednisone, Quantity: 1800.00 grams, Total Cost: 0.00
-ORDER              | [2024-12-04 00:17:06] | Batch Number: 12366, Supplier: HealthCorp, Item: Doxycycline, Quantity: 2000.00 grams, Total Cost: 92280.00
-ORDER              | [2024-12-04 00:17:06] | Batch Number: 12368, Supplier: Pharma Inc., Item: Ketoconazole, Quantity: 2200.00 grams, Total Cost: 79442.00
-ORDER              | [2024-12-04 00:17:06] | Batch Number: 12370, Supplier: MedSupply, Item: Tacrolimus, Quantity: 2400.00 grams, Total Cost: 81624.00
-ORDER              | [2024-12-04 00:17:06] | Batch Number: 12372, Supplier: HealthCorp, Item: Oseltamivir, Quantity: 2600.00 grams, Total Cost: 125606.00
-ORDER              | [2024-12-04 00:17:06] | Batch Number: 12374, Supplier: Pharma Inc., Item: Risperidone, Quantity: 2800.00 grams, Total Cost: 37212.00
-ORDER              | [2024-12-04 00:17:06] | Batch Number: 12376, Supplier: MedSupply, Item: Terbinafine, Quantity: 3000.00 grams, Total Cost: 24690.00
-ORDER              | [2024-12-04 00:17:06] | Batch Number: 12378, Supplier: HealthCorp, Item: Estrogen, Quantity: 3200.00 grams, Total Cost: 101696.00
-ORDER              | [2024-12-04 00:17:06] | Batch Number: 12380, Supplier: Pharma Inc., Item: Calcium, Quantity: 3400.00 grams, Total Cost: 159664.00
-ORDER              | [2024-12-04 00:17:06] | Batch Number: 12382, Supplier: MedSupply, Item: Diphenhydramine, Quantity: 3600.00 grams, Total Cost: 167112.00
-ORDER              | [2024-12-04 00:17:06] | Batch Number: 12384, Supplier: HealthCorp, Item: Naproxen, Quantity: 3800.00 grams, Total Cost: 161690.00
-ORDER              | [2024-12-04 00:17:06] | Batch Number: 12386, Supplier: HealthCorp, Item: Ibuprofen, Quantity: 4000.00 grams, Total Cost: 37600.00
-ORDER              | [2024-12-04 00:17:06] | Batch Number: 12388, Supplier: Pharma Inc., Item: Amoxicillin, Quantity: 4200.00 grams, Total Cost: 64932.00
-ORDER              | [2024-12-04 00:17:06] | Batch Number: 12390, Supplier: Pharma Inc., Item: Metformin, Quantity: 4400.00 grams, Total Cost: 0.00
-ORDER              | [2024-12-04 00:17:06] | Batch Number: 12392, Supplier: MedSupply, Item: Atorvastatin, Quantity: 4600.00 grams, Total Cost: 36524.00
-ORDER              | [2024-12-04 00:17:06] | Batch Number: 12394, Supplier: HealthCorp, Item: Simvastatin, Quantity: 4800.00 grams, Total Cost: 0.00
-ORDER              | [2024-12-04 00:17:06] | Batch Number: 12396, Supplier: Pharma Inc., Item: Gabapentin, Quantity: 5000.00 grams, Total Cost: 0.00
-ORDER              | [2024-12-04 00:17:06] | Batch Number: 12398, Supplier: MedSupply, Item: Amlodipine, Quantity: 5200.00 grams, Total Cost: 60164.00
-ORDER              | [2024-12-04 00:17:06] | Batch Number: 12400, Supplier: HealthCorp, Item: Losartan, Quantity: 5400.00 grams, Total Cost: 0.00
-ORDER              | [2024-12-04 00:17:06] | Batch Number: 12402, Supplier: Pharma Inc., Item: Albuterol, Quantity: 5600.00 grams, Total Cost: 0.00
-ORDER              | [2024-12-04 00:17:06] | Batch Number: 12404, Supplier: MedSupply, Item: Prednisone, Quantity: 5800.00 grams, Total Cost: 0.00
-ORDER              | [2024-12-04 00:17:06] | Batch Number: 12406, Supplier: HealthCorp, Item: Doxycycline, Quantity: 6000.00 grams, Total Cost: 276840.00
-ORDER              | [2024-12-04 00:17:06] | Batch Number: 12408, Supplier: Pharma Inc., Item: Ketoconazole, Quantity: 6200.00 grams, Total Cost: 223882.00
-ORDER              | [2024-12-04 00:17:06] | Batch Number: 12410, Supplier: MedSupply, Item: Tacrolimus, Quantity: 6400.00 grams, Total Cost: 217664.00
-ORDER              | [2024-12-04 00:17:06] | Batch Number: 12412, Supplier: HealthCorp, Item: Oseltamivir, Quantity: 6600.00 grams, Total Cost: 318846.00
-ORDER              | [2024-12-04 00:17:06] | Batch Number: 12414, Supplier: Pharma Inc., Item: Risperidone, Quantity: 6800.00 grams, Total Cost: 90372.00
-ORDER              | [2024-12-04 00:17:06] | Batch Number: 12416, Supplier: MedSupply, Item: Terbinafine, Quantity: 7000.00 grams, Total Cost: 57610.00
-ORDER              | [2024-12-04 00:17:06] | Batch Number: 12418, Supplier: HealthCorp, Item: Estrogen, Quantity: 7200.00 grams, Total Cost: 228816.00
-ORDER              | [2024-12-04 00:17:06] | Batch Number: 12420, Supplier: Pharma Inc., Item: Calcium, Quantity: 7400.00 grams, Total Cost: 347504.00
-ORDER              | [2024-12-04 00:17:06] | Batch Number: 12422, Supplier: MedSupply, Item: Diphenhydramine, Quantity: 7600.00 grams, Total Cost: 352792.00
-ORDER              | [2024-12-04 00:17:06] | Batch Number: 12424, Supplier: HealthCorp, Item: Naproxen, Quantity: 7800.00 grams, Total Cost: 331890.00
-ORDER              | [2024-12-04 00:20:53] | Batch Number: 12346, Supplier: HealthCorp, Item: Ibuprofen, Quantity: 200.00 grams, Total Cost: 1880.00
-ORDER              | [2024-12-04 00:20:53] | Batch Number: 12348, Supplier: Pharma Inc., Item: Amoxicillin, Quantity: 250.00 grams, Total Cost: 3865.00
-ORDER              | [2024-12-04 00:20:53] | Batch Number: 12350, Supplier: Pharma Inc., Item: Metformin, Quantity: 400.00 grams, Total Cost: 0.00
-ORDER              | [2024-12-04 00:20:53] | Batch Number: 12352, Supplier: MedSupply, Item: Atorvastatin, Quantity: 600.00 grams, Total Cost: 4764.00
-ORDER              | [2024-12-04 00:20:53] | Batch Number: 12354, Supplier: HealthCorp, Item: Simvastatin, Quantity: 800.00 grams, Total Cost: 0.00
-ORDER              | [2024-12-04 00:20:53] | Batch Number: 12356, Supplier: Pharma Inc., Item: Gabapentin, Quantity: 1000.00 grams, Total Cost: 0.00
-ORDER              | [2024-12-04 00:20:53] | Batch Number: 12358, Supplier: MedSupply, Item: Amlodipine, Quantity: 1200.00 grams, Total Cost: 13884.00
-ORDER              | [2024-12-04 00:20:53] | Batch Number: 12360, Supplier: HealthCorp, Item: Losartan, Quantity: 1400.00 grams, Total Cost: 0.00
-ORDER              | [2024-12-04 00:20:53] | Batch Number: 12362, Supplier: Pharma Inc., Item: Albuterol, Quantity: 1600.00 grams, Total Cost: 0.00
-ORDER              | [2024-12-04 00:20:53] | Batch Number: 12364, Supplier: MedSupply, Item: Prednisone, Quantity: 1800.00 grams, Total Cost: 0.00
-ORDER              | [2024-12-04 00:20:53] | Batch Number: 12366, Supplier: HealthCorp, Item: Doxycycline, Quantity: 2000.00 grams, Total Cost: 92280.00
-ORDER              | [2024-12-04 00:20:53] | Batch Number: 12368, Supplier: Pharma Inc., Item: Ketoconazole, Quantity: 2200.00 grams, Total Cost: 79442.00
-ORDER              | [2024-12-04 00:20:53] | Batch Number: 12370, Supplier: MedSupply, Item: Tacrolimus, Quantity: 2400.00 grams, Total Cost: 81624.00
-ORDER              | [2024-12-04 00:20:53] | Batch Number: 12372, Supplier: HealthCorp, Item: Oseltamivir, Quantity: 2600.00 grams, Total Cost: 125606.00
-ORDER              | [2024-12-04 00:20:53] | Batch Number: 12374, Supplier: Pharma Inc., Item: Risperidone, Quantity: 2800.00 grams, Total Cost: 37212.00
-ORDER              | [2024-12-04 00:20:53] | Batch Number: 12376, Supplier: MedSupply, Item: Terbinafine, Quantity: 3000.00 grams, Total Cost: 24690.00
-ORDER              | [2024-12-04 00:20:53] | Batch Number: 12378, Supplier: HealthCorp, Item: Estrogen, Quantity: 3200.00 grams, Total Cost: 101696.00
-ORDER              | [2024-12-04 00:20:53] | Batch Number: 12380, Supplier: Pharma Inc., Item: Calcium, Quantity: 3400.00 grams, Total Cost: 159664.00
-ORDER              | [2024-12-04 00:20:53] | Batch Number: 12382, Supplier: MedSupply, Item: Diphenhydramine, Quantity: 3600.00 grams, Total Cost: 167112.00
-ORDER              | [2024-12-04 00:20:53] | Batch Number: 12384, Supplier: HealthCorp, Item: Naproxen, Quantity: 3800.00 grams, Total Cost: 161690.00
-ORDER              | [2024-12-04 00:20:53] | Batch Number: 12386, Supplier: HealthCorp, Item: Ibuprofen, Quantity: 4000.00 grams, Total Cost: 37600.00
-ORDER              | [2024-12-04 00:20:53] | Batch Number: 12388, Supplier: Pharma Inc., Item: Amoxicillin, Quantity: 4200.00 grams, Total Cost: 64932.00
-ORDER              | [2024-12-04 00:20:53] | Batch Number: 12390, Supplier: Pharma Inc., Item: Metformin, Quantity: 4400.00 grams, Total Cost: 0.00
-ORDER              | [2024-12-04 00:20:53] | Batch Number: 12392, Supplier: MedSupply, Item: Atorvastatin, Quantity: 4600.00 grams, Total Cost: 36524.00
-ORDER              | [2024-12-04 00:20:53] | Batch Number: 12394, Supplier: HealthCorp, Item: Simvastatin, Quantity: 4800.00 grams, Total Cost: 0.00
-ORDER              | [2024-12-04 00:20:53] | Batch Number: 12396, Supplier: Pharma Inc., Item: Gabapentin, Quantity: 5000.00 grams, Total Cost: 0.00
-ORDER              | [2024-12-04 00:20:53] | Batch Number: 12398, Supplier: MedSupply, Item: Amlodipine, Quantity: 5200.00 grams, Total Cost: 60164.00
-ORDER              | [2024-12-04 00:20:53] | Batch Number: 12400, Supplier: HealthCorp, Item: Losartan, Quantity: 5400.00 grams, Total Cost: 0.00
-ORDER              | [2024-12-04 00:20:53] | Batch Number: 12402, Supplier: Pharma Inc., Item: Albuterol, Quantity: 5600.00 grams, Total Cost: 0.00
-ORDER              | [2024-12-04 00:20:53] | Batch Number: 12404, Supplier: MedSupply, Item: Prednisone, Quantity: 5800.00 grams, Total Cost: 0.00
-ORDER              | [2024-12-04 00:20:53] | Batch Number: 12406, Supplier: HealthCorp, Item: Doxycycline, Quantity: 6000.00 grams, Total Cost: 276840.00
-ORDER              | [2024-12-04 00:20:53] | Batch Number: 12408, Supplier: Pharma Inc., Item: Ketoconazole, Quantity: 6200.00 grams, Total Cost: 223882.00
-ORDER              | [2024-12-04 00:20:53] | Batch Number: 12410, Supplier: MedSupply, Item: Tacrolimus, Quantity: 6400.00 grams, Total Cost: 217664.00
-ORDER              | [2024-12-04 00:20:53] | Batch Number: 12412, Supplier: HealthCorp, Item: Oseltamivir, Quantity: 6600.00 grams, Total Cost: 318846.00
-ORDER              | [2024-12-04 00:20:53] | Batch Number: 12414, Supplier: Pharma Inc., Item: Risperidone, Quantity: 6800.00 grams, Total Cost: 90372.00
-ORDER              | [2024-12-04 00:20:53] | Batch Number: 12416, Supplier: MedSupply, Item: Terbinafine, Quantity: 7000.00 grams, Total Cost: 57610.00
-ORDER              | [2024-12-04 00:20:53] | Batch Number: 12418, Supplier: HealthCorp, Item: Estrogen, Quantity: 7200.00 grams, Total Cost: 228816.00
-ORDER              | [2024-12-04 00:20:53] | Batch Number: 12420, Supplier: Pharma Inc., Item: Calcium, Quantity: 7400.00 grams, Total Cost: 347504.00
-ORDER              | [2024-12-04 00:20:53] | Batch Number: 12422, Supplier: MedSupply, Item: Diphenhydramine, Quantity: 7600.00 grams, Total Cost: 352792.00
-ORDER              | [2024-12-04 00:20:53] | Batch Number: 12424, Supplier: HealthCorp, Item: Naproxen, Quantity: 7800.00 grams, Total Cost: 331890.00
-ORDER              | [2024-12-04 10:55:02] | Batch Number: 12346, Supplier: HealthCorp, Item: Ibuprofen, Quantity: 200.00 grams, Total Cost: 1880.00
-ORDER              | [2024-12-04 10:55:02] | Batch Number: 12348, Supplier: Pharma Inc., Item: Amoxicillin, Quantity: 250.00 grams, Total Cost: 3865.00
-ORDER              | [2024-12-04 10:55:02] | Batch Number: 12350, Supplier: Pharma Inc., Item: Metformin, Quantity: 400.00 grams, Total Cost: 5000.00
-ORDER              | [2024-12-04 10:55:02] | Batch Number: 12352, Supplier: MedSupply, Item: Atorvastatin, Quantity: 600.00 grams, Total Cost: 4764.00
-ORDER              | [2024-12-04 10:55:02] | Batch Number: 12354, Supplier: HealthCorp, Item: Simvastatin, Quantity: 800.00 grams, Total Cost: 8000.00
-ORDER              | [2024-12-04 10:55:02] | Batch Number: 12356, Supplier: Pharma Inc., Item: Gabapentin, Quantity: 1000.00 grams, Total Cost: 0.00
-ORDER              | [2024-12-04 10:55:02] | Batch Number: 12358, Supplier: MedSupply, Item: Amlodipine, Quantity: 1200.00 grams, Total Cost: 13884.00
-ORDER              | [2024-12-04 10:55:02] | Batch Number: 12360, Supplier: HealthCorp, Item: Losartan, Quantity: 1400.00 grams, Total Cost: 13300.00
-ORDER              | [2024-12-04 10:55:02] | Batch Number: 12362, Supplier: Pharma Inc., Item: Albuterol, Quantity: 1600.00 grams, Total Cost: 28800.00
-ORDER              | [2024-12-04 10:55:02] | Batch Number: 12364, Supplier: MedSupply, Item: Prednisone, Quantity: 1800.00 grams, Total Cost: 27000.00
-ORDER              | [2024-12-04 10:55:02] | Batch Number: 12366, Supplier: HealthCorp, Item: Doxycycline, Quantity: 2000.00 grams, Total Cost: 92280.00
-ORDER              | [2024-12-04 10:55:02] | Batch Number: 12368, Supplier: Pharma Inc., Item: Ketoconazole, Quantity: 2200.00 grams, Total Cost: 79442.00
-ORDER              | [2024-12-04 10:55:02] | Batch Number: 12370, Supplier: MedSupply, Item: Tacrolimus, Quantity: 2400.00 grams, Total Cost: 81624.00
-ORDER              | [2024-12-04 10:55:02] | Batch Number: 12372, Supplier: HealthCorp, Item: Oseltamivir, Quantity: 2600.00 grams, Total Cost: 125606.00
-ORDER              | [2024-12-04 10:55:02] | Batch Number: 12374, Supplier: Pharma Inc., Item: Risperidone, Quantity: 2800.00 grams, Total Cost: 37212.00
-ORDER              | [2024-12-04 10:55:02] | Batch Number: 12376, Supplier: MedSupply, Item: Terbinafine, Quantity: 3000.00 grams, Total Cost: 24690.00
-ORDER              | [2024-12-04 10:55:02] | Batch Number: 12378, Supplier: HealthCorp, Item: Estrogen, Quantity: 3200.00 grams, Total Cost: 101696.00
-ORDER              | [2024-12-04 10:55:02] | Batch Number: 12380, Supplier: Pharma Inc., Item: Calcium, Quantity: 3400.00 grams, Total Cost: 159664.00
-ORDER              | [2024-12-04 10:55:02] | Batch Number: 12382, Supplier: MedSupply, Item: Diphenhydramine, Quantity: 3600.00 grams, Total Cost: 167112.00
-ORDER              | [2024-12-04 10:55:02] | Batch Number: 12384, Supplier: HealthCorp, Item: Naproxen, Quantity: 3800.00 grams, Total Cost: 161690.00
-ORDER              | [2024-12-04 10:55:02] | Batch Number: 12386, Supplier: HealthCorp, Item: Ibuprofen, Quantity: 4000.00 grams, Total Cost: 37600.00
-ORDER              | [2024-12-04 10:55:02] | Batch Number: 12388, Supplier: Pharma Inc., Item: Amoxicillin, Quantity: 4200.00 grams, Total Cost: 64932.00
-ORDER              | [2024-12-04 10:55:02] | Batch Number: 12390, Supplier: Pharma Inc., Item: Metformin, Quantity: 4400.00 grams, Total Cost: 55000.00
-ORDER              | [2024-12-04 10:55:02] | Batch Number: 12392, Supplier: MedSupply, Item: Atorvastatin, Quantity: 4600.00 grams, Total Cost: 36524.00
-ORDER              | [2024-12-04 10:55:02] | Batch Number: 12394, Supplier: HealthCorp, Item: Simvastatin, Quantity: 4800.00 grams, Total Cost: 48000.00
-ORDER              | [2024-12-04 10:55:02] | Batch Number: 12396, Supplier: Pharma Inc., Item: Gabapentin, Quantity: 5000.00 grams, Total Cost: 0.00
-ORDER              | [2024-12-04 10:55:02] | Batch Number: 12398, Supplier: MedSupply, Item: Amlodipine, Quantity: 5200.00 grams, Total Cost: 60164.00
-ORDER              | [2024-12-04 10:55:02] | Batch Number: 12400, Supplier: HealthCorp, Item: Losartan, Quantity: 5400.00 grams, Total Cost: 51300.00
-ORDER              | [2024-12-04 10:55:02] | Batch Number: 12402, Supplier: Pharma Inc., Item: Albuterol, Quantity: 5600.00 grams, Total Cost: 100800.00
-ORDER              | [2024-12-04 10:55:02] | Batch Number: 12404, Supplier: MedSupply, Item: Prednisone, Quantity: 5800.00 grams, Total Cost: 87000.00
-ORDER              | [2024-12-04 10:55:02] | Batch Number: 12406, Supplier: HealthCorp, Item: Doxycycline, Quantity: 6000.00 grams, Total Cost: 276840.00
-ORDER              | [2024-12-04 10:55:02] | Batch Number: 12408, Supplier: Pharma Inc., Item: Ketoconazole, Quantity: 6200.00 grams, Total Cost: 223882.00
-ORDER              | [2024-12-04 10:55:02] | Batch Number: 12410, Supplier: MedSupply, Item: Tacrolimus, Quantity: 6400.00 grams, Total Cost: 217664.00
-ORDER              | [2024-12-04 10:55:02] | Batch Number: 12412, Supplier: HealthCorp, Item: Oseltamivir, Quantity: 6600.00 grams, Total Cost: 318846.00
-ORDER              | [2024-12-04 10:55:02] | Batch Number: 12414, Supplier: Pharma Inc., Item: Risperidone, Quantity: 6800.00 grams, Total Cost: 90372.00
-ORDER              | [2024-12-04 10:55:02] | Batch Number: 12416, Supplier: MedSupply, Item: Terbinafine, Quantity: 7000.00 grams, Total Cost: 57610.00
-ORDER              | [2024-12-04 10:55:02] | Batch Number: 12418, Supplier: HealthCorp, Item: Estrogen, Quantity: 7200.00 grams, Total Cost: 228816.00
-ORDER              | [2024-12-04 10:55:02] | Batch Number: 12420, Supplier: Pharma Inc., Item: Calcium, Quantity: 7400.00 grams, Total Cost: 347504.00
-ORDER              | [2024-12-04 10:55:02] | Batch Number: 12422, Supplier: MedSupply, Item: Diphenhydramine, Quantity: 7600.00 grams, Total Cost: 352792.00
-ORDER              | [2024-12-04 10:55:02] | Batch Number: 12424, Supplier: HealthCorp, Item: Naproxen, Quantity: 7800.00 grams, Total Cost: 331890.00
-ORDER              | [2024-12-04 11:10:43] | Batch Number: 12346, Supplier: HealthCorp, Item: Ibuprofen, Quantity: 200.00 grams, Total Cost: 1880.00
-ORDER              | [2024-12-04 11:10:43] | Batch Number: 12348, Supplier: Pharma Inc., Item: Amoxicillin, Quantity: 250.00 grams, Total Cost: 3865.00
-ORDER              | [2024-12-04 11:10:43] | Batch Number: 12350, Supplier: Pharma Inc., Item: Metformin, Quantity: 400.00 grams, Total Cost: 5000.00
-ORDER              | [2024-12-04 11:10:43] | Batch Number: 12352, Supplier: MedSupply, Item: Atorvastatin, Quantity: 600.00 grams, Total Cost: 4764.00
-ORDER              | [2024-12-04 11:10:43] | Batch Number: 12354, Supplier: HealthCorp, Item: Simvastatin, Quantity: 800.00 grams, Total Cost: 8000.00
-ORDER              | [2024-12-04 11:10:43] | Batch Number: 12356, Supplier: Pharma Inc., Item: Gabapentin, Quantity: 1000.00 grams, Total Cost: 0.00
-ORDER              | [2024-12-04 11:10:43] | Batch Number: 12358, Supplier: MedSupply, Item: Amlodipine, Quantity: 1200.00 grams, Total Cost: 13884.00
-ORDER              | [2024-12-04 11:10:43] | Batch Number: 12360, Supplier: HealthCorp, Item: Losartan, Quantity: 1400.00 grams, Total Cost: 13300.00
-ORDER              | [2024-12-04 11:10:43] | Batch Number: 12362, Supplier: Pharma Inc., Item: Albuterol, Quantity: 1600.00 grams, Total Cost: 28800.00
-ORDER              | [2024-12-04 11:10:43] | Batch Number: 12364, Supplier: MedSupply, Item: Prednisone, Quantity: 1800.00 grams, Total Cost: 27000.00
-ORDER              | [2024-12-04 11:10:43] | Batch Number: 12366, Supplier: HealthCorp, Item: Doxycycline, Quantity: 2000.00 grams, Total Cost: 92280.00
-ORDER              | [2024-12-04 11:10:43] | Batch Number: 12368, Supplier: Pharma Inc., Item: Ketoconazole, Quantity: 2200.00 grams, Total Cost: 79442.00
-ORDER              | [2024-12-04 11:10:43] | Batch Number: 12370, Supplier: MedSupply, Item: Tacrolimus, Quantity: 2400.00 grams, Total Cost: 81624.00
-ORDER              | [2024-12-04 11:10:43] | Batch Number: 12372, Supplier: HealthCorp, Item: Oseltamivir, Quantity: 2600.00 grams, Total Cost: 125606.00
-ORDER              | [2024-12-04 11:10:43] | Batch Number: 12374, Supplier: Pharma Inc., Item: Risperidone, Quantity: 2800.00 grams, Total Cost: 37212.00
-ORDER              | [2024-12-04 11:10:43] | Batch Number: 12376, Supplier: MedSupply, Item: Terbinafine, Quantity: 3000.00 grams, Total Cost: 24690.00
-ORDER              | [2024-12-04 11:10:43] | Batch Number: 12378, Supplier: HealthCorp, Item: Estrogen, Quantity: 3200.00 grams, Total Cost: 101696.00
-ORDER              | [2024-12-04 11:10:43] | Batch Number: 12380, Supplier: Pharma Inc., Item: Calcium, Quantity: 3400.00 grams, Total Cost: 159664.00
-ORDER              | [2024-12-04 11:10:43] | Batch Number: 12382, Supplier: MedSupply, Item: Diphenhydramine, Quantity: 3600.00 grams, Total Cost: 167112.00
-ORDER              | [2024-12-04 11:10:43] | Batch Number: 12384, Supplier: HealthCorp, Item: Naproxen, Quantity: 3800.00 grams, Total Cost: 161690.00
-ORDER              | [2024-12-04 11:10:43] | Batch Number: 12386, Supplier: HealthCorp, Item: Ibuprofen, Quantity: 4000.00 grams, Total Cost: 37600.00
-ORDER              | [2024-12-04 11:10:43] | Batch Number: 12388, Supplier: Pharma Inc., Item: Amoxicillin, Quantity: 4200.00 grams, Total Cost: 64932.00
-ORDER              | [2024-12-04 11:10:43] | Batch Number: 12390, Supplier: Pharma Inc., Item: Metformin, Quantity: 4400.00 grams, Total Cost: 55000.00
-ORDER              | [2024-12-04 11:10:43] | Batch Number: 12392, Supplier: MedSupply, Item: Atorvastatin, Quantity: 4600.00 grams, Total Cost: 36524.00
-ORDER              | [2024-12-04 11:10:43] | Batch Number: 12394, Supplier: HealthCorp, Item: Simvastatin, Quantity: 4800.00 grams, Total Cost: 48000.00
-ORDER              | [2024-12-04 11:10:43] | Batch Number: 12396, Supplier: Pharma Inc., Item: Gabapentin, Quantity: 5000.00 grams, Total Cost: 0.00
-ORDER              | [2024-12-04 11:10:43] | Batch Number: 12398, Supplier: MedSupply, Item: Amlodipine, Quantity: 5200.00 grams, Total Cost: 60164.00
-ORDER              | [2024-12-04 11:10:43] | Batch Number: 12400, Supplier: HealthCorp, Item: Losartan, Quantity: 5400.00 grams, Total Cost: 51300.00
-ORDER              | [2024-12-04 11:10:43] | Batch Number: 12402, Supplier: Pharma Inc., Item: Albuterol, Quantity: 5600.00 grams, Total Cost: 100800.00
-ORDER              | [2024-12-04 11:10:43] | Batch Number: 12404, Supplier: MedSupply, Item: Prednisone, Quantity: 5800.00 grams, Total Cost: 87000.00
-ORDER              | [2024-12-04 11:10:43] | Batch Number: 12406, Supplier: HealthCorp, Item: Doxycycline, Quantity: 6000.00 grams, Total Cost: 276840.00
-ORDER              | [2024-12-04 11:10:43] | Batch Number: 12408, Supplier: Pharma Inc., Item: Ketoconazole, Quantity: 6200.00 grams, Total Cost: 223882.00
-ORDER              | [2024-12-04 11:10:43] | Batch Number: 12410, Supplier: MedSupply, Item: Tacrolimus, Quantity: 6400.00 grams, Total Cost: 217664.00
-ORDER              | [2024-12-04 11:10:43] | Batch Number: 12412, Supplier: HealthCorp, Item: Oseltamivir, Quantity: 6600.00 grams, Total Cost: 318846.00
-ORDER              | [2024-12-04 11:10:43] | Batch Number: 12414, Supplier: Pharma Inc., Item: Risperidone, Quantity: 6800.00 grams, Total Cost: 90372.00
-ORDER              | [2024-12-04 11:10:43] | Batch Number: 12416, Supplier: MedSupply, Item: Terbinafine, Quantity: 7000.00 grams, Total Cost: 57610.00
-ORDER              | [2024-12-04 11:10:43] | Batch Number: 12418, Supplier: HealthCorp, Item: Estrogen, Quantity: 7200.00 grams, Total Cost: 228816.00
-ORDER              | [2024-12-04 11:10:43] | Batch Number: 12420, Supplier: Pharma Inc., Item: Calcium, Quantity: 7400.00 grams, Total Cost: 347504.00
-ORDER              | [2024-12-04 11:10:43] | Batch Number: 12422, Supplier: MedSupply, Item: Diphenhydramine, Quantity: 7600.00 grams, Total Cost: 352792.00
-ORDER              | [2024-12-04 11:10:43] | Batch Number: 12424, Supplier: HealthCorp, Item: Naproxen, Quantity: 7800.00 grams, Total Cost: 331890.00
-LOW STOCK          | [2024-12-04 13:34:07] | Item: Calcium Carbonate is Low Stock, Threshold: 225, Remaining Quantity: 144.00 grams
-LOW STOCK          | [2024-12-04 13:34:07] | Item: Loratadine is Low Stock, Threshold: 225, Remaining Quantity: 59.00 grams
-SALE               | [2024-12-04 13:58:29] | Medication: Vitamin D, Quantity Sold: 5.00 grams, Gross Income: 30.25
-ORDER              | [2024-12-04 14:47:36] | Batch Number: 1, Supplier: HealthCorp, Item: Ibuprofen, Quantity: 200.00 grams, Total Cost: 1880.00
-ORDER              | [2024-12-04 14:47:36] | Batch Number: 3, Supplier: Pharma Inc., Item: Amoxicillin, Quantity: 250.00 grams, Total Cost: 3865.00
-ORDER              | [2024-12-04 14:47:36] | Batch Number: 5, Supplier: Pharma Inc., Item: Metformin, Quantity: 400.00 grams, Total Cost: 5000.00
-ORDER              | [2024-12-04 14:47:36] | Batch Number: 7, Supplier: MedSupply, Item: Atorvastatin, Quantity: 600.00 grams, Total Cost: 4764.00
-ORDER              | [2024-12-04 14:47:36] | Batch Number: 9, Supplier: HealthCorp, Item: Simvastatin, Quantity: 800.00 grams, Total Cost: 8000.00
-ORDER              | [2024-12-04 14:47:36] | Batch Number: 11, Supplier: Pharma Inc., Item: Gabapentin, Quantity: 1000.00 grams, Total Cost: 0.00
-ORDER              | [2024-12-04 14:47:36] | Batch Number: 13, Supplier: MedSupply, Item: Amlodipine, Quantity: 1200.00 grams, Total Cost: 13884.00
-ORDER              | [2024-12-04 14:47:36] | Batch Number: 15, Supplier: HealthCorp, Item: Losartan, Quantity: 1400.00 grams, Total Cost: 13300.00
-ORDER              | [2024-12-04 14:47:36] | Batch Number: 17, Supplier: Pharma Inc., Item: Albuterol, Quantity: 1600.00 grams, Total Cost: 28800.00
-ORDER              | [2024-12-04 14:47:36] | Batch Number: 19, Supplier: MedSupply, Item: Prednisone, Quantity: 1800.00 grams, Total Cost: 27000.00
-ORDER              | [2024-12-04 14:47:36] | Batch Number: 21, Supplier: HealthCorp, Item: Doxycycline, Quantity: 2000.00 grams, Total Cost: 92280.00
-ORDER              | [2024-12-04 14:47:36] | Batch Number: 23, Supplier: Pharma Inc., Item: Ketoconazole, Quantity: 2200.00 grams, Total Cost: 79442.00
-ORDER              | [2024-12-04 14:47:36] | Batch Number: 25, Supplier: MedSupply, Item: Tacrolimus, Quantity: 2400.00 grams, Total Cost: 81624.00
-ORDER              | [2024-12-04 14:47:36] | Batch Number: 27, Supplier: HealthCorp, Item: Oseltamivir, Quantity: 2600.00 grams, Total Cost: 125606.00
-ORDER              | [2024-12-04 14:47:36] | Batch Number: 29, Supplier: Pharma Inc., Item: Risperidone, Quantity: 2800.00 grams, Total Cost: 37212.00
-ORDER              | [2024-12-04 14:47:36] | Batch Number: 31, Supplier: MedSupply, Item: Terbinafine, Quantity: 3000.00 grams, Total Cost: 24690.00
-ORDER              | [2024-12-04 14:47:36] | Batch Number: 33, Supplier: HealthCorp, Item: Estrogen, Quantity: 3200.00 grams, Total Cost: 101696.00
-ORDER              | [2024-12-04 14:47:36] | Batch Number: 35, Supplier: Pharma Inc., Item: Calcium, Quantity: 3400.00 grams, Total Cost: 159664.00
-ORDER              | [2024-12-04 14:47:36] | Batch Number: 37, Supplier: MedSupply, Item: Diphenhydramine, Quantity: 3600.00 grams, Total Cost: 167112.00
-ORDER              | [2024-12-04 14:47:36] | Batch Number: 39, Supplier: HealthCorp, Item: Naproxen, Quantity: 3800.00 grams, Total Cost: 161690.00
-ORDER              | [2024-12-04 14:47:36] | Batch Number: 41, Supplier: HealthCorp, Item: Ibuprofen, Quantity: 4000.00 grams, Total Cost: 37600.00
-ORDER              | [2024-12-04 14:47:36] | Batch Number: 43, Supplier: Pharma Inc., Item: Amoxicillin, Quantity: 4200.00 grams, Total Cost: 64932.00
-ORDER              | [2024-12-04 14:47:36] | Batch Number: 45, Supplier: Pharma Inc., Item: Metformin, Quantity: 4400.00 grams, Total Cost: 55000.00
-ORDER              | [2024-12-04 14:47:36] | Batch Number: 47, Supplier: MedSupply, Item: Atorvastatin, Quantity: 4600.00 grams, Total Cost: 36524.00
-ORDER              | [2024-12-04 14:47:36] | Batch Number: 49, Supplier: HealthCorp, Item: Simvastatin, Quantity: 4800.00 grams, Total Cost: 48000.00
-ORDER              | [2024-12-04 14:47:36] | Batch Number: 51, Supplier: Pharma Inc., Item: Gabapentin, Quantity: 5000.00 grams, Total Cost: 0.00
-ORDER              | [2024-12-04 14:47:36] | Batch Number: 53, Supplier: MedSupply, Item: Amlodipine, Quantity: 5200.00 grams, Total Cost: 60164.00
-ORDER              | [2024-12-04 14:47:36] | Batch Number: 55, Supplier: HealthCorp, Item: Losartan, Quantity: 5400.00 grams, Total Cost: 51300.00
-ORDER              | [2024-12-04 14:47:36] | Batch Number: 57, Supplier: Pharma Inc., Item: Albuterol, Quantity: 5600.00 grams, Total Cost: 100800.00
-ORDER              | [2024-12-04 14:47:36] | Batch Number: 59, Supplier: MedSupply, Item: Prednisone, Quantity: 5800.00 grams, Total Cost: 87000.00
-ORDER              | [2024-12-04 14:47:36] | Batch Number: 61, Supplier: HealthCorp, Item: Doxycycline, Quantity: 6000.00 grams, Total Cost: 276840.00
-ORDER              | [2024-12-04 14:47:36] | Batch Number: 63, Supplier: Pharma Inc., Item: Ketoconazole, Quantity: 6200.00 grams, Total Cost: 223882.00
-ORDER              | [2024-12-04 14:47:36] | Batch Number: 65, Supplier: MedSupply, Item: Tacrolimus, Quantity: 6400.00 grams, Total Cost: 217664.00
-ORDER              | [2024-12-04 14:47:36] | Batch Number: 67, Supplier: HealthCorp, Item: Oseltamivir, Quantity: 6600.00 grams, Total Cost: 318846.00
-ORDER              | [2024-12-04 14:47:36] | Batch Number: 69, Supplier: Pharma Inc., Item: Risperidone, Quantity: 6800.00 grams, Total Cost: 90372.00
-ORDER              | [2024-12-04 14:47:36] | Batch Number: 71, Supplier: MedSupply, Item: Terbinafine, Quantity: 7000.00 grams, Total Cost: 57610.00
-ORDER              | [2024-12-04 14:47:36] | Batch Number: 73, Supplier: HealthCorp, Item: Estrogen, Quantity: 7200.00 grams, Total Cost: 228816.00
-ORDER              | [2024-12-04 14:47:36] | Batch Number: 75, Supplier: Pharma Inc., Item: Calcium, Quantity: 7400.00 grams, Total Cost: 347504.00
-ORDER              | [2024-12-04 14:47:36] | Batch Number: 77, Supplier: MedSupply, Item: Diphenhydramine, Quantity: 7600.00 grams, Total Cost: 352792.00
-ORDER              | [2024-12-04 14:47:36] | Batch Number: 79, Supplier: HealthCorp, Item: Naproxen, Quantity: 7800.00 grams, Total Cost: 331890.00
-LOW STOCK          | [2024-12-04 14:47:40] | Item: Calcium Carbonate is Low Stock, Threshold: 225, Remaining Quantity: 144.00 grams
-LOW STOCK          | [2024-12-04 14:47:40] | Item: Loratadine is Low Stock, Threshold: 225, Remaining Quantity: 59.00 grams
-ORDER              | [2024-12-04 15:08:54] | Batch Number: 0, Supplier: Pharma Inc., Item: Aspirin, Quantity: 100.00 grams, Total Cost: 2500.00
-ORDER              | [2024-12-04 15:08:54] | Batch Number: 2, Supplier: MedSupply, Item: Paracetamol, Quantity: 150.00 grams, Total Cost: 3000.00
-ORDER              | [2024-12-04 15:08:54] | Batch Number: 4, Supplier: HealthCorp, Item: Cetirizine, Quantity: 300.00 grams, Total Cost: 13275.00
-ORDER              | [2024-12-04 15:08:54] | Batch Number: 6, Supplier: HealthCorp, Item: Lisinopril, Quantity: 500.00 grams, Total Cost: 7950.00
-ORDER              | [2024-12-04 15:08:54] | Batch Number: 8, Supplier: Pharma Inc., Item: Omeprazole, Quantity: 700.00 grams, Total Cost: 11683.00
-ORDER              | [2024-12-04 15:08:54] | Batch Number: 10, Supplier: MedSupply, Item: Levothyroxine, Quantity: 900.00 grams, Total Cost: 44388.00
-ORDER              | [2024-12-04 15:08:54] | Batch Number: 12, Supplier: HealthCorp, Item: Hydrochlorothiazide, Quantity: 1100.00 grams, Total Cost: 14531.00
-ORDER              | [2024-12-04 15:08:54] | Batch Number: 14, Supplier: Pharma Inc., Item: Metoprolol, Quantity: 1300.00 grams, Total Cost: 14300.00
-ORDER              | [2024-12-04 15:08:54] | Batch Number: 16, Supplier: MedSupply, Item: Azithromycin, Quantity: 1500.00 grams, Total Cost: 37500.00
-ORDER              | [2024-12-04 15:08:54] | Batch Number: 18, Supplier: HealthCorp, Item: Gabapentin, Quantity: 1700.00 grams, Total Cost: 0.00
-ORDER              | [2024-12-04 15:08:54] | Batch Number: 20, Supplier: Pharma Inc., Item: Fluconazole, Quantity: 1900.00 grams, Total Cost: 69654.00
-ORDER              | [2024-12-04 15:08:54] | Batch Number: 22, Supplier: MedSupply, Item: Carbamazepine, Quantity: 2100.00 grams, Total Cost: 15015.00
-ORDER              | [2024-12-04 15:08:54] | Batch Number: 24, Supplier: HealthCorp, Item: Ranitidine, Quantity: 2300.00 grams, Total Cost: 80500.00
-ORDER              | [2024-12-04 15:08:54] | Batch Number: 26, Supplier: Pharma Inc., Item: Cyclosporine, Quantity: 2500.00 grams, Total Cost: 36525.00
-ORDER              | [2024-12-04 15:08:54] | Batch Number: 28, Supplier: MedSupply, Item: Acyclovir, Quantity: 2700.00 grams, Total Cost: 51354.00
-ORDER              | [2024-12-04 15:08:54] | Batch Number: 30, Supplier: HealthCorp, Item: Methotrexate, Quantity: 2900.00 grams, Total Cost: 108373.00
-ORDER              | [2024-12-04 15:08:54] | Batch Number: 32, Supplier: Pharma Inc., Item: Iron, Quantity: 3100.00 grams, Total Cost: 152334.00
-ORDER              | [2024-12-04 15:08:54] | Batch Number: 34, Supplier: MedSupply, Item: Vitamin D, Quantity: 3300.00 grams, Total Cost: 19965.00
-ORDER              | [2024-12-04 15:08:54] | Batch Number: 36, Supplier: HealthCorp, Item: Furosemide, Quantity: 3500.00 grams, Total Cost: 118895.00
-ORDER              | [2024-12-04 15:08:54] | Batch Number: 38, Supplier: Pharma Inc., Item: Ciprofloxacin, Quantity: 3700.00 grams, Total Cost: 77071.00
-ORDER              | [2024-12-04 15:08:54] | Batch Number: 40, Supplier: Pharma Inc., Item: Aspirin, Quantity: 3900.00 grams, Total Cost: 97500.00
-ORDER              | [2024-12-04 15:08:54] | Batch Number: 42, Supplier: MedSupply, Item: Paracetamol, Quantity: 4100.00 grams, Total Cost: 82000.00
-ORDER              | [2024-12-04 15:08:54] | Batch Number: 44, Supplier: HealthCorp, Item: Cetirizine, Quantity: 4300.00 grams, Total Cost: 190275.00
-ORDER              | [2024-12-04 15:08:54] | Batch Number: 46, Supplier: HealthCorp, Item: Lisinopril, Quantity: 4500.00 grams, Total Cost: 71550.00
-ORDER              | [2024-12-04 15:08:54] | Batch Number: 48, Supplier: Pharma Inc., Item: Omeprazole, Quantity: 4700.00 grams, Total Cost: 78443.00
-ORDER              | [2024-12-04 15:08:54] | Batch Number: 50, Supplier: MedSupply, Item: Levothyroxine, Quantity: 4900.00 grams, Total Cost: 241668.00
-ORDER              | [2024-12-04 15:08:54] | Batch Number: 52, Supplier: HealthCorp, Item: Hydrochlorothiazide, Quantity: 5100.00 grams, Total Cost: 67371.00
-ORDER              | [2024-12-04 15:08:54] | Batch Number: 54, Supplier: Pharma Inc., Item: Metoprolol, Quantity: 5300.00 grams, Total Cost: 58300.00
-ORDER              | [2024-12-04 15:08:54] | Batch Number: 56, Supplier: MedSupply, Item: Azithromycin, Quantity: 5500.00 grams, Total Cost: 137500.00
-ORDER              | [2024-12-04 15:08:54] | Batch Number: 58, Supplier: HealthCorp, Item: Gabapentin, Quantity: 5700.00 grams, Total Cost: 0.00
-ORDER              | [2024-12-04 15:08:54] | Batch Number: 60, Supplier: Pharma Inc., Item: Fluconazole, Quantity: 5900.00 grams, Total Cost: 216294.00
-ORDER              | [2024-12-04 15:08:54] | Batch Number: 62, Supplier: MedSupply, Item: Carbamazepine, Quantity: 6100.00 grams, Total Cost: 43615.00
-ORDER              | [2024-12-04 15:08:54] | Batch Number: 64, Supplier: HealthCorp, Item: Ranitidine, Quantity: 6300.00 grams, Total Cost: 220500.00
-ORDER              | [2024-12-04 15:08:54] | Batch Number: 66, Supplier: Pharma Inc., Item: Cyclosporine, Quantity: 6500.00 grams, Total Cost: 94965.00
-ORDER              | [2024-12-04 15:08:54] | Batch Number: 68, Supplier: MedSupply, Item: Acyclovir, Quantity: 6700.00 grams, Total Cost: 127434.00
-ORDER              | [2024-12-04 15:08:54] | Batch Number: 70, Supplier: HealthCorp, Item: Methotrexate, Quantity: 6900.00 grams, Total Cost: 257853.00
-ORDER              | [2024-12-04 15:08:54] | Batch Number: 72, Supplier: Pharma Inc., Item: Iron, Quantity: 7100.00 grams, Total Cost: 348894.00
-ORDER              | [2024-12-04 15:08:54] | Batch Number: 74, Supplier: MedSupply, Item: Vitamin D, Quantity: 7300.00 grams, Total Cost: 44165.00
-ORDER              | [2024-12-04 15:08:54] | Batch Number: 76, Supplier: HealthCorp, Item: Furosemide, Quantity: 7500.00 grams, Total Cost: 254775.00
-ORDER              | [2024-12-04 15:08:54] | Batch Number: 78, Supplier: Pharma Inc., Item: Ciprofloxacin, Quantity: 7700.00 grams, Total Cost: 160391.00
-LOW STOCK          | [2024-12-04 15:09:17] | Item: Acetaminophen is Low Stock, Threshold: 225, Remaining Quantity: 109.00 grams
-LOW STOCK          | [2024-12-04 15:09:17] | Item: Calcium Carbonate is Low Stock, Threshold: 225, Remaining Quantity: 144.00 grams
-LOW STOCK          | [2024-12-04 15:09:17] | Item: Loratadine is Low Stock, Threshold: 225, Remaining Quantity: 59.00 grams
-ORDER              | [2024-12-04 15:10:09] | Batch Number: 83, Supplier: Manual Restock, Item: Calcium Carbonate, Quantity: 1000.00 grams, Total Cost: 43540.00
+ORDER              | [2024-12-04 16:24:04] | Batch Number: 0, Supplier: Pharma Inc., Item: Aspirin, Quantity: 100.00 grams, Total Cost: 2500.00
+ORDER              | [2024-12-04 16:24:04] | Batch Number: 1, Supplier: HealthCorp, Item: Ibuprofen, Quantity: 200.00 grams, Total Cost: 1880.00
+ORDER              | [2024-12-04 16:24:04] | Batch Number: 2, Supplier: MedSupply, Item: Paracetamol, Quantity: 150.00 grams, Total Cost: 3000.00
+ORDER              | [2024-12-04 16:24:04] | Batch Number: 3, Supplier: Pharma Inc., Item: Amoxicillin, Quantity: 250.00 grams, Total Cost: 3865.00
+ORDER              | [2024-12-04 16:24:04] | Batch Number: 4, Supplier: HealthCorp, Item: Cetirizine, Quantity: 300.00 grams, Total Cost: 13275.00
+ORDER              | [2024-12-04 16:24:04] | Batch Number: 5, Supplier: Pharma Inc., Item: Metformin, Quantity: 400.00 grams, Total Cost: 5000.00
+ORDER              | [2024-12-04 16:24:04] | Batch Number: 6, Supplier: HealthCorp, Item: Lisinopril, Quantity: 500.00 grams, Total Cost: 7950.00
+ORDER              | [2024-12-04 16:24:04] | Batch Number: 7, Supplier: MedSupply, Item: Atorvastatin, Quantity: 600.00 grams, Total Cost: 4764.00
+ORDER              | [2024-12-04 16:24:04] | Batch Number: 8, Supplier: Pharma Inc., Item: Omeprazole, Quantity: 700.00 grams, Total Cost: 11683.00
+ORDER              | [2024-12-04 16:24:04] | Batch Number: 9, Supplier: HealthCorp, Item: Simvastatin, Quantity: 800.00 grams, Total Cost: 8000.00
+ORDER              | [2024-12-04 16:24:04] | Batch Number: 10, Supplier: MedSupply, Item: Levothyroxine, Quantity: 900.00 grams, Total Cost: 44388.00
+ORDER              | [2024-12-04 16:24:04] | Batch Number: 11, Supplier: Pharma Inc., Item: Gabapentin, Quantity: 1000.00 grams, Total Cost: 0.00
+ORDER              | [2024-12-04 16:24:04] | Batch Number: 12, Supplier: HealthCorp, Item: Hydrochlorothiazide, Quantity: 1100.00 grams, Total Cost: 14531.00
+ORDER              | [2024-12-04 16:24:04] | Batch Number: 13, Supplier: MedSupply, Item: Amlodipine, Quantity: 1200.00 grams, Total Cost: 13884.00
+ORDER              | [2024-12-04 16:24:04] | Batch Number: 14, Supplier: Pharma Inc., Item: Metoprolol, Quantity: 1300.00 grams, Total Cost: 14300.00
+ORDER              | [2024-12-04 16:24:04] | Batch Number: 15, Supplier: HealthCorp, Item: Losartan, Quantity: 1400.00 grams, Total Cost: 13300.00
+ORDER              | [2024-12-04 16:24:04] | Batch Number: 16, Supplier: MedSupply, Item: Azithromycin, Quantity: 1500.00 grams, Total Cost: 37500.00
+ORDER              | [2024-12-04 16:24:04] | Batch Number: 17, Supplier: Pharma Inc., Item: Albuterol, Quantity: 1600.00 grams, Total Cost: 28800.00
+ORDER              | [2024-12-04 16:24:04] | Batch Number: 18, Supplier: HealthCorp, Item: Gabapentin, Quantity: 1700.00 grams, Total Cost: 0.00
+ORDER              | [2024-12-04 16:24:04] | Batch Number: 19, Supplier: MedSupply, Item: Prednisone, Quantity: 1800.00 grams, Total Cost: 27000.00
+ORDER              | [2024-12-04 16:24:04] | Batch Number: 20, Supplier: Pharma Inc., Item: Fluconazole, Quantity: 1900.00 grams, Total Cost: 69654.00
+ORDER              | [2024-12-04 16:24:04] | Batch Number: 21, Supplier: HealthCorp, Item: Doxycycline, Quantity: 2000.00 grams, Total Cost: 92280.00
+ORDER              | [2024-12-04 16:24:04] | Batch Number: 22, Supplier: MedSupply, Item: Carbamazepine, Quantity: 2100.00 grams, Total Cost: 15015.00
+ORDER              | [2024-12-04 16:24:04] | Batch Number: 23, Supplier: Pharma Inc., Item: Ketoconazole, Quantity: 2200.00 grams, Total Cost: 79442.00
+ORDER              | [2024-12-04 16:24:04] | Batch Number: 24, Supplier: HealthCorp, Item: Ranitidine, Quantity: 2300.00 grams, Total Cost: 80500.00
+ORDER              | [2024-12-04 16:24:04] | Batch Number: 25, Supplier: MedSupply, Item: Tacrolimus, Quantity: 2400.00 grams, Total Cost: 81624.00
+ORDER              | [2024-12-04 16:24:04] | Batch Number: 26, Supplier: Pharma Inc., Item: Cyclosporine, Quantity: 2500.00 grams, Total Cost: 36525.00
+ORDER              | [2024-12-04 16:24:04] | Batch Number: 27, Supplier: HealthCorp, Item: Oseltamivir, Quantity: 2600.00 grams, Total Cost: 125606.00
+ORDER              | [2024-12-04 16:24:04] | Batch Number: 28, Supplier: MedSupply, Item: Acyclovir, Quantity: 2700.00 grams, Total Cost: 51354.00
+ORDER              | [2024-12-04 16:24:04] | Batch Number: 29, Supplier: Pharma Inc., Item: Risperidone, Quantity: 2800.00 grams, Total Cost: 37212.00
+ORDER              | [2024-12-04 16:24:04] | Batch Number: 30, Supplier: HealthCorp, Item: Methotrexate, Quantity: 2900.00 grams, Total Cost: 108373.00
+ORDER              | [2024-12-04 16:24:04] | Batch Number: 31, Supplier: MedSupply, Item: Terbinafine, Quantity: 3000.00 grams, Total Cost: 24690.00
+ORDER              | [2024-12-04 16:24:04] | Batch Number: 32, Supplier: Pharma Inc., Item: Iron, Quantity: 3100.00 grams, Total Cost: 152334.00
+ORDER              | [2024-12-04 16:24:04] | Batch Number: 33, Supplier: HealthCorp, Item: Estrogen, Quantity: 3200.00 grams, Total Cost: 101696.00
+ORDER              | [2024-12-04 16:24:04] | Batch Number: 34, Supplier: MedSupply, Item: Vitamin D, Quantity: 3300.00 grams, Total Cost: 19965.00
+ORDER              | [2024-12-04 16:24:04] | Batch Number: 35, Supplier: Pharma Inc., Item: Calcium, Quantity: 3400.00 grams, Total Cost: 159664.00
+ORDER              | [2024-12-04 16:24:04] | Batch Number: 36, Supplier: HealthCorp, Item: Furosemide, Quantity: 3500.00 grams, Total Cost: 118895.00
+ORDER              | [2024-12-04 16:24:04] | Batch Number: 37, Supplier: MedSupply, Item: Diphenhydramine, Quantity: 3600.00 grams, Total Cost: 167112.00
+ORDER              | [2024-12-04 16:24:04] | Batch Number: 38, Supplier: Pharma Inc., Item: Ciprofloxacin, Quantity: 3700.00 grams, Total Cost: 77071.00
+ORDER              | [2024-12-04 16:24:04] | Batch Number: 39, Supplier: HealthCorp, Item: Naproxen, Quantity: 3800.00 grams, Total Cost: 161690.00
+ORDER              | [2024-12-04 16:24:04] | Batch Number: 40, Supplier: Pharma Inc., Item: Aspirin, Quantity: 3900.00 grams, Total Cost: 97500.00
+ORDER              | [2024-12-04 16:24:04] | Batch Number: 41, Supplier: HealthCorp, Item: Ibuprofen, Quantity: 4000.00 grams, Total Cost: 37600.00
+ORDER              | [2024-12-04 16:24:04] | Batch Number: 42, Supplier: MedSupply, Item: Paracetamol, Quantity: 4100.00 grams, Total Cost: 82000.00
+ORDER              | [2024-12-04 16:24:04] | Batch Number: 43, Supplier: Pharma Inc., Item: Amoxicillin, Quantity: 4200.00 grams, Total Cost: 64932.00
+ORDER              | [2024-12-04 16:24:04] | Batch Number: 44, Supplier: HealthCorp, Item: Cetirizine, Quantity: 4300.00 grams, Total Cost: 190275.00
+ORDER              | [2024-12-04 16:24:04] | Batch Number: 45, Supplier: Pharma Inc., Item: Metformin, Quantity: 4400.00 grams, Total Cost: 55000.00
+ORDER              | [2024-12-04 16:24:04] | Batch Number: 46, Supplier: HealthCorp, Item: Lisinopril, Quantity: 4500.00 grams, Total Cost: 71550.00
+ORDER              | [2024-12-04 16:24:04] | Batch Number: 47, Supplier: MedSupply, Item: Atorvastatin, Quantity: 4600.00 grams, Total Cost: 36524.00
+ORDER              | [2024-12-04 16:24:04] | Batch Number: 48, Supplier: Pharma Inc., Item: Omeprazole, Quantity: 4700.00 grams, Total Cost: 78443.00
+ORDER              | [2024-12-04 16:24:04] | Batch Number: 49, Supplier: HealthCorp, Item: Simvastatin, Quantity: 4800.00 grams, Total Cost: 48000.00
+ORDER              | [2024-12-04 16:24:04] | Batch Number: 50, Supplier: MedSupply, Item: Levothyroxine, Quantity: 4900.00 grams, Total Cost: 241668.00
+ORDER              | [2024-12-04 16:24:04] | Batch Number: 51, Supplier: Pharma Inc., Item: Gabapentin, Quantity: 5000.00 grams, Total Cost: 0.00
+ORDER              | [2024-12-04 16:24:04] | Batch Number: 52, Supplier: HealthCorp, Item: Hydrochlorothiazide, Quantity: 5100.00 grams, Total Cost: 67371.00
+ORDER              | [2024-12-04 16:24:04] | Batch Number: 53, Supplier: MedSupply, Item: Amlodipine, Quantity: 5200.00 grams, Total Cost: 60164.00
+ORDER              | [2024-12-04 16:24:04] | Batch Number: 54, Supplier: Pharma Inc., Item: Metoprolol, Quantity: 5300.00 grams, Total Cost: 58300.00
+ORDER              | [2024-12-04 16:24:04] | Batch Number: 55, Supplier: HealthCorp, Item: Losartan, Quantity: 5400.00 grams, Total Cost: 51300.00
+ORDER              | [2024-12-04 16:24:04] | Batch Number: 56, Supplier: MedSupply, Item: Azithromycin, Quantity: 5500.00 grams, Total Cost: 137500.00
+ORDER              | [2024-12-04 16:24:04] | Batch Number: 57, Supplier: Pharma Inc., Item: Albuterol, Quantity: 5600.00 grams, Total Cost: 100800.00
+ORDER              | [2024-12-04 16:24:04] | Batch Number: 58, Supplier: HealthCorp, Item: Gabapentin, Quantity: 5700.00 grams, Total Cost: 0.00
+ORDER              | [2024-12-04 16:24:04] | Batch Number: 59, Supplier: MedSupply, Item: Prednisone, Quantity: 5800.00 grams, Total Cost: 87000.00
+ORDER              | [2024-12-04 16:24:04] | Batch Number: 60, Supplier: Pharma Inc., Item: Fluconazole, Quantity: 5900.00 grams, Total Cost: 216294.00
+ORDER              | [2024-12-04 16:24:04] | Batch Number: 61, Supplier: HealthCorp, Item: Doxycycline, Quantity: 6000.00 grams, Total Cost: 276840.00
+ORDER              | [2024-12-04 16:24:04] | Batch Number: 62, Supplier: MedSupply, Item: Carbamazepine, Quantity: 6100.00 grams, Total Cost: 43615.00
+ORDER              | [2024-12-04 16:24:04] | Batch Number: 63, Supplier: Pharma Inc., Item: Ketoconazole, Quantity: 6200.00 grams, Total Cost: 223882.00
+ORDER              | [2024-12-04 16:24:04] | Batch Number: 64, Supplier: HealthCorp, Item: Ranitidine, Quantity: 6300.00 grams, Total Cost: 220500.00
+ORDER              | [2024-12-04 16:24:04] | Batch Number: 65, Supplier: MedSupply, Item: Tacrolimus, Quantity: 6400.00 grams, Total Cost: 217664.00
+ORDER              | [2024-12-04 16:24:04] | Batch Number: 66, Supplier: Pharma Inc., Item: Cyclosporine, Quantity: 6500.00 grams, Total Cost: 94965.00
+ORDER              | [2024-12-04 16:24:04] | Batch Number: 67, Supplier: HealthCorp, Item: Oseltamivir, Quantity: 6600.00 grams, Total Cost: 318846.00
+ORDER              | [2024-12-04 16:24:04] | Batch Number: 68, Supplier: MedSupply, Item: Acyclovir, Quantity: 6700.00 grams, Total Cost: 127434.00
+ORDER              | [2024-12-04 16:24:04] | Batch Number: 69, Supplier: Pharma Inc., Item: Risperidone, Quantity: 6800.00 grams, Total Cost: 90372.00
+ORDER              | [2024-12-04 16:24:04] | Batch Number: 70, Supplier: HealthCorp, Item: Methotrexate, Quantity: 6900.00 grams, Total Cost: 257853.00
+ORDER              | [2024-12-04 16:24:04] | Batch Number: 71, Supplier: MedSupply, Item: Terbinafine, Quantity: 7000.00 grams, Total Cost: 57610.00
+ORDER              | [2024-12-04 16:24:04] | Batch Number: 72, Supplier: Pharma Inc., Item: Iron, Quantity: 7100.00 grams, Total Cost: 348894.00
+ORDER              | [2024-12-04 16:24:04] | Batch Number: 73, Supplier: HealthCorp, Item: Estrogen, Quantity: 7200.00 grams, Total Cost: 228816.00
+ORDER              | [2024-12-04 16:24:04] | Batch Number: 74, Supplier: MedSupply, Item: Vitamin D, Quantity: 7300.00 grams, Total Cost: 44165.00
+ORDER              | [2024-12-04 16:24:04] | Batch Number: 75, Supplier: Pharma Inc., Item: Calcium, Quantity: 7400.00 grams, Total Cost: 347504.00
+ORDER              | [2024-12-04 16:24:04] | Batch Number: 76, Supplier: HealthCorp, Item: Furosemide, Quantity: 7500.00 grams, Total Cost: 254775.00
+ORDER              | [2024-12-04 16:24:04] | Batch Number: 77, Supplier: MedSupply, Item: Diphenhydramine, Quantity: 7600.00 grams, Total Cost: 352792.00
+ORDER              | [2024-12-04 16:24:04] | Batch Number: 78, Supplier: Pharma Inc., Item: Ciprofloxacin, Quantity: 7700.00 grams, Total Cost: 160391.00
+ORDER              | [2024-12-04 16:24:04] | Batch Number: 79, Supplier: HealthCorp, Item: Naproxen, Quantity: 7800.00 grams, Total Cost: 331890.00
+ORDER              | [2024-12-04 16:24:13] | Batch Number: 160, Supplier: Automatic Restock, Item: Acetaminophen, Quantity: 1000.00 grams, Total Cost: 37270.00
+ORDER              | [2024-12-04 16:24:13] | Batch Number: 161, Supplier: Automatic Restock, Item: Calcium Carbonate, Quantity: 1000.00 grams, Total Cost: 43540.00
+ORDER              | [2024-12-04 16:24:13] | Batch Number: 162, Supplier: Automatic Restock, Item: Loratadine, Quantity: 1000.00 grams, Total Cost: 17210.00
 __________________________________________________________
-Profit 30.25Date 2024-12-04
+Total Sales: $605.0
+Total Expenses: $7895371.0
+Net Income: $-7894766.0
+Date 2024-12-04
