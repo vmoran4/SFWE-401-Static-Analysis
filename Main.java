@@ -7,6 +7,8 @@ import java.util.zip.ZipOutputStream;
 import java.util.zip.ZipEntry;
 import java.io.FileOutputStream;
 import java.io.FileInputStream;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 
 
 public class Main {
@@ -178,7 +180,15 @@ public class Main {
                     }
                     System.out.println("Enter the quantity in grams:");
                     double quantityGrams = Double.parseDouble(scanner.nextLine());
-                    Order order = new Order(medName, quantityGrams, "12/31/2021", 1, "Manual Restock");
+
+                    //Get todays date + 30 days
+                    LocalDate today = LocalDate.now();
+                    DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+                    LocalDate futureDate = today.plusDays(30);
+                    String formattedFutureDate = futureDate.format(formatter);
+                    
+                    //Create order
+                    Order order = new Order(medName, quantityGrams, formattedFutureDate, 1, "Manual Restock");
                     inventory.updateInventoryOrder(order);
                     break;
 
@@ -229,6 +239,9 @@ public class Main {
                             
                             break;
                         case "2":
+                            //Export curr Inventory
+                            inventory.exportCurrInventory();
+                            //Generate report
                             Report.generateInventoryReport(inventory, targetDate);
                             break;
                     }

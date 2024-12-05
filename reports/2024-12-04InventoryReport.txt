@@ -50,10 +50,10 @@ Name: Vitamin D, Type: Vitamins and Supplements, Quantity: 10665.00 grams, Low S
 __________________________________________________________
 Medications with expiration date soon in the next 30 days:
 
-Medication: Aspirin, Quantity: 100.00 grams, Expiration Date: 2024-12-31, Batch Number: 83, Supplier: Pharma Inc.
-Medication: Gabapentin, Quantity: 1000.00 grams, Expiration Date: 2024-11-05, Batch Number: 94, Supplier: Pharma Inc.
-Medication: Aspirin, Quantity: 3900.00 grams, Expiration Date: 2024-12-31, Batch Number: 123, Supplier: Pharma Inc.
-Medication: Gabapentin, Quantity: 5000.00 grams, Expiration Date: 2024-11-05, Batch Number: 134, Supplier: Pharma Inc.
+Medication: Aspirin, Quantity: 100.00 grams, Expiration Date: 2024-12-31, Batch Number: 0, Supplier: Pharma Inc.
+Medication: Gabapentin, Quantity: 1000.00 grams, Expiration Date: 2024-11-05, Batch Number: 11, Supplier: Pharma Inc.
+Medication: Aspirin, Quantity: 3900.00 grams, Expiration Date: 2024-12-31, Batch Number: 40, Supplier: Pharma Inc.
+Medication: Gabapentin, Quantity: 5000.00 grams, Expiration Date: 2024-11-05, Batch Number: 51, Supplier: Pharma Inc.
 __________________________________________________________
 Medications with expiration date soon in the next 1 days:
 

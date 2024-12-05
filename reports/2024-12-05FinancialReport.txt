@@ -1,0 +1,16 @@
+__________________________________________________________
+Pharmacy Name
+Pharmacy Address
+Pharmacy eMail Address
+Pharmacy Phone Number
+Financial Report
+__________________________________________________________
+Sales
+__________________________________________________________
+Expenses
+ORDER              | [2024-12-05 00:49:49] | Batch Number: 83, Supplier: Manual Restock, Item: Amoxicillin, Quantity: 0.00 grams, Total Cost: 0.00
+__________________________________________________________
+Total Sales: $0.0
+Total Expenses: $0.0
+Net Income: $0.0
+Date 2024-12-05
