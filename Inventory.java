@@ -116,15 +116,15 @@ public class Inventory {
     //FIXME: Might be a logic error here in terms of remainingQuantity
     public void updateOrdersSale(String medicationName, double quantityGrams){
         double remainingQuantity = quantityGrams;
-        for (Order order : orders) {
+        Iterator<Order> iterator = orders.iterator();
+        while (iterator.hasNext()) {
+            Order order = iterator.next();
             if (order.getMedicationName().equals(medicationName)) {
                 order.setQuantityGrams(order.getQuantityGrams() - quantityGrams);
                 if(order.getQuantityGrams() <= 0){
                     remainingQuantity = -order.getQuantityGrams();
-                    orders.remove(order);
-                }
-                else{
-                    // remainingQuantity = 0;
+                    iterator.remove();
+                } else {
                     break;
                 }
             }
