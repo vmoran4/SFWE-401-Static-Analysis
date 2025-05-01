@@ -63,6 +63,17 @@ jobs:
     # - name: Setup runtime (example)
     #   uses: actions/setup-example@v1
 
+    - name: Set up Java
+      uses: actions/setup-java@v3
+      with:
+          java-version: '17'
+          distribution: 'temurin'
+
+    - name: Compile with javac
+      run: |
+          mkdir -p target/classes
+          javac -d target/classes -cp "lib/*" src/*.java
+
     # Initializes the CodeQL tools for scanning.
     - name: Initialize CodeQL
       uses: github/codeql-action/init@v3
