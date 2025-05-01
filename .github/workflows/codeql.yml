@@ -15,7 +15,7 @@ jobs:
         with:
           languages: java
           # Analyze ALL .java files in the root directory
-          paths: .  
+          paths: src  
 
       - name: Perform CodeQL Analysis
         uses: github/codeql-action/analyze@v2
