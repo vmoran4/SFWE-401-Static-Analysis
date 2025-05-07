@@ -1,0 +1,10 @@
+steps:
+  - name: Initialize CodeQL
+    uses: github/codeql-action/init@v3
+    with:
+      languages: java
+      config-file: .github/codeql/codeql-config.yml  # Point to your config
+
+  # Add explicit Maven build step (critical for Java)
+  - name: Build with Maven
+    run: mvn clean compile --fail-never
