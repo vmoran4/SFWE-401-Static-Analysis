@@ -1,34 +1,14 @@
-name: "CodeQL"
+name: "Extended Java Analysis"
+disable-default-queries: false  # Keep default queries
 
-on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
-  schedule:
-    - cron: '0 0 * * 0'
+languages:
+  - java
 
-jobs:
-  analyze:
-    name: Analyze
-    runs-on: ubuntu-latest
-    permissions:
-      actions: read
-      contents: read
-      security-events: write
+# Enable broader query suites
+queries:
+  - uses: security-and-quality   # Default security checks (always run)
+  - uses: security-extended     # Adds 25% more security rules
+  - uses: security-experimental # Advanced/experimental checks (may have FPs)
 
-    steps:
-    - name: Checkout repository
-      uses: actions/checkout@v4
-
-    - name: Initialize CodeQL
-      uses: github/codeql-action/init@v3
-      with:
-        languages: java
-        build-mode: maven
-
-    - name: Autobuild
-      uses: github/codeql-action/autobuild@v3
-
-    - name: Perform CodeQL Analysis
-      uses: github/codeql-action/analyze@v3
+# Force Maven mode explicitly
+build-mode: maven
