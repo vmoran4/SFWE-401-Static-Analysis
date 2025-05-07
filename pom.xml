@@ -3,4 +3,14 @@
   <groupId>com.example</groupId>
   <artifactId>my-project</artifactId>
   <version>1.0-SNAPSHOT</version>
+  
+  <properties>
+    <maven.compiler.source>11</maven.compiler.source>
+    <maven.compiler.target>11</maven.compiler.target>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <build>
+    <sourceDirectory>src</sourceDirectory>
+  </build>
 </project>
