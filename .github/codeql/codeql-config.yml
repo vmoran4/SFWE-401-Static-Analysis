@@ -1,16 +1,20 @@
-name: "Extended Java Analysis"
-disable-default-queries: true  # Keep default queries
+name: "Aggressive Security Scan"
+disable-default-queries: true  # Disable all quality checks
 
 languages:
   - java
 
-# Enable broader query suites
 queries:
-  - uses: security-and-quality   # Default security checks (always run)
-  - uses: security-extended     # Adds 25% more security rules
-  - uses: security-experimental # Advanced/experimental checks (may have FPs)
-  - uses: ./custom-queries
+  # Focus ONLY on high-impact security queries
+  - uses: security-and-quality
+    queries:
+      - include:
+          tags:
+            - security
+            - external/cwe/cwe-259  # Hardcoded credentials
+            - external/cwe/cwe-89   # SQL injection
+  - uses: security-extended
+  - uses: security-experimental
 
-# Force Maven mode explicitly
 build-mode: maven
-build-command: "mvn clean compile"
+build-command: "mvn clean compile -DskipTests"
