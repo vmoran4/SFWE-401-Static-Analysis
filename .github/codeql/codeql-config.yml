@@ -9,6 +9,7 @@ queries:
   - uses: security-and-quality   # Default security checks (always run)
   - uses: security-extended     # Adds 25% more security rules
   - uses: security-experimental # Advanced/experimental checks (may have FPs)
+  - uses: ./custom-queries
 
 # Force Maven mode explicitly
 build-mode: maven
