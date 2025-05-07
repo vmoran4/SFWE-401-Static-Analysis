@@ -1,5 +1,5 @@
 name: "Extended Java Analysis"
-disable-default-queries: false  # Keep default queries
+disable-default-queries: true  # Keep default queries
 
 languages:
   - java
@@ -13,4 +13,4 @@ queries:
 
 # Force Maven mode explicitly
 build-mode: maven
-build-command: "mvn clean compile -DskipTests"
+build-command: "mvn clean compile"
