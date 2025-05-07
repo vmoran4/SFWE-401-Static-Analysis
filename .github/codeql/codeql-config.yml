@@ -12,3 +12,4 @@ queries:
 
 # Force Maven mode explicitly
 build-mode: maven
+build-command: "mvn clean compile -DskipTests"
