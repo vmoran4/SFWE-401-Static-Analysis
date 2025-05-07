@@ -1,0 +1,9 @@
+- description: "Custom security queries"
+  queries:
+    - import: java
+      from: Security/CWE
+      queries: |
+        HardcodedCredentials.ql
+        SqlInjection.ql
+        CommandInjection.ql
+        Xss.ql
